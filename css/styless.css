@@ -217,8 +217,16 @@ footer i{
     opacity: 95%;
     padding: 30px;
     margin-bottom: 80px;
-
+    
 }
+.card{
+    margin: 100px;
+}
+
+.card-text{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 
 #texto1, #texto2{
 font-family: 'Open Sans Condensed', sans-serif;
