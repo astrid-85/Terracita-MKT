@@ -8,6 +8,7 @@
 body{
 background-color: #f9c733;
 }
+
 .encabezado{
     display: flex;
     flex-direction: column;
@@ -24,8 +25,7 @@ background-color: #f9c733;
     100% {
     opacity: 1;
     }
- }
-
+}
 
 #menu{
     color: #f9c733;
@@ -62,6 +62,8 @@ ul li a:hover {
     font-family: 'Bowlby One SC', cursive;
     
 }
+/*INICIO PAGINA PRINCIPAL*/
+
 /*main*/
 .fondo{
     display: flex;
@@ -74,8 +76,6 @@ ul li a:hover {
     background-size:cover;
     border: outset;
 }
-
-/*Pagina Inicio*/
 
 #tituloInicio{
     color: #377f8b;
@@ -90,23 +90,10 @@ ul li a:hover {
     animation-iteration-count:initial ;
  }
  
- 
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
- 
-
 .principal{
     padding: 50px;
     height: auto;
-    
-    
-}
+    }
 
 #apartadoUno{
     background-color:#377f8b;
@@ -114,7 +101,6 @@ ul li a:hover {
     height: 300px;
     overflow: auto;
 }
-
 
 #textoPrincipal{
     font-size: 25px;
@@ -128,17 +114,7 @@ ul li a:hover {
     animation-iteration-count:inherit ;
    
  }
- 
- 
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
-
+ /*FIN PAGINA PRINCIPAL*/
 
 /*footer*/
 .piePagina{
@@ -189,63 +165,49 @@ footer i{
     font-size: 35px;
 }
 
-/*Pagina Quienes Somos*/
+/*FIN FOOTER */
 
-#equipo{
-    display: grid;
-    background-color: #f9c733;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    grid-template-areas: "foto1 caja1" 
-                         "foto2 caja2"
-                         "foto3 caja3"
-                         "foto4 caja4"
-                         "foto5 caja5";
-    column-gap: 3px;
-    row-gap: 10px;
-    width: 800px;
-    justify-content: left;
-    align-items: left;
-    margin: 50px;
-    padding-left: 20px;
-    padding-top: 10px;
-    
-}
+/*INICIO PAGINA EQUIPO*/
 
 #tituloEquipo{
     color: #377f8b;
     margin-top: 30px;
     margin-bottom: 10px;
     font-family: 'Bowlby One SC', cursive;
-    text-align: center;
+    text-align: right;
 }
-#caja1, #caja2, #caja3, #caja4, #caja5{
-color:#377f8b;
-font-family: 'Open Sans Condensed', sans-serif;
-padding-left: 30px;
-padding-right: 20px;
-text-align: center;
-line-height: 30px;
+#equipo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px;
+    background-color: #f9c733;
+    opacity: 95%;
+    padding: 30px;
+    margin-bottom: 80px;
+
 }
 
-#foto1{
-    width: 100%;
-    grid-area: foto1;
-}
-#caja1{
+#cajaUno, #cajaDos, #cajaTres, #cajaCuatro, #cajaCinco{
    
-    grid-area: caja1;
-}
-#foto2{
-    width: 100%;
-    grid-area: foto2;
-}
-#caja2{
-    grid-area: caja2;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    padding: 70px 30px 30px 10px;
+    margin: 90px;
+    text-align: left;
+    line-height: 30px;
+    color: #377f8b;
+    }
+
+#equipo img{
+    border-radius: 50%;
+    margin: 90px;
+    float: left;
 }
 
+/*FIN PAGINA EQUIPO*/
 
-/*Página Que hacemos*/
+/*INICIO PAGINA NUESTRO TRABAJO*/
 #clientes{
     display: flex;
     flex-direction: row;
@@ -258,7 +220,6 @@ line-height: 30px;
 
 }
 
-
 #texto1, #texto2{
 font-family: 'Open Sans Condensed', sans-serif;
 font-size: 20px;
@@ -269,8 +230,9 @@ line-height: 30px;
 color: #f9c733;
 }
 
+/*FIN PAGINA NUESTRO TRABAJO*/
 
-/*Pagina Planes a medida*/
+/*INICIO PAGINA PLANES*/
 #planes{
     color: #377f8b;
     margin-top: 60px;
@@ -411,7 +373,9 @@ line-height: 30px;
         background-color:#377f8b;
             }
 
-/*Pagina Contacto*/
+/*FIN PAGINA PLANES*/
+
+/*INICIO PAGINA CONTACTO*/
 
 #contacto{
     color: #377f8b;
@@ -438,4 +402,4 @@ line-height: 30px;
 input, select{
     font-family: 'Open Sans Condensed', sans-serif;
 }
-
+/*FIN PAGINA CONTACTO*/
