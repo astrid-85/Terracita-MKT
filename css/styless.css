@@ -34,7 +34,7 @@ background-color: #f9c733;
     padding-bottom: 4px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #cc776c , #377f8b);
+    background-image: linear-gradient(to bottom,  #dfb129, #377f8b);
 }
 ul{
    display: flex;
@@ -68,13 +68,16 @@ ul li a:hover {
 .fondo{
     display: flex;
     flex-direction: column;
+    color: #377f8b;
+    font-family: "Bowlby One SC", cursive;
+    background-color: #f9c733;
     margin: 1px 2px 1px 2px;
     justify-content: space-evenly;
     align-items: center;
     background-image: url("../img/fototerracita.jpg") ;
     background-repeat:no-repeat;
     background-size:cover;
-    border: outset;
+    border: outset 2px #cc7760; 
 }
 
 #tituloInicio{
@@ -82,10 +85,8 @@ ul li a:hover {
     font-size: 20px;
     text-align: center;
     font-family: 'Bowlby One SC', cursive;
-    padding-left: 80px;
-    padding-top: 80px;
-    padding-right: 80px;
-    animation-duration: 3s;
+    padding: 80px 80px 0px 80px;
+    animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count:initial ;
  }
@@ -97,19 +98,22 @@ ul li a:hover {
 
 #apartadoUno{
     background-color:#377f8b;
+    opacity: 90%;
     margin: 50px;
-    height: 300px;
+    height: 400px;
     overflow: auto;
+    width: 900px; 
 }
 
 #textoPrincipal{
-    font-size: 25px;
+    font-size: 32px;
     color: #f9c733;
     font-family: 'Open Sans Condensed', sans-serif;
-    padding: 70px;
+    font-weight: 200px;
+    padding: 100px;
     text-align: center;
     line-height: 40px;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-name: aparecer;
     animation-iteration-count:inherit ;
    
@@ -182,6 +186,7 @@ footer i{
     align-items: center;
     margin: 60px;
     background-color: #f9c733;
+    margin: 60px;
     opacity: 95%;
     padding: 30px;
     margin-bottom: 80px;
