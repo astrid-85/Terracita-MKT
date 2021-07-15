@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/*INICIO PAGINA NUESTRO TRABAJO*/
+/*FIN PAGINA NUESTRO TRABAJO*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f9c733; }
+
+/*INICIO ENCABEZADO GENERAL*/
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+header .fotoEncabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
+#menu {
+  color: #f9c733;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #dfb129, #cc7760); }
+
+ul {
+  display: flex;
+  list-style-type: none; }
+  ul li {
+    border-right: 2px solid #cc7760;
+    margin: 20px 10px 20px 5px; }
+    ul li a {
+      text-decoration: none;
+      text-align: center;
+      padding: 30px;
+      font-size: 25px;
+      font-family: "Bowlby One SC", cursive;
+      color: #f9c733; }
+      ul li a:hover {
+        background-color: #f9c733;
+        color: #377f8b;
+        padding: 4px; }
+
+/*FIN ENCABEZADO GENERAL*/
+/*INICIO PAGINA PRINCIPAL*/
+main {
+  display: flex;
+  flex-direction: column;
+  color: #377f8b;
+  font-family: "Bowlby One SC", cursive;
+  background-color: #f9c733;
+  margin: 1px 2px 1px 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../img/fototerracita.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: outset 2px #cc7760; }
+  main #tituloInicio {
+    color: #377f8b;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Bowlby One SC", cursive;
+    padding: 80px 80px 0px 80px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+
+.principal {
+  padding: 50px;
+  height: auto; }
+  .principal #apartadoUno {
+    background-color: #377f8b;
+    opacity: 90%;
+    margin: 50px;
+    height: 400px;
+    overflow: auto;
+    width: 900px; }
+    .principal #apartadoUno #textoPrincipal {
+      font-size: 32px;
+      color: #f9c733;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 200px;
+      padding: 100px;
+      text-align: center;
+      line-height: 40px;
+      animation-duration: 8s;
+      animation-name: aparecer;
+      animation-iteration-count: inherit; }
+
+/*FIN PAGINA PRINCIPAL*/
+/*INICIO FOOTER*/
+.piePagina {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 70px 70px 70px;
+  grid-template-areas: "h3 h3 h3" "pie1 pie4 pie2" "pie3 pie3 pie3";
+  column-gap: 30px;
+  row-gap: 10px;
+  align-items: flex-end;
+  height: 250px;
+  background-color: #377f8b;
+  background-image: linear-gradient(#cc7760, #377f8b);
+  text-align: center;
+  margin: 10px; }
+  .piePagina h3 {
+    font-family: "Bowlby One SC", cursive;
+    color: #f9c733;
+    font-size: 25px;
+    grid-area: h3; }
+  .piePagina footer i {
+    font-size: 35px; }
+
+.pie1, .pie4, .pie2 {
+  color: #f9c733;
+  font-family: "Bowlby One SC", cursive;
+  grid-area: pie1;
+  font-size: 20px; }
+
+.pie4 {
+  grid-area: pie4; }
+
+.pie2 {
+  grid-area: pie2; }
+
+.pie3 {
+  color: #f9c733;
+  font-family: "Open Sans Condensed", sans-serif;
+  grid-area: pie3; }
+
+/*FIN FOOTER*/
+/*INICIO PÁGINA EQUIPO*/
+#tituloEquipo {
+  color: #377f8b;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Bowlby One SC', cursive;
+  text-align: right; }
+
+#equipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f9c733;
+  margin: 60px;
+  opacity: 95%;
+  padding: 30px;
+  margin-bottom: 80px; }
+
+#equipo img {
+  border-radius: 50%;
+  margin: 90px;
+  float: left; }
+
+#cajaUno, #cajaDos, #cajaTres, #cajaCuatro, #cajaCinco {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding: 70px 30px 30px 10px;
+  margin: 90px;
+  text-align: left;
+  line-height: 30px;
+  color: #377f8b; }
+
+/*FIN PAGINA EQUIPO*/
+/*INICIO PAGINA NUESTRO TRABAJO*/
+#clientes {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin: 60px;
+  background-color: #377f8b;
+  opacity: 95%;
+  padding: 30px;
+  margin-bottom: 80px; }
+
+.card {
+  margin: 100px; }
+
+.card-text {
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+#texto1, #texto2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 12px;
+  text-align: left;
+  line-height: 30px;
+  color: #f9c733; }
+
+#botonesPlanes {
+  display: inline-block;
+  margin: 50px; }
+  #botonesPlanes a {
+    text-decoration: none;
+    transition: height 2s;
+    color: #aa8324; }
+
+#boton1 {
+  background-color: #f9c733;
+  text-align: center;
+  height: 80px;
+  padding: 20px; }
+
+#boton2 {
+  background-color: #377f8b;
+  text-align: center;
+  height: 80px;
+  padding: 20px; }
+
+#boton3 {
+  background-color: #cc7760;
+  text-align: center;
+  height: 80px;
+  padding: 20px; }
+
+/*FIN PAGINA NUESTRO TRABAJO*/
+/*INICIO PAGINA PLANES*/
+#planes {
+  color: #377f8b;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center; }
+
+.tablaPlanes {
+  display: grid;
+  background-color: #cc7760;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas: "colum1 colum2 colum3 colum4"  "row1 row4 row7 row10" "row2 row5 row8 row11" "row3 row6 row9 row12";
+  column-gap: 1px;
+  row-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: #377f8b 2px solid; }
+  .tablaPlanes #colum1, .tablaPlanes #colum2, .tablaPlanes #colum3, .tablaPlanes #colum4 {
+    color: #f9c733;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 12px;
+    text-align: center;
+    line-height: 30px;
+    border-right: 2px solid #377f8b;
+    border-bottom: 2px solid #377f8b; }
+  .tablaPlanes #row1, .tablaPlanes #row2, .tablaPlanes #row3, .tablaPlanes #row4, .tablaPlanes #row5, .tablaPlanes #row6, .tablaPlanes #row7,
+  .tablaPlanes #row8, .tablaPlanes #row9, .tablaPlanes #row10, .tablaPlanes #row11, .tablaPlanes #row12 {
+    color: #f9c733;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 30px; }
+
+#colum1 {
+  grid-area: colum1; }
+
+#row1 {
+  grid-area: row1;
+  font-size: 25px; }
+
+#row2 {
+  grid-area: row2;
+  font-size: 25px; }
+
+#row3 {
+  grid-area: row3;
+  font-size: 25px; }
+
+#colum2 {
+  grid-area: colum2; }
+
+#row4 {
+  grid-area: row4; }
+
+#row5 {
+  grid-area: row5; }
+
+#row6 {
+  grid-area: row6;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px; }
+
+.botones #row6:hover, #row9:hover #row6:hover, #row12:hover #row6:hover {
+  transition: height 2s;
+  height: 80px;
+  background-color: #377f8b; }
+
+#colum3 {
+  grid-area: colum3; }
+
+#row7 {
+  grid-area: row7; }
+
+#row8 {
+  grid-area: row8; }
+
+#row9 {
+  grid-area: row9;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px; }
+
+#colum4 {
+  grid-area: colum4; }
+
+#row10 {
+  grid-area: row10; }
+
+#row11 {
+  grid-area: row11; }
+
+#row12 {
+  grid-area: row12;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px; }
+
+a {
+  text-decoration: none;
+  transition: height 2s;
+  color: height 2s; }
+
+/*FIN PAGINA PLANES*/
+/*INICIO PAGINA CONTACTO*/
+#contacto {
+  color: #377f8b;
+  text-align: end;
+  font-family: 'Bowlby One SC', cursive;
+  margin-right: 50px;
+  margin-top: 50px; }
+
+#formulario {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 70px;
+  background-color: #377f8b;
+  background-image: linear-gradient(to right, #377f8b, #aa8321); }
+  #formulario #formularioUno {
+    margin: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 1.6; }
+    #formulario #formularioUno input, #formulario #formularioUno select {
+      font-family: 'Open Sans Condensed', sans-serif; }
+
+/*FIN PAGINA CONTACTO*/

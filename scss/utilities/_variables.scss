@@ -1,0 +1,29 @@
+
+$colorTitulo:#377f8b;
+$colorTipografia: #f9c733;
+$tipografiaTitulo: 'Bowlby One SC', cursive;
+$tipografiaTexto: 'Open Sans Condensed', sans-serif;
+$colorFondo: #f9c733;
+$anchoCajas: 250px;
+$imgFondo: url("../img/fototerracita.jpg"); 
+
+/*INICIO PAGINA NUESTRO TRABAJO*/
+
+@mixin botones ($botonFondo, $botonAling){
+    background-color: $botonFondo;
+    text-align: $botonAling;
+    height: 80px;
+    padding: 20px;
+    
+    }
+    
+@mixin enlace ($subrayado, $botonColor, $transicion){
+    text-decoration: none;
+    transition: height 2s;
+    color: $botonColor;
+   
+}
+/*FIN PAGINA NUESTRO TRABAJO*/
+
+
+
