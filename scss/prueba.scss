@@ -6,11 +6,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-items:stretch;
     }
 
 body{
     background-color: $colorFondo;
+    padding: auto;
+    width: 100%; 
+    
 }
+
 /*INICIO ENCABEZADO GENERAL*/
 
 header{
@@ -26,7 +31,8 @@ header{
                 align-items: center;
                 animation-duration: 5s;
                 animation-name: aparecer;
-                animation-iteration-count:initial ;
+                animation-iteration-count:initial;
+                
 }
 }
 #menu{
@@ -78,7 +84,7 @@ main{
 
             #tituloInicio{
                     color: $colorTitulo;
-                    font-size: 20px;
+                    font-size: 1.25 rem;
                     text-align: center;
                     font-family: $tipografiaTitulo;
                     padding: 80px 80px 0px 80px;
@@ -88,14 +94,14 @@ main{
                 }
                         }   
 .principal{
-            padding: 50px;
+            padding: 10%;
             height: auto;
 
         #apartadoUno{
                 background-color:#377f8b;
                 opacity: 90%;
                 margin: 50px;
-                height: 400px;
+                height: 2500%;
                 overflow: auto;
                 width: 900px;
 
@@ -131,24 +137,28 @@ main{
                 background-color: #377f8b;
                 background-image: linear-gradient(#cc7760, #377f8b);
                 text-align: center;
-                margin: 10px;
+                width: 100%;
+                padding: 20px;
+                margin: 0px;
 
                         h3{
                         font-family: $tipografiaTitulo;
                         color: $colorTipografia;
-                        font-size: 25px;
+                        font-size: 1.563;
                         grid-area: h3;
                         }
 
-                        footer i{
-                            font-size: 35px;
+                        footer a i{
+                            
+                            color: #f9c733;
+                            font-size: 50px;
                         }
                                     }
         .pie1, .pie4, .pie2{
             color: $colorTipografia;
             font-family: $tipografiaTitulo;
             grid-area: pie1;
-            font-size: 20px;
+            font-size: 1.25rem;
             
         }
             .pie4 {
@@ -156,6 +166,10 @@ main{
             }
                 .pie2{
                     grid-area: pie2;
+                    a{
+                        color: #f9c733;
+
+                    }
                       }
                 .pie3{
                     color: $colorTipografia;

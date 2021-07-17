@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+
+
 body{
 background-color: #f9c733;
 }
+
+
 
 .encabezado{
     display: flex;

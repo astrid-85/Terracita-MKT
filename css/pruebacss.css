@@ -4,10 +4,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  align-items: stretch; }
 
 body {
-  background-color: #f9c733; }
+  background-color: #f9c733;
+  padding: auto;
+  width: 100%; }
 
 /*INICIO ENCABEZADO GENERAL*/
 @keyframes aparecer {
@@ -68,7 +71,7 @@ main {
   border: outset 2px #cc7760; }
   main #tituloInicio {
     color: #377f8b;
-    font-size: 20px;
+    font-size: 1.25 rem;
     text-align: center;
     font-family: "Bowlby One SC", cursive;
     padding: 80px 80px 0px 80px;
@@ -77,13 +80,13 @@ main {
     animation-iteration-count: initial; }
 
 .principal {
-  padding: 50px;
+  padding: 10%;
   height: auto; }
   .principal #apartadoUno {
     background-color: #377f8b;
     opacity: 90%;
     margin: 50px;
-    height: 400px;
+    height: 2500%;
     overflow: auto;
     width: 900px; }
     .principal #apartadoUno #textoPrincipal {
@@ -112,26 +115,31 @@ main {
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
   text-align: center;
-  margin: 10px; }
+  width: 100%;
+  padding: 20px;
+  margin: 0px; }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
     color: #f9c733;
-    font-size: 25px;
+    font-size: 1.563;
     grid-area: h3; }
-  .piePagina footer i {
-    font-size: 35px; }
+  .piePagina footer a i {
+    color: #f9c733;
+    font-size: 50px; }
 
 .pie1, .pie4, .pie2 {
   color: #f9c733;
   font-family: "Bowlby One SC", cursive;
   grid-area: pie1;
-  font-size: 20px; }
+  font-size: 1.25rem; }
 
 .pie4 {
   grid-area: pie4; }
 
 .pie2 {
   grid-area: pie2; }
+  .pie2 a {
+    color: #f9c733; }
 
 .pie3 {
   color: #f9c733;

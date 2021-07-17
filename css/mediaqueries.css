@@ -1,0 +1,17 @@
+/* @media only screen and (max-width: 1400px) {
+
+  } */
+  
+@media only screen and (max-width: 768px) {
+  #menu{
+    color: #377f8b;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom , #dfb129, #cc7760);
+}
+
+  }
+
