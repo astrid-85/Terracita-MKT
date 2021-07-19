@@ -91,6 +91,7 @@ main {
     width: 900px; }
     .principal #apartadoUno #textoPrincipal {
       font-size: 32px;
+      overflow: hidden;
       color: #f9c733;
       font-family: "Open Sans Condensed", sans-serif;
       font-weight: 200px;

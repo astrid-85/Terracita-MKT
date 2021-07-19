@@ -107,6 +107,7 @@ main{
 
                 #textoPrincipal{
                         font-size: 32px;
+                        overflow: hidden;
                         color: $colorTipografia;
                         font-family: $tipografiaTexto;
                         font-weight: 200px;
@@ -255,9 +256,6 @@ color: #f9c733;
                 #boton3{
                     @include botones (#cc7760, center);}
      
-       
-
-
 /*FIN PAGINA NUESTRO TRABAJO*/
 
 /*INICIO PAGINA PLANES*/
