@@ -146,13 +146,10 @@ main{
                         color: $colorTipografia;
                         font-size: 1.563;
                         grid-area: h3;
-                        }
-
-                        footer a i{
-                            
+                        }          
+                       footer a i{
                             color: #f9c733;
-                            font-size: 50px;
-                        }
+                                                 }           
                                     }
         .pie1, .pie4, .pie2{
             color: $colorTipografia;
@@ -166,10 +163,8 @@ main{
             }
                 .pie2{
                     grid-area: pie2;
-                    a{
-                        color: #f9c733;
-
-                    }
+                    
+                    
                       }
                 .pie3{
                     color: $colorTipografia;
