@@ -6,6 +6,7 @@ $tipografiaTexto: 'Open Sans Condensed', sans-serif;
 $colorFondo: #f9c733;
 $anchoCajas: 250px;
 $imgFondo: url("../img/fototerracita.jpg"); 
+$botonColor: #aa8324; 
 
 /*INICIO PAGINA NUESTRO TRABAJO*/
 
@@ -20,7 +21,7 @@ $imgFondo: url("../img/fototerracita.jpg");
 @mixin enlace ($subrayado, $botonColor, $transicion){
     text-decoration: none;
     transition: height 2s;
-    color: $botonColor;
+    color: #377f8b;
    
 }
 /*FIN PAGINA NUESTRO TRABAJO*/

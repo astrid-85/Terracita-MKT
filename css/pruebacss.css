@@ -124,8 +124,9 @@ main {
     color: #f9c733;
     font-size: 1.563;
     grid-area: h3; }
-  .piePagina footer a i {
-    color: #f9c733; }
+
+a #iconoFooter {
+  color: #f9c733; }
 
 .pie1, .pie4, .pie2 {
   color: #f9c733;
@@ -210,7 +211,7 @@ main {
   #botonesPlanes a {
     text-decoration: none;
     transition: height 2s;
-    color: #aa8324; }
+    color: #377f8b; }
 
 #boton1 {
   background-color: #f9c733;
@@ -348,7 +349,7 @@ main {
 a {
   text-decoration: none;
   transition: height 2s;
-  color: height 2s; }
+  color: #377f8b; }
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
