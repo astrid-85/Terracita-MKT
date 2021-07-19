@@ -9,7 +9,7 @@
 body {
   background-color: $colorFondo;
   width: 100%;
-  //overflow-x:hidden;
+  
 }
 
 /*INICIO ENCABEZADO GENERAL*/
@@ -36,10 +36,10 @@ header {
   color: $colorTipografia;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #dfb129, #cc7760);
+  background-image: linear-gradient(to top, #dfb129, #cc7760);
 }
 ul {
   display: flex;
@@ -47,7 +47,7 @@ ul {
 
   li {
     border-right: 2px solid #cc7760;
-    margin: 20px 10px 20px 5px;
+    margin: 0;
 
     a {
       text-decoration: none;
@@ -126,7 +126,7 @@ main {
 /*INICIO FOOTER*/
 .piePagina {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: 70px 70px 70px;
   grid-template-areas:
     "h3 h3 h3"
