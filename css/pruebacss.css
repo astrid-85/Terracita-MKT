@@ -4,8 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  align-items: stretch; }
+  box-sizing: border-box; }
 
 body {
   background-color: #f9c733;
@@ -125,9 +124,6 @@ main {
     font-size: 1.563;
     grid-area: h3; }
 
-a #iconoFooter {
-  color: #f9c733; }
-
 .pie1, .pie4, .pie2 {
   color: #f9c733;
   font-family: "Bowlby One SC", cursive;
@@ -205,10 +201,10 @@ a #iconoFooter {
   line-height: 30px;
   color: #f9c733; }
 
-#botonesPlanes {
-  display: inline-block;
+#botones {
+  margin: 50px;
   margin: 50px; }
-  #botonesPlanes a {
+  #botones a {
     text-decoration: none;
     transition: height 2s;
     color: #377f8b; }
@@ -223,7 +219,8 @@ a #iconoFooter {
   background-color: #377f8b;
   text-align: center;
   height: 80px;
-  padding: 20px; }
+  padding: 20px;
+  color: #f9c733; }
 
 #boton3 {
   background-color: #cc7760;
