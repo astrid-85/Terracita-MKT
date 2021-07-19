@@ -131,14 +131,14 @@ main {
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
   text-align:justify;
-   
+  padding: 10px; 
 
   h3 {
     font-family: $tipografiaTitulo;
     color: $colorTipografia;
     font-size: 1.563;
     grid-area: h3;
-    text-align: center;
+    text-align: right;
     
     
   }
