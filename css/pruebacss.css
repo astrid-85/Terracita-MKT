@@ -4,12 +4,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  align-items: stretch; }
+  box-sizing: border-box; }
 
 body {
   background-color: #f9c733;
-  padding: auto;
   width: 100%; }
 
 /*INICIO ENCABEZADO GENERAL*/
@@ -29,30 +27,36 @@ header .fotoEncabezado {
 
 #menu {
   color: #f9c733;
-  width: 100%;
   padding-top: 10px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #dfb129, #cc7760); }
+  background-image: linear-gradient(to top, #dfb129, #cc7760); }
 
 ul {
   display: flex;
-  list-style-type: none; }
+  list-style-type: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px;
+  text-align: center; }
   ul li {
     border-right: 2px solid #cc7760;
-    margin: 20px 10px 20px 5px; }
+    margin: 0; }
     ul li a {
       text-decoration: none;
       text-align: center;
-      padding: 30px;
+      padding: 10px;
       font-size: 25px;
-      font-family: "Bowlby One SC", cursive;
+      font-family: "Open Sans Condensed", sans-serif;
       color: #f9c733; }
       ul li a:hover {
         background-color: #f9c733;
         color: #377f8b;
         padding: 4px; }
+
+li:last-child {
+  border-right: none; }
 
 /*FIN ENCABEZADO GENERAL*/
 /*INICIO PAGINA PRINCIPAL*/
@@ -81,32 +85,25 @@ main {
 
 .principal {
   padding: 10%;
-  height: auto; }
-  .principal #apartadoUno {
-    background-color: #377f8b;
-    opacity: 90%;
-    margin: 50px;
-    height: 2500%;
-    overflow: auto;
-    width: 900px; }
-    .principal #apartadoUno #textoPrincipal {
-      font-size: 32px;
-      overflow: hidden;
-      color: #f9c733;
-      font-family: "Open Sans Condensed", sans-serif;
-      font-weight: 200px;
-      padding: 100px;
-      text-align: center;
-      line-height: 40px;
-      animation-duration: 8s;
-      animation-name: aparecer;
-      animation-iteration-count: inherit; }
+  background-color: #377f8b;
+  opacity: 90%;
+  margin: 50px; }
+  .principal #textoPrincipal {
+    font-size: 2rem;
+    color: #f9c733;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 40px;
+    text-align: center;
+    line-height: 40px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: inherit; }
 
 /*FIN PAGINA PRINCIPAL*/
 /*INICIO FOOTER*/
 .piePagina {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: 70px 70px 70px;
   grid-template-areas: "h3 h3 h3" "pie1 pie4 pie2" "pie3 pie3 pie3";
   column-gap: 30px;
@@ -115,23 +112,25 @@ main {
   height: 250px;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-  text-align: center;
-  width: 100%;
-  padding: 20px;
-  margin: 0px; }
+  text-align: justify;
+  padding: 10px; }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
     color: #f9c733;
     font-size: 1.563;
-    grid-area: h3; }
-  .piePagina footer a i {
-    color: #f9c733; }
+    grid-area: h3;
+    text-align: center;
+    margin: 30px; }
 
-.pie1, .pie4, .pie2 {
+.pie1,
+.pie4,
+.pie2 {
   color: #f9c733;
   font-family: "Bowlby One SC", cursive;
   grid-area: pie1;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  padding: 5px;
+  margin: 0px; }
 
 .pie4 {
   grid-area: pie4; }
@@ -142,7 +141,12 @@ main {
 .pie3 {
   color: #f9c733;
   font-family: "Open Sans Condensed", sans-serif;
-  grid-area: pie3; }
+  grid-area: pie3;
+  text-align: center; }
+
+.socialIcon {
+  color: #f9c733;
+  font-size: 30px; }
 
 /*FIN FOOTER*/
 /*INICIO PÁGINA EQUIPO*/
@@ -150,7 +154,7 @@ main {
   color: #377f8b;
   margin-top: 30px;
   margin-bottom: 10px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   text-align: right; }
 
 #equipo {
@@ -168,8 +172,12 @@ main {
   margin: 90px;
   float: left; }
 
-#cajaUno, #cajaDos, #cajaTres, #cajaCuatro, #cajaCinco {
-  font-family: 'Open Sans Condensed', sans-serif;
+#cajaUno,
+#cajaDos,
+#cajaTres,
+#cajaCuatro,
+#cajaCinco {
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
   padding: 70px 30px 30px 10px;
   margin: 90px;
@@ -193,10 +201,11 @@ main {
   margin: 100px; }
 
 .card-text {
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif; }
 
-#texto1, #texto2 {
-  font-family: 'Open Sans Condensed', sans-serif;
+#texto1,
+#texto2 {
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
   padding-left: 10px;
   padding-right: 12px;
@@ -204,27 +213,27 @@ main {
   line-height: 30px;
   color: #f9c733; }
 
-#botonesPlanes {
-  display: inline-block;
+#botones {
+  margin: 50px;
   margin: 50px; }
-  #botonesPlanes a {
+  #botones .enlace {
     text-decoration: none;
-    transition: height 2s;
-    color: #aa8324; }
+    transition: height 2s; }
 
-#boton1 {
+.boton1 {
   background-color: #f9c733;
   text-align: center;
   height: 80px;
   padding: 20px; }
 
-#boton2 {
+.boton2 {
   background-color: #377f8b;
   text-align: center;
   height: 80px;
-  padding: 20px; }
+  padding: 20px;
+  color: #f9c733; }
 
-#boton3 {
+.boton3 {
   background-color: #cc7760;
   text-align: center;
   height: 80px;
@@ -236,7 +245,7 @@ main {
   color: #377f8b;
   margin-top: 60px;
   margin-bottom: 30px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   text-align: center; }
 
 .tablaPlanes {
@@ -244,7 +253,7 @@ main {
   background-color: #cc7760;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 100px 100px 100px 100px;
-  grid-template-areas: "colum1 colum2 colum3 colum4"  "row1 row4 row7 row10" "row2 row5 row8 row11" "row3 row6 row9 row12";
+  grid-template-areas: "colum1 colum2 colum3 colum4" "row1 row4 row7 row10" "row2 row5 row8 row11" "row3 row6 row9 row12";
   column-gap: 1px;
   row-gap: 5px;
   justify-content: center;
@@ -253,9 +262,12 @@ main {
   margin-left: 50px;
   margin-right: 50px;
   border: #377f8b 2px solid; }
-  .tablaPlanes #colum1, .tablaPlanes #colum2, .tablaPlanes #colum3, .tablaPlanes #colum4 {
+  .tablaPlanes #colum1,
+  .tablaPlanes #colum2,
+  .tablaPlanes #colum3,
+  .tablaPlanes #colum4 {
     color: #f9c733;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 30px;
     padding-left: 10px;
     padding-right: 12px;
@@ -263,10 +275,20 @@ main {
     line-height: 30px;
     border-right: 2px solid #377f8b;
     border-bottom: 2px solid #377f8b; }
-  .tablaPlanes #row1, .tablaPlanes #row2, .tablaPlanes #row3, .tablaPlanes #row4, .tablaPlanes #row5, .tablaPlanes #row6, .tablaPlanes #row7,
-  .tablaPlanes #row8, .tablaPlanes #row9, .tablaPlanes #row10, .tablaPlanes #row11, .tablaPlanes #row12 {
+  .tablaPlanes #row1,
+  .tablaPlanes #row2,
+  .tablaPlanes #row3,
+  .tablaPlanes #row4,
+  .tablaPlanes #row5,
+  .tablaPlanes #row6,
+  .tablaPlanes #row7,
+  .tablaPlanes #row8,
+  .tablaPlanes #row9,
+  .tablaPlanes #row10,
+  .tablaPlanes #row11,
+  .tablaPlanes #row12 {
     color: #f9c733;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 25px;
     font-weight: bold;
     padding-left: 40px;
@@ -347,15 +369,14 @@ main {
 
 a {
   text-decoration: none;
-  transition: height 2s;
-  color: height 2s; }
+  transition: height 2s; }
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
 #contacto {
   color: #377f8b;
   text-align: end;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   margin-right: 50px;
   margin-top: 50px; }
 
@@ -367,10 +388,11 @@ a {
   background-image: linear-gradient(to right, #377f8b, #aa8321); }
   #formulario #formularioUno {
     margin: 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 20px;
     line-height: 1.6; }
-    #formulario #formularioUno input, #formulario #formularioUno select {
-      font-family: 'Open Sans Condensed', sans-serif; }
+    #formulario #formularioUno input,
+    #formulario #formularioUno select {
+      font-family: "Open Sans Condensed", sans-serif; }
 
 /*FIN PAGINA CONTACTO*/
