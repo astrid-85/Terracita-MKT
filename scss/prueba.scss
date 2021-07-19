@@ -34,7 +34,6 @@ header {
 }
 #menu {
   color: $colorTipografia;
-  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -44,6 +43,12 @@ header {
 ul {
   display: flex;
   list-style-type: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+
+
 
   li {
     border-right: 2px solid #cc7760;
@@ -54,7 +59,7 @@ ul {
       text-align: center;
       padding: 10px;
       font-size: 25px;
-      font-family: $tipografiaTitulo;
+      font-family: $tipografiaTexto;
       color: $colorTipografia;
 
       &:hover {
@@ -64,6 +69,11 @@ ul {
       }
     }
   }
+}
+
+li:last-child{
+  border-right: none;
+
 }
 
 /*FIN ENCABEZADO GENERAL*/
@@ -138,7 +148,7 @@ main {
     color: $colorTipografia;
     font-size: 1.563;
     grid-area: h3;
-    text-align: right;
+    text-align: center;
     margin: 30px;
     
     

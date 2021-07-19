@@ -27,7 +27,6 @@ header .fotoEncabezado {
 
 #menu {
   color: #f9c733;
-  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -36,7 +35,11 @@ header .fotoEncabezado {
 
 ul {
   display: flex;
-  list-style-type: none; }
+  list-style-type: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px;
+  text-align: center; }
   ul li {
     border-right: 2px solid #cc7760;
     margin: 0; }
@@ -45,12 +48,15 @@ ul {
       text-align: center;
       padding: 10px;
       font-size: 25px;
-      font-family: "Bowlby One SC", cursive;
+      font-family: "Open Sans Condensed", sans-serif;
       color: #f9c733; }
       ul li a:hover {
         background-color: #f9c733;
         color: #377f8b;
         padding: 4px; }
+
+li:last-child {
+  border-right: none; }
 
 /*FIN ENCABEZADO GENERAL*/
 /*INICIO PAGINA PRINCIPAL*/
@@ -106,13 +112,15 @@ main {
   height: 250px;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-  text-align: justify; }
+  text-align: justify;
+  padding: 10px; }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
     color: #f9c733;
     font-size: 1.563;
     grid-area: h3;
-    text-align: center; }
+    text-align: center;
+    margin: 30px; }
 
 .pie1,
 .pie4,
