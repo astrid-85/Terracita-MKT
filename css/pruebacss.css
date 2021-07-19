@@ -43,7 +43,7 @@ ul {
     ul li a {
       text-decoration: none;
       text-align: center;
-      padding: 30px;
+      padding: 10px;
       font-size: 25px;
       font-family: "Bowlby One SC", cursive;
       color: #f9c733; }
@@ -79,26 +79,19 @@ main {
 
 .principal {
   padding: 10%;
-  height: auto; }
-  .principal #apartadoUno {
-    background-color: #377f8b;
-    opacity: 90%;
-    margin: 50px;
-    height: 2500%;
-    overflow: auto;
-    width: 900px; }
-    .principal #apartadoUno #textoPrincipal {
-      font-size: 32px;
-      overflow: hidden;
-      color: #f9c733;
-      font-family: "Open Sans Condensed", sans-serif;
-      font-weight: 200px;
-      padding: 100px;
-      text-align: center;
-      line-height: 40px;
-      animation-duration: 8s;
-      animation-name: aparecer;
-      animation-iteration-count: inherit; }
+  background-color: #377f8b;
+  opacity: 90%;
+  margin: 50px; }
+  .principal #textoPrincipal {
+    font-size: 2rem;
+    color: #f9c733;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 40px;
+    text-align: center;
+    line-height: 40px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: inherit; }
 
 /*FIN PAGINA PRINCIPAL*/
 /*INICIO FOOTER*/
@@ -113,13 +106,13 @@ main {
   height: 250px;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-  text-align: center;
-  margin: 0px; }
+  text-align: justify; }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
     color: #f9c733;
     font-size: 1.563;
-    grid-area: h3; }
+    grid-area: h3;
+    text-align: center; }
 
 .pie1,
 .pie4,
@@ -127,7 +120,9 @@ main {
   color: #f9c733;
   font-family: "Bowlby One SC", cursive;
   grid-area: pie1;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  padding: 5px;
+  margin: 0px; }
 
 .pie4 {
   grid-area: pie4; }
@@ -138,7 +133,8 @@ main {
 .pie3 {
   color: #f9c733;
   font-family: "Open Sans Condensed", sans-serif;
-  grid-area: pie3; }
+  grid-area: pie3;
+  text-align: center; }
 
 .socialIcon {
   color: #f9c733;
