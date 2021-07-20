@@ -1,50 +1,47 @@
 
+  @media only screen and (min-width: 1200px)
+  {
+    #equipo img {
+      margin: 10px;
+      float:right; 
+      padding: 60px;
+    }
+  }
+    
   
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
 
-  }
-
-@media only screen and (max-width: 992px) {
-    .headerMenu {
-      width: 40%;
-      margin-right: 20px;
+  #equipo img {
+  float: right;
+  padding: 60px;
     }
-
-    .headerLogo {
-      margin-left: 20px;
+    #formulario #mensajeContacto{
+      width: 90%;
     }
-
-  }
-
-@media only screen and (max-width: 768px) {
-
-  .headerLogo {
-    width: 150px;
-  }
-
-  .headerMenu {
-    width: 60%;
-  }
-
-  .mainSection {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0px;
-    row-gap: 20px;
+  
 }
-
-
-  }
 
 @media only screen and (max-width: 576px) {
 
-  h3 {
-   color: black;
-    grid-area: h3;
-    
-    
+  #equipo{
+    width: auto;
     
   }
-  }
+
+  #equipo img {
+    visibility:visible;
+    margin-top: 60px;
+    margin-left: auto;
+     margin-right: auto;
+     display: block;  
+   }
+   #equipo p{
+      visibility: hidden;
+   }
+
+   #formulario #mensajeContacto{
+    width: 90%;
+   }
+   }
+ 
 

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*NUESTRO EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/
 /*FIN PAGINA NUESTRO TRABAJO*/
 * {
@@ -112,7 +113,7 @@ main {
   height: 250px;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-  text-align: justify;
+  text-align: center;
   padding: 10px; }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
@@ -154,8 +155,7 @@ main {
   color: #377f8b;
   margin-top: 30px;
   margin-bottom: 10px;
-  font-family: "Bowlby One SC", cursive;
-  text-align: right; }
+  font-family: "Bowlby One SC", cursive; }
 
 #equipo {
   display: flex;
@@ -163,27 +163,26 @@ main {
   align-items: center;
   background-color: #f9c733;
   margin: 60px;
-  opacity: 95%;
-  padding: 30px;
-  margin-bottom: 80px; }
+  margin-bottom: 40px;
+  width: 750px; }
 
-#equipo img {
-  border-radius: 50%;
-  margin: 90px;
-  float: left; }
-
-#cajaUno,
-#cajaDos,
-#cajaTres,
-#cajaCuatro,
-#cajaCinco {
+.cajasEquipo {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
-  padding: 70px 30px 30px 10px;
+  padding: 30px 30px 30px 10px;
   margin: 90px;
-  text-align: left;
+  text-align: center;
   line-height: 30px;
   color: #377f8b; }
+  .cajasEquipo h5 {
+    color: #377f8b;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center; }
+  .cajasEquipo #equipo img {
+    margin: 10px;
+    float: right;
+    padding: 60px; }
 
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/

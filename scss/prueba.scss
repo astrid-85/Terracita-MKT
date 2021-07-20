@@ -140,7 +140,7 @@ main {
   height: $anchoCajas;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-  text-align:justify;
+  text-align:center;
   padding: 10px; 
 
   h3 {
@@ -191,36 +191,35 @@ main {
   margin-top: 30px;
   margin-bottom: 10px;
   font-family: "Bowlby One SC", cursive;
-  text-align: right;
-}
+  }
+
 #equipo {
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: $colorFondo;
   margin: 60px;
-  opacity: 95%;
-  padding: 30px;
-  margin-bottom: 80px;
-}
+  margin-bottom: 40px;
+  width: 750px;
+  }
 
-#equipo img {
-  border-radius: 50%;
-  margin: 90px;
-  float: left;
+
+.cajasEquipo {
+@include cajasEstilos;
+
+
+h5{
+  color: $colorTitulo;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align:center;
 }
-#cajaUno,
-#cajaDos,
-#cajaTres,
-#cajaCuatro,
-#cajaCinco {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 20px;
-  padding: 70px 30px 30px 10px;
-  margin: 90px;
-  text-align: left;
-  line-height: 30px;
-  color: #377f8b;
+#equipo img {
+  margin: 10px;
+  float:right; 
+  padding: 60px;
+  
+}
 }
 
 /*FIN PAGINA EQUIPO*/
@@ -260,7 +259,7 @@ main {
   margin: 50px;
   margin: 50px;
 
-  .enlace{
+.enlace{
     @include enlace(none, #a09884, height 2s);
   }
 }
