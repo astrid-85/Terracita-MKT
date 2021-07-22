@@ -9,7 +9,7 @@ $imgFondo: url("../img/fototerracita.jpg");
 $botonColor: #aa8324; 
 
 
-/*NUESTRO EQUIPO*/
+/*INICIO PAGINA NUESTRO EQUIPO*/
 
 @mixin cajasEstilos {
   font-family: $tipografiaTexto;
@@ -19,8 +19,12 @@ $botonColor: #aa8324;
   text-align: center;
   line-height: 30px;
   color: #377f8b;
-    
-}
+  }
+
+  /*FIN PAGINA NUESTRO EQUIPO*/
+
+
+
 /*INICIO PAGINA NUESTRO TRABAJO*/
 
 @mixin botones ($botonFondo, $botonAling){
