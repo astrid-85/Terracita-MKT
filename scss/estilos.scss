@@ -37,30 +37,23 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  justify-content: center;
   background-image: linear-gradient(to top, #dfb129, #cc7760);
 }
 ul {
   display: flex;
   list-style-type: none;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0px;
-  text-align: center;
-
-
-
+   
   li {
     border-right: 2px solid #cc7760;
     margin: 0;
 
-    a {
+    #navInicio {
       text-decoration: none;
       text-align: center;
-      padding: 10px;
-      font-size: 25px;
+      font-size: 1.3rem;
       font-family: $tipografiaTexto;
       color: $colorTipografia;
+      font-weight: bolder;
 
       &:hover {
         background-color: $colorFondo;
@@ -70,6 +63,10 @@ ul {
     }
   }
 }
+.navbar-light .navbar-brand{
+  color: #377f8b;
+  font-weight: bold;
+}
 
 li:last-child{
   border-right: none;
@@ -78,7 +75,7 @@ li:last-child{
 
 /*FIN ENCABEZADO GENERAL*/
 /*INICIO PAGINA PRINCIPAL*/
-main {
+.fondo{
   display: flex;
   flex-direction: column;
   color: $colorTitulo;
@@ -92,9 +89,9 @@ main {
   background-size: cover;
   border: outset 2px #cc7760;
 
-  #tituloInicio {
+  .tituloPrincipal {
     color: $colorTitulo;
-    font-size: 1.25 rem;
+    font-size: $tamanioTitulo;
     text-align: center;
     font-family: $tipografiaTitulo;
     padding: 80px 80px 0px 80px;
@@ -102,18 +99,22 @@ main {
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
-}
-.principal {
-    padding: 10%;
+  
+  
+  }
+ 
+
+.container{
     background-color: #377f8b;
     opacity: 90%;
     margin: 50px;
+    
   
     #textoPrincipal {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: $colorTipografia;
       font-family: $tipografiaTexto;
-      padding: 40px;
+      padding: 60px;
       text-align: center;
       line-height: 40px;
       animation-duration: 8s;
@@ -134,48 +135,49 @@ main {
     "h3 h3 h3"
     "pie1 pie4 pie2"
     "pie3 pie3 pie3";
-  column-gap: 30px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 5px;
   align-items: flex-end;
   height: $anchoCajas;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
   text-align:center;
-  padding: 10px; 
+  
+  
 
   h3 {
+    
     font-family: $tipografiaTitulo;
     color: $colorTipografia;
-    font-size: 1.563;
+    font-size: $tamanioTitulo;
     grid-area: h3;
     text-align: center;
-    margin: 30px;
-    
-    
+     
   }
 }
 
-.pie1,
-.pie4,
-.pie2 {
+.contactosEstilo {
   color: $colorTipografia;
   font-family: $tipografiaTitulo;
-  grid-area: pie1;
-  font-size: 1.25rem;
+  font-size: $tamanioTexto;
+  text-align: center;
+  margin: auto;
   padding: 5px;
-  margin: 0px;
 }
-.pie4 {
+#pie1{
+grid-area: pie1;
+}
+
+#pie4 {
   grid-area: pie4;
 }
-.pie2 {
+#pie2 {
   grid-area: pie2;
 }
-.pie3 {
-  color: $colorTipografia;
-  font-family: $tipografiaTexto;
+#pie3 {
   grid-area: pie3;
-  text-align: center;
+  font-family: $tipografiaTexto;
+  
 }
 .socialIcon {
     color: #f9c733;
@@ -191,6 +193,7 @@ main {
   margin-top: 30px;
   margin-bottom: 10px;
   font-family: "Bowlby One SC", cursive;
+  font-size: $tamanioTitulo;
   }
 
 #equipo {
@@ -211,7 +214,7 @@ main {
 h5{
   color: $colorTitulo;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: $tamanioTitulo;
   text-align:center;
 }
 #equipo img {
@@ -247,7 +250,7 @@ h5{
 #texto1,
 #texto2 {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 20px;
+  font-size: $tamanioTexto;
   padding-left: 10px;
   padding-right: 12px;
   text-align: left;
@@ -309,8 +312,8 @@ h5{
   #colum3,
   #colum4 {
     color: #f9c733;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 30px;
+    font-family: $tipografiaTexto;
+    font-size: $tamanioTexto;
     padding-left: 10px;
     padding-right: 12px;
     text-align: center;
@@ -331,8 +334,8 @@ h5{
   #row11,
   #row12 {
     color: #f9c733;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 25px;
+    font-family: $tipografiaTexto;
+    font-size: $tamanioTexto;
     font-weight: bold;
     padding-left: 40px;
     padding-right: 20px;
@@ -345,15 +348,15 @@ h5{
 }
 #row1 {
   grid-area: row1;
-  font-size: 25px;
+  font-size: $tamanioTexto;
 }
 #row2 {
   grid-area: row2;
-  font-size: 25px;
+  font-size: $tamanioTexto;
 }
 #row3 {
   grid-area: row3;
-  font-size: 25px;
+  font-size:  $tamanioTexto;
 }
 
 #colum2 {
@@ -371,7 +374,7 @@ h5{
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size:  $tamanioTexto;
   margin: 4px 2px;
 }
 .botones #row6:hover {
@@ -394,7 +397,7 @@ h5{
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size:  $tamanioTexto;
   margin: 4px 2px;
 }
 
@@ -417,7 +420,7 @@ h5{
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: $tamanioTexto;
   margin: 4px 2px;
 }
 
@@ -434,7 +437,7 @@ a {
 #contacto {
   color: #377f8b;
   text-align: end;
-  font-family: "Bowlby One SC", cursive;
+  font-family: $tipografiaTitulo, cursive;
   margin-right: 50px;
   margin-top: 50px;
 }
@@ -447,13 +450,13 @@ a {
 
   #formularioUno {
     margin: 30px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 20px;
+    font-family: $tipografiaTexto;
+    font-size: $tamanioTitulo;
     line-height: 1.6;
 
     input,
     select {
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: $tipografiaTexto;
     }
   }
 }

@@ -1,11 +1,14 @@
 
   @media only screen and (min-width: 1200px)
   {
+
+   
     #equipo img {
       margin: 10px;
       float:right; 
       padding: 60px;
     }
+    
   }
     
   
@@ -23,13 +26,20 @@
 
 @media only screen and (max-width: 576px) {
 
-  #equipo{
+  h3{
+    visibility: hidden;
+  }
+   .contactosEstilo{
+    font-size: 0.875rem;
+  }
+
+   #equipo{
     width: auto;
     
   }
 
   #equipo img {
-    visibility:visible;
+    
     margin-top: 60px;
     margin-left: auto;
      margin-right: auto;

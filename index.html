@@ -19,7 +19,12 @@
     <meta property="og:type" content="La Terracita Marketing Digital"" />
     <meta property="og:title" content="La Terracita MKT" />
     <meta property="og:url" content="https://terracitamkt.000webhostapp.com/" />
-    <meta property="og:image" content="img" src="img/logo.jpg" />
+    <meta
+      property="og:image"
+      content="img"
+      src="http://127.0.0.1:5500/img/logo.jpg/"
+    />
+
     <meta
       property="og:description"
       content="Terracita Marketing Digital, profesionales para la comunicación digital"
@@ -44,8 +49,7 @@
     />
 
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="../entregas-baumann/css/mediaqueries.css" />
-    
+    <link rel="stylesheet" href="css/mediaqueries.css" />
 
     <title>La Terracita MKT</title>
   </head>
@@ -56,92 +60,119 @@
           ><img src="img/logo.jpg" alt="Logo Terracita" />
         </a>
       </div>
-
-      <nav id="menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/equipo.html">Quiénes somos </a></li>
-          <li><a href="pages/nuestrotrabajo.html">Qué hacemos</a></li>
-          <li><a href="pages/planes.html">Planes a medida</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--INICIO NAVBAR BS-->
+      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html">Menú</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  id="navInicio"
+                  href="index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" id="navInicio" href="pages/equipo.html"
+                  >Quiénes somos</a
+                >
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a id="navInicio"
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nuestro Trabajo
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navInicio"
+                      href="pages/nuestrotrabajo.html"
+                      >Qué hacemos</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navInicio"
+                      href="pages/planes.html"
+                      >Planes a medida</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a
+                  class="nav-link"
+                  id="navInicio"
+                  href="pages/contacto.html"
+                  tabindex="-1"
+                  aria-disabled="false"
+                  >Contacto</a
+                >
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
-
+      <!--FIN NAVBAR BS-->
     </header>
 
-    <main>
-      <div id="tituloInicio">
+    <main class="fondo">
+
         <!--INICIO TITULO BS-->
-        <h1>
+        <h1 class="tituloPrincipal">
           TERRACITA <br />
           <small class="text-muted">un lugar para desarrollar tus ideas</small>
         </h1>
         <!--FIN TITULO BS-->
-      </div>
-
-      <section class="principal">
-        
-          <p id="textoPrincipal">
-            Terracita es el espacio que buscabas, acá encontrás asesoramiento y
-            compañia para imaginar tu marca. Somos un grupo de profesionales
-            dispuesto ayudar y orientarte si estás comenzando, si tenés
-            experiencia y sabés a dónde querés llegar. Te damos la bienvenida a
-            este nuestro espacio y te invitamos a recorrelo.
-          </p>
-       
+    
+<!--INICIO SECTION BS-->
+      <section class="container" class="principal">
+        <p id="textoPrincipal">
+          Terracita es el espacio que buscabas, acá encontrás asesoramiento y
+          compañia para imaginar tu marca. Somos un grupo de profesionales
+          dispuesto ayudar y orientarte si estás comenzando, si tenés
+          experiencia y sabés a dónde querés llegar. <br> Te damos la bienvenida a
+          este nuestro espacio y te invitamos a que subas.
+        </p>
       </section>
+
+      <!--FIN SECTION BS-->
     </main>
 
     <footer class="piePagina">
       <h3>Contacto</h3>
 
-      <div class="pie1">
+      <div class="contactosEstilo" id="pie2">
         <p>Teléfono</p>
         <p>(0221) 452-5678</p>
       </div>
-      <div class="pie4">
+      <div class="contactosEstilo" id="pie4" >
         <p>Dirección</p>
         <p>Av. 7 n° 1234</p>
       </div>
-      <div class="pie2">
+      <div class="contactosEstilo" id="pie1">
         <p>Redes Sociales</p>
 
         <a
@@ -160,7 +191,7 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-      <div class="pie3">
+      <div id="pie3" class="contactosEstilo">
         <p>Copyright-Terracita 2021</p>
       </div>
     </footer>

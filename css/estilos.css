@@ -32,37 +32,36 @@ header .fotoEncabezado {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  justify-content: center;
   background-image: linear-gradient(to top, #dfb129, #cc7760); }
 
 ul {
   display: flex;
-  list-style-type: none;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0px;
-  text-align: center; }
+  list-style-type: none; }
   ul li {
     border-right: 2px solid #cc7760;
     margin: 0; }
-    ul li a {
+    ul li #navInicio {
       text-decoration: none;
       text-align: center;
-      padding: 10px;
-      font-size: 25px;
+      font-size: 1.3rem;
       font-family: "Open Sans Condensed", sans-serif;
-      color: #f9c733; }
-      ul li a:hover {
+      color: #f9c733;
+      font-weight: bolder; }
+      ul li #navInicio:hover {
         background-color: #f9c733;
         color: #377f8b;
         padding: 4px; }
+
+.navbar-light .navbar-brand {
+  color: #377f8b;
+  font-weight: bold; }
 
 li:last-child {
   border-right: none; }
 
 /*FIN ENCABEZADO GENERAL*/
 /*INICIO PAGINA PRINCIPAL*/
-main {
+.fondo {
   display: flex;
   flex-direction: column;
   color: #377f8b;
@@ -75,9 +74,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   border: outset 2px #cc7760; }
-  main #tituloInicio {
+  .fondo .tituloPrincipal {
     color: #377f8b;
-    font-size: 1.25 rem;
+    font-size: 2rem;
     text-align: center;
     font-family: "Bowlby One SC", cursive;
     padding: 80px 80px 0px 80px;
@@ -85,16 +84,15 @@ main {
     animation-name: aparecer;
     animation-iteration-count: initial; }
 
-.principal {
-  padding: 10%;
+.container {
   background-color: #377f8b;
   opacity: 90%;
   margin: 50px; }
-  .principal #textoPrincipal {
-    font-size: 2rem;
+  .container #textoPrincipal {
+    font-size: 1.5rem;
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
-    padding: 40px;
+    padding: 60px;
     text-align: center;
     line-height: 40px;
     animation-duration: 8s;
@@ -108,43 +106,40 @@ main {
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 70px 70px 70px;
   grid-template-areas: "h3 h3 h3" "pie1 pie4 pie2" "pie3 pie3 pie3";
-  column-gap: 30px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 5px;
   align-items: flex-end;
   height: 250px;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-  text-align: center;
-  padding: 10px; }
+  text-align: center; }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
     color: #f9c733;
-    font-size: 1.563;
+    font-size: 2rem;
     grid-area: h3;
-    text-align: center;
-    margin: 30px; }
+    text-align: center; }
 
-.pie1,
-.pie4,
-.pie2 {
+.contactosEstilo {
   color: #f9c733;
   font-family: "Bowlby One SC", cursive;
-  grid-area: pie1;
   font-size: 1.25rem;
-  padding: 5px;
-  margin: 0px; }
+  text-align: center;
+  margin: auto;
+  padding: 5px; }
 
-.pie4 {
+#pie1 {
+  grid-area: pie1; }
+
+#pie4 {
   grid-area: pie4; }
 
-.pie2 {
+#pie2 {
   grid-area: pie2; }
 
-.pie3 {
-  color: #f9c733;
-  font-family: "Open Sans Condensed", sans-serif;
+#pie3 {
   grid-area: pie3;
-  text-align: center; }
+  font-family: "Open Sans Condensed", sans-serif; }
 
 .socialIcon {
   color: #f9c733;
@@ -156,7 +151,8 @@ main {
   color: #377f8b;
   margin-top: 30px;
   margin-bottom: 10px;
-  font-family: "Bowlby One SC", cursive; }
+  font-family: "Bowlby One SC", cursive;
+  font-size: 2rem; }
 
 #equipo {
   display: flex;
@@ -169,7 +165,7 @@ main {
 
 .cajasEquipo {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 30px 30px 30px 10px;
   margin: 90px;
   text-align: center;
@@ -178,7 +174,7 @@ main {
   .cajasEquipo h5 {
     color: #377f8b;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center; }
   .cajasEquipo #equipo img {
     margin: 10px;
@@ -206,7 +202,7 @@ main {
 #texto1,
 #texto2 {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-left: 10px;
   padding-right: 12px;
   text-align: left;
@@ -268,7 +264,7 @@ main {
   .tablaPlanes #colum4 {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 30px;
+    font-size: 1.25rem;
     padding-left: 10px;
     padding-right: 12px;
     text-align: center;
@@ -289,7 +285,7 @@ main {
   .tablaPlanes #row12 {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 25px;
+    font-size: 1.25rem;
     font-weight: bold;
     padding-left: 40px;
     padding-right: 20px;
@@ -301,15 +297,15 @@ main {
 
 #row1 {
   grid-area: row1;
-  font-size: 25px; }
+  font-size: 1.25rem; }
 
 #row2 {
   grid-area: row2;
-  font-size: 25px; }
+  font-size: 1.25rem; }
 
 #row3 {
   grid-area: row3;
-  font-size: 25px; }
+  font-size: 1.25rem; }
 
 #colum2 {
   grid-area: colum2; }
@@ -325,7 +321,7 @@ main {
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.25rem;
   margin: 4px 2px; }
 
 .botones #row6:hover, #row9:hover #row6:hover, #row12:hover #row6:hover {
@@ -347,7 +343,7 @@ main {
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.25rem;
   margin: 4px 2px; }
 
 #colum4 {
@@ -364,7 +360,7 @@ main {
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.25rem;
   margin: 4px 2px; }
 
 a {
@@ -376,7 +372,7 @@ a {
 #contacto {
   color: #377f8b;
   text-align: end;
-  font-family: "Bowlby One SC", cursive;
+  font-family: "Bowlby One SC", cursive, cursive;
   margin-right: 50px;
   margin-top: 50px; }
 
@@ -389,7 +385,7 @@ a {
   #formulario #formularioUno {
     margin: 30px;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.6; }
     #formulario #formularioUno input,
     #formulario #formularioUno select {

@@ -54,21 +54,88 @@
         </a>
       </div>
 
-      <nav id="menu">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="equipo.html">Quiénes somos </a></li>
-          <li><a href="nuestrotrabajo.html">Qué hacemos</a></li>
-          <li><a href="planes.html">Planes a medida</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Menú</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  id="navInicio"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navInicio" href="equipo.html"
+                  >Quiénes somos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a id="navInicio"
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nuestro Trabajo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navInicio"
+                      href="nuestrotrabajo.html"
+                      >Qué hacemos</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="navInicio"
+                      href="planes.html"
+                      >Planes a medida</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="navInicio"
+                  href="contacto.html"
+                  tabindex="-1"
+                  aria-disabled="false"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </header>
+</header>
+
+
 
     <main class="fondo">
-      <h3 id="planes">Planes de Trabajo</h3>
+      <h1 class="tituloPrincipal">Planes de Trabajo</h1>
 
-      <section class="tablaPlanes">
+      <section class="tablaPlanes" class="container" >
         <p id="colum1">Por dónde empiezo</p>
         <p id="row1">Plan</p>
         <p id="row2">Descripción</p>
@@ -90,18 +157,20 @@
         <button id="row12"><a href="contacto.html">click acá</a></button>
       </section>
     </main>
+
+    
     <footer class="piePagina">
       <h3>Contacto</h3>
 
-      <div class="pie1">
+      <div class="contactosEstilo" id="pie2">
         <p>Teléfono</p>
         <p>(0221) 452-5678</p>
       </div>
-      <div class="pie4">
+      <div class="contactosEstilo" id="pie4" >
         <p>Dirección</p>
         <p>Av. 7 n° 1234</p>
       </div>
-      <div class="pie2">
+      <div class="contactosEstilo" id="pie1">
         <p>Redes Sociales</p>
 
         <a
@@ -120,7 +189,7 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-      <div class="pie3">
+      <div id="pie3" class="contactosEstilo">
         <p>Copyright-Terracita 2021</p>
       </div>
     </footer>

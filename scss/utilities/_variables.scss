@@ -7,13 +7,17 @@ $colorFondo: #f9c733;
 $anchoCajas: 250px;
 $imgFondo: url("../img/fototerracita.jpg"); 
 $botonColor: #aa8324; 
+$tamanioTexto: 1.25rem;
+$tamanioTitulo: 2rem;
+$letraFooter: 0.875rem; 
+
 
 
 /*INICIO PAGINA NUESTRO EQUIPO*/
 
 @mixin cajasEstilos {
   font-family: $tipografiaTexto;
-  font-size: 20px;
+  font-size: $tamanioTexto;
   padding: 30px 30px 30px 10px;
   margin: 90px;
   text-align: center;
