@@ -353,13 +353,6 @@ li:last-child {
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
 
-#contacto {
-  color: #377f8b;
-  text-align: end;
-  font-family: $tipografiaTitulo, cursive;
-  margin-right: 50px;
-  margin-top: 50px;
-}
 #formulario {
   margin-left: 50px;
   margin-right: 50px;
@@ -370,12 +363,14 @@ li:last-child {
   #formularioUno {
     margin: 30px;
     font-family: $tipografiaTexto;
-    font-size: $tamanioTitulo;
+    font-size: $tamanioTexto;
     line-height: 1.6;
+    color: $colorTipografia;
 
     input,
     select {
       font-family: $tipografiaTexto;
+      color: #cc7760;
     }
   }
 }

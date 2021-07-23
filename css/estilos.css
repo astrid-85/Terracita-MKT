@@ -322,13 +322,6 @@ li:last-child {
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
-#contacto {
-  color: #377f8b;
-  text-align: end;
-  font-family: "Bowlby One SC", cursive, cursive;
-  margin-right: 50px;
-  margin-top: 50px; }
-
 #formulario {
   margin-left: 50px;
   margin-right: 50px;
@@ -338,10 +331,12 @@ li:last-child {
   #formulario #formularioUno {
     margin: 30px;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 2rem;
-    line-height: 1.6; }
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #f9c733; }
     #formulario #formularioUno input,
     #formulario #formularioUno select {
-      font-family: "Open Sans Condensed", sans-serif; }
+      font-family: "Open Sans Condensed", sans-serif;
+      color: #cc7760; }
 
 /*FIN PAGINA CONTACTO*/
