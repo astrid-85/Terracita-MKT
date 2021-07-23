@@ -49,7 +49,7 @@ ul {
       font-weight: bolder; }
       ul li #navInicio:hover {
         background-color: #f9c733;
-        color: #377f8b;
+        color: #cc7760;
         padding: 4px; }
 
 .navbar-light .navbar-brand {
@@ -66,7 +66,6 @@ li:last-child {
   flex-direction: column;
   color: #377f8b;
   font-family: "Bowlby One SC", cursive;
-  background-color: #f9c733;
   margin: 1px 2px 1px 2px;
   justify-content: space-evenly;
   align-items: center;
@@ -93,7 +92,7 @@ li:last-child {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
     padding: 60px;
-    text-align: center;
+    text-align: justify;
     line-height: 40px;
     animation-duration: 8s;
     animation-name: aparecer;
@@ -103,16 +102,15 @@ li:last-child {
 /*INICIO FOOTER*/
 .piePagina {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 70px 70px 70px;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 30%;
   grid-template-areas: "h3 h3 h3" "pie1 pie4 pie2" "pie3 pie3 pie3";
-  column-gap: 20px;
-  row-gap: 5px;
-  align-items: flex-end;
+  column-gap: 0px;
+  row-gap: 2px;
+  align-items: end;
   height: 250px;
   background-color: #377f8b;
-  background-image: linear-gradient(#cc7760, #377f8b);
-  text-align: center; }
+  background-image: linear-gradient(#cc7760, #377f8b); }
   .piePagina h3 {
     font-family: "Bowlby One SC", cursive;
     color: #f9c733;
@@ -120,13 +118,12 @@ li:last-child {
     grid-area: h3;
     text-align: center; }
 
-.contactosEstilo {
+.contactosEstilo p {
   color: #f9c733;
-  font-family: "Bowlby One SC", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.25rem;
   text-align: center;
-  margin: auto;
-  padding: 5px; }
+  font-weight: bold; }
 
 #pie1 {
   grid-area: pie1; }
@@ -138,48 +135,44 @@ li:last-child {
   grid-area: pie2; }
 
 #pie3 {
-  grid-area: pie3;
-  font-family: "Open Sans Condensed", sans-serif; }
+  grid-area: pie3; }
 
 .socialIcon {
   color: #f9c733;
-  font-size: 30px; }
+  font-size: 1.875rem;
+  left: 45%;
+  position: relative; }
 
 /*FIN FOOTER*/
 /*INICIO PÁGINA EQUIPO*/
-#tituloEquipo {
-  color: #377f8b;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-family: "Bowlby One SC", cursive;
-  font-size: 2rem; }
+.equipoFlex {
+  background-color: #377f8b;
+  max-width: 60%;
+  margin-bottom: 30px; }
 
-#equipo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #f9c733;
-  margin: 60px;
-  margin-bottom: 40px;
-  width: 750px; }
+.carousel-control-next, .carousel-control-prev {
+  width: 10%; }
 
 .cajasEquipo {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.25rem;
   padding: 30px 30px 30px 10px;
   margin: 90px;
-  text-align: center;
+  text-align: justify;
   line-height: 30px;
-  color: #377f8b; }
+  color: #f9c733;
+  position: relative; }
   .cajasEquipo h5 {
-    color: #377f8b;
+    color: #f9c733;
     font-weight: bolder;
     font-size: 2rem;
     text-align: center; }
-  .cajasEquipo #equipo img {
-    margin: 10px;
-    float: right;
-    padding: 60px; }
+  .cajasEquipo .cajasEquipo p {
+    margin-left: 10px; }
+
+.equipoFlex img {
+  float: left;
+  margin: 30px 10px 0px 50px; }
 
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/

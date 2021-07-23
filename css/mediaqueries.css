@@ -3,55 +3,70 @@
   {
 
    
-    #equipo img {
+    .equipoFlex img {
       margin: 10px;
       float:right; 
       padding: 60px;
     }
-    
-  }
-    
-  
+ 
+}
+      
 @media only screen and (min-width: 768px) {
 
-  #equipo img {
+  .equipoFlex img {
   float: right;
   padding: 60px;
     }
     #formulario #mensajeContacto{
       width: 90%;
     }
-  
+    .socialIcon {
+      left: 43%;
+     position: relative;
+     
+ }
 }
 
 @media only screen and (max-width: 576px) {
 
+  /*FOOTER*/
   h3{
     visibility: hidden;
   }
    .contactosEstilo{
     font-size: 0.875rem;
   }
-
-   #equipo{
-    width: auto;
+  .socialIcon {
+     left: 35%;
+    position: relative;
     
-  }
+}
+ /*FIN FOOTER*/
 
-  #equipo img {
-    
-    margin-top: 60px;
-    margin-left: auto;
-     margin-right: auto;
+ /*INICIO PAGINA EQUIPO*/
+
+ .equipoFlex{
+   height: 700px;
+ }
+
+  .equipoFlex img {
+    margin: 80px;
      display: block;  
    }
-   #equipo p{
+
+   .cajasEquipo  p{
       visibility: hidden;
    }
+
+     /*FIN PAGINA EQUIPO*/
+
+
+    /*PAGINA CONTACTO*/
 
    #formulario #mensajeContacto{
     width: 90%;
    }
    }
+     /*FIN PAGINA CONTACTO*/
  
 
