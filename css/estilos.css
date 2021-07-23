@@ -72,21 +72,21 @@ li:last-child {
   background-image: url("../img/fototerracita.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: outset 2px #cc7760; }
+  border: outset 2px #cc7760;
+  padding: 50px; }
   .fondo .tituloPrincipal {
     color: #377f8b;
     font-size: 2rem;
     text-align: center;
     font-family: "Bowlby One SC", cursive;
-    padding: 80px 80px 0px 80px;
+    padding: 0px;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial; }
 
 .container {
   background-color: #377f8b;
-  opacity: 90%;
-  margin: 50px; }
+  opacity: 90%; }
   .container #textoPrincipal {
     font-size: 1.5rem;
     color: #f9c733;
@@ -150,8 +150,13 @@ li:last-child {
   max-width: 60%;
   margin-bottom: 30px; }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   width: 10%; }
+
+.equipoFlex img {
+  float: left;
+  margin: 30px 10px 0px 50px; }
 
 .cajasEquipo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -169,10 +174,6 @@ li:last-child {
     text-align: center; }
   .cajasEquipo .cajasEquipo p {
     margin-left: 10px; }
-
-.equipoFlex img {
-  float: left;
-  margin: 30px 10px 0px 50px; }
 
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/
@@ -207,6 +208,7 @@ li:last-child {
   margin: 50px; }
   #botones .enlace {
     text-decoration: none;
+    background-color: #f9c733;
     transition: height 2s; }
 
 .boton1 {
@@ -230,31 +232,22 @@ li:last-child {
 
 /*FIN PAGINA NUESTRO TRABAJO*/
 /*INICIO PAGINA PLANES*/
-#planes {
-  color: #377f8b;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-family: "Bowlby One SC", cursive;
-  text-align: center; }
-
 .tablaPlanes {
   display: grid;
-  background-color: #cc7760;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100px 100px 100px 100px;
+  background-color: #377f8b;
+  grid-template-columns: 10% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas: "colum1 colum2 colum3 colum4" "row1 row4 row7 row10" "row2 row5 row8 row11" "row3 row6 row9 row12";
   column-gap: 1px;
-  row-gap: 5px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 90px;
+  row-gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
   margin-left: 50px;
   margin-right: 50px;
-  border: #377f8b 2px solid; }
-  .tablaPlanes #colum1,
-  .tablaPlanes #colum2,
-  .tablaPlanes #colum3,
-  .tablaPlanes #colum4 {
+  border: #377f8b 2px solid;
+  padding: 10px; }
+  .tablaPlanes .planesDescripcion {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.25rem;
@@ -262,103 +255,70 @@ li:last-child {
     padding-right: 12px;
     text-align: center;
     line-height: 30px;
-    border-right: 2px solid #377f8b;
-    border-bottom: 2px solid #377f8b; }
-  .tablaPlanes #row1,
-  .tablaPlanes #row2,
-  .tablaPlanes #row3,
-  .tablaPlanes #row4,
-  .tablaPlanes #row5,
-  .tablaPlanes #row6,
-  .tablaPlanes #row7,
-  .tablaPlanes #row8,
-  .tablaPlanes #row9,
-  .tablaPlanes #row10,
-  .tablaPlanes #row11,
-  .tablaPlanes #row12 {
+    border-right: 2px solid #cc7760; }
+  .tablaPlanes .rowDescripcion {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.25rem;
-    font-weight: bold;
-    padding-left: 40px;
-    padding-right: 20px;
-    text-align: center;
-    line-height: 30px; }
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    line-height: 30px;
+    margin: 0; }
 
-#colum1 {
+#columInicio {
   grid-area: colum1; }
 
-#row1 {
-  grid-area: row1;
-  font-size: 1.25rem; }
+#rowPlan {
+  grid-area: row1; }
 
-#row2 {
-  grid-area: row2;
-  font-size: 1.25rem; }
+#rowDetalle {
+  grid-area: row2; }
 
-#row3 {
-  grid-area: row3;
-  font-size: 1.25rem; }
+#rowDescuento {
+  grid-area: row3; }
 
-#colum2 {
+#proyecto {
   grid-area: colum2; }
 
-#row4 {
+#row2 {
   grid-area: row4; }
 
-#row5 {
+#row3 {
   grid-area: row5; }
 
-#row6 {
-  grid-area: row6;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.25rem;
-  margin: 4px 2px; }
+#row4 {
+  grid-area: row6; }
 
-.botones #row6:hover, #row9:hover #row6:hover, #row12:hover #row6:hover {
-  transition: height 2s;
-  height: 80px;
-  background-color: #377f8b; }
-
-#colum3 {
+#experiencia {
   grid-area: colum3; }
 
-#row7 {
+#row5 {
   grid-area: row7; }
 
-#row8 {
+#row6 {
   grid-area: row8; }
 
-#row9 {
-  grid-area: row9;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.25rem;
-  margin: 4px 2px; }
+#row7 {
+  grid-area: row9; }
 
-#colum4 {
-  grid-area: colum4; }
+#mantenimiento {
+  grid-area: colum4;
+  border-right: none; }
 
-#row10 {
+#row8 {
   grid-area: row10; }
 
-#row11 {
+#row9 {
   grid-area: row11; }
 
-#row12 {
-  grid-area: row12;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.25rem;
-  margin: 4px 2px; }
+#row10 {
+  grid-area: row12; }
 
-a {
-  text-decoration: none;
-  transition: height 2s; }
+.botonPlanes {
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 50%; }
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/

@@ -45,6 +45,10 @@
 
  /*INICIO PAGINA EQUIPO*/
 
+ #fondoEquipo{
+   padding: 0;
+ }
+
  .equipoFlex{
    height: 700px;
  }
@@ -61,12 +65,37 @@
      /*FIN PAGINA EQUIPO*/
 
 
+/*PAGINA PLANES*/
+#tamanioPlanes{
+  display: grid;
+  margin: 0;
+  grid-template-columns: 20% 25% 25% 25%;
+  column-gap: 1px;
+  row-gap: 1px;
+  align-items: self-start;
+}
+
+
+.tablaPlanes .rowDescripcion{
+  font-size: 1rem;
+  }
+  
+  #row7, #row10{
+    visibility: hidden;
+
+  }
+}
+
+
+   /*FIN PAGINA PLANES*/
+
+
     /*PAGINA CONTACTO*/
 
    #formulario #mensajeContacto{
     width: 90%;
    }
-   }
+   
      /*FIN PAGINA CONTACTO*/
  
 

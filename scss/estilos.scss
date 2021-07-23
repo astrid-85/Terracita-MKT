@@ -9,7 +9,6 @@
 body {
   background-color: $colorFondo;
   width: 100%;
-  
 }
 
 /*INICIO ENCABEZADO GENERAL*/
@@ -42,7 +41,7 @@ header {
 ul {
   display: flex;
   list-style-type: none;
-   
+
   li {
     border-right: 2px solid #cc7760;
     margin: 0;
@@ -63,19 +62,18 @@ ul {
     }
   }
 }
-.navbar-light .navbar-brand{
+.navbar-light .navbar-brand {
   color: #377f8b;
   font-weight: bold;
 }
 
-li:last-child{
+li:last-child {
   border-right: none;
-
 }
 
 /*FIN ENCABEZADO GENERAL*/
 /*INICIO PAGINA PRINCIPAL*/
-.fondo{
+.fondo {
   display: flex;
   flex-direction: column;
   color: $colorTitulo;
@@ -87,41 +85,36 @@ li:last-child{
   background-repeat: no-repeat;
   background-size: cover;
   border: outset 2px #cc7760;
+  padding: 50px;
 
   .tituloPrincipal {
     color: $colorTitulo;
     font-size: $tamanioTitulo;
     text-align: center;
     font-family: $tipografiaTitulo;
-    padding: 80px 80px 0px 80px;
+    padding: 0px;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
-  
-  
-  }
- 
+}
 
-.container{
-    background-color: #377f8b;
-    opacity: 90%;
-    margin: 50px;
-    
-  
-    #textoPrincipal {
-      font-size: 1.5rem;
-      color: $colorTipografia;
-      font-family: $tipografiaTexto;
-      padding: 60px;
-      text-align: justify;
-      line-height: 40px;
-      animation-duration: 8s;
-      animation-name: aparecer;
-      animation-iteration-count: inherit;
-    }
-  }
+.container {
+  background-color: #377f8b;
+  opacity: 90%;
 
+  #textoPrincipal {
+    font-size: 1.5rem;
+    color: $colorTipografia;
+    font-family: $tipografiaTexto;
+    padding: 60px;
+    text-align: justify;
+    line-height: 40px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: inherit;
+  }
+}
 
 /*FIN PAGINA PRINCIPAL*/
 
@@ -140,18 +133,13 @@ li:last-child{
   height: $anchoCajas;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
- 
-  
-  
 
   h3 {
-    
     font-family: $tipografiaTitulo;
     color: $colorTipografia;
     font-size: $tamanioTitulo;
     grid-area: h3;
     text-align: center;
-     
   }
 }
 
@@ -161,10 +149,9 @@ li:last-child{
   font-size: $tamanioTexto;
   text-align: center;
   font-weight: bold;
- 
 }
-#pie1{
-grid-area: pie1;
+#pie1 {
+  grid-area: pie1;
 }
 
 #pie4 {
@@ -175,16 +162,14 @@ grid-area: pie1;
 }
 #pie3 {
   grid-area: pie3;
-  
 }
 .socialIcon {
-    color: #f9c733;
-    font-size: 1.875rem;
-    left: 45%;
-    position: relative;
-    
+  color: #f9c733;
+  font-size: 1.875rem;
+  left: 45%;
+  position: relative;
+
 }
- 
 
 /*FIN FOOTER*/
 
@@ -194,31 +179,30 @@ grid-area: pie1;
   background-color: #377f8b;
   max-width: 60%;
   margin-bottom: 30px;
-  
-  }
-  .carousel-control-next, .carousel-control-prev{
-    width: 10%
-  }
-
-.cajasEquipo {
-@include cajasEstilos;
-
-
-h5{
-  color: #f9c733;
-  font-weight: bolder;
-  font-size: $tamanioTitulo;
-  text-align:center;
 }
-.cajasEquipo p{
- margin-left: 10px;
-}
-
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10%;
 }
 .equipoFlex img {
-  float:left;
+  float: left;
   margin: 30px 10px 0px 50px;
 }
+
+.cajasEquipo {
+  @include cajasEstilos;
+
+  h5 {
+    color: #f9c733;
+    font-weight: bolder;
+    font-size: $tamanioTitulo;
+    text-align: center;
+  }
+  .cajasEquipo p {
+    margin-left: 10px;
+  }
+}
+
 
 /*FIN PAGINA EQUIPO*/
 
@@ -257,7 +241,7 @@ h5{
   margin: 50px;
   margin: 50px;
 
-.enlace{
+  .enlace {
     @include enlace(none, #a09884, height 2s);
   }
 }
@@ -275,156 +259,96 @@ h5{
 /*FIN PAGINA NUESTRO TRABAJO*/
 
 /*INICIO PAGINA PLANES*/
-#planes {
-  color: #377f8b;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-family: "Bowlby One SC", cursive;
-  text-align: center;
-}
 
 .tablaPlanes {
   display: grid;
-  background-color: #cc7760;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100px 100px 100px 100px;
+  background-color: #377f8b;
+  grid-template-columns: 10% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas:
     "colum1 colum2 colum3 colum4"
     "row1 row4 row7 row10"
     "row2 row5 row8 row11"
     "row3 row6 row9 row12";
   column-gap: 1px;
-  row-gap: 5px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 90px;
+  row-gap: 10px;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom: 30px;
   margin-left: 50px;
   margin-right: 50px;
   border: #377f8b 2px solid;
+  padding: 10px;
 
-  #colum1,
-  #colum2,
-  #colum3,
-  #colum4 {
-    color: #f9c733;
+  .planesDescripcion {
+    color: $colorTipografia;
     font-family: $tipografiaTexto;
     font-size: $tamanioTexto;
     padding-left: 10px;
     padding-right: 12px;
     text-align: center;
     line-height: 30px;
-    border-right: 2px solid #377f8b;
-    border-bottom: 2px solid #377f8b;
+    border-right: 2px solid #cc7760;
   }
-  #row1,
-  #row2,
-  #row3,
-  #row4,
-  #row5,
-  #row6,
-  #row7,
-  #row8,
-  #row9,
-  #row10,
-  #row11,
-  #row12 {
-    color: #f9c733;
+
+  .rowDescripcion {
+    color: $colorTipografia;
     font-family: $tipografiaTexto;
     font-size: $tamanioTexto;
-    font-weight: bold;
-    padding-left: 40px;
-    padding-right: 20px;
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
     line-height: 30px;
+    margin: 0;
+    
   }
 }
-#colum1 {
-  grid-area: colum1;
-}
-#row1 {
-  grid-area: row1;
-  font-size: $tamanioTexto;
-}
-#row2 {
-  grid-area: row2;
-  font-size: $tamanioTexto;
-}
+
+#columInicio {
+  grid-area: colum1;}
+#rowPlan{
+  grid-area: row1;}
+#rowDetalle {
+  grid-area: row2;}
+#rowDescuento{
+  grid-area: row3;}
+
+#proyecto {
+  grid-area: colum2;}
+#row2{
+  grid-area: row4;}
 #row3 {
-  grid-area: row3;
-  font-size:  $tamanioTexto;
-}
+  grid-area: row5;}
+#row4{
+  grid-area: row6;}
 
-#colum2 {
-  grid-area: colum2;
-}
-#row4 {
-  grid-area: row4;
-}
+#experiencia {
+  grid-area: colum3;}
+#row5{
+  grid-area: row7;}
+#row6{
+  grid-area: row8;}
+#row7{
+  grid-area: row9;}
 
-#row5 {
-  grid-area: row5;
-}
-#row6 {
-  grid-area: row6;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size:  $tamanioTexto;
-  margin: 4px 2px;
-}
-.botones #row6:hover {
-  transition: height 2s;
-  height: 80px;
-  background-color: #377f8b;
-}
-#colum3 {
-  grid-area: colum3;
-}
-
-#row7 {
-  grid-area: row7;
-}
-#row8 {
-  grid-area: row8;
-}
-#row9 {
-  grid-area: row9;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size:  $tamanioTexto;
-  margin: 4px 2px;
-}
-
-#row9:hover {
-  @extend .botones;
-}
-
-#colum4 {
+#mantenimiento {
   grid-area: colum4;
-}
+  border-right:none;}
+#row8 {
+  grid-area: row10;}
+#row9 {
+  grid-area: row11;}
+#row10{
+  grid-area: row12;}
 
-#row10 {
-  grid-area: row10;
-}
-#row11 {
-  grid-area: row11;
-}
-#row12 {
-  grid-area: row12;
-  padding: 10px 15px;
+.botonPlanes{
   text-align: center;
-  text-decoration: none;
   font-size: $tamanioTexto;
-  margin: 4px 2px;
+  max-width: 50%;
 }
 
-#row12:hover {
-  @extend .botones;
-}
-a {
-  @include enlace(none, height 2s, #377f8b);
-}
+
+
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
