@@ -168,6 +168,7 @@ li:last-child {
   font-size: 1.875rem;
   left: 45%;
   position: relative;
+  text-decoration: none;
 }
 
 /*FIN FOOTER*/
@@ -201,7 +202,7 @@ li:last-child {
     margin-left: 10px;
   }
 }
-h6{
+h6 {
   visibility: hidden;
 }
 /*FIN PAGINA EQUIPO*/
@@ -213,44 +214,42 @@ h6{
   align-items: left;
   margin: 60px;
   background-color: #377f8b;
-  opacity: 95%;
   padding: 30px;
   margin-bottom: 80px;
 }
 
 .card {
   margin: 10px;
-  width: 50%;
-  
-.card-text {
-  font-family: $tipografiaTexto;
-  font-size: $tamanioTexto;
-  padding-left: 10px;
-  padding-right: 12px;
-  text-align: left;
-  line-height: 30px;
-  color: #f9c733;
-}
-}
 
-
-#botones {
-  margin: 50px;
-  margin: 50px;
-
-  .enlace {
-    @include enlace(none, #a09884, height 2s);
+  .card-text {
+    font-family: $tipografiaTexto;
+    font-size: $tamanioTexto;
+    padding-left: 10px;
+    padding-right: 12px;
+    text-align: left;
+    line-height: 30px;
+    color: #377f8b;
+  }
+  .card-img,
+  .card-img-bottom,
+  .card-img-top {
+    width: 65%;
+    margin-left: 20%;
   }
 }
-.boton1 {
-  @include botones(#f9c733, center);
+h4 {
+  font-family: $tipografiaTexto;
+  font-size: $tamanioTitulo;
+  color: #377f8b;
 }
-.boton2 {
-  @include botones(#377f8b, center);
-  color: #f9c733;
+.btn-outline-warning {
+  background-color: $colorFondo;
+  color: #377f8b;
 }
-.boton3 {
-  @include botones(#cc7760, center);
+.btn-outline-warning:hover {
+  color: #cc7760;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 
 /*FIN PAGINA NUESTRO TRABAJO*/
@@ -260,18 +259,18 @@ h6{
 .tablaPlanes {
   display: grid;
   background-color: #377f8b;
-  grid-template-columns: 10% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 15% 25% 25% 25%;
   grid-template-areas:
-    "colum1 colum2 colum3 colum4"
-    "row1 row4 row7 row10"
-    "row2 row5 row8 row11"
-    "row3 row6 row9 row12";
-  column-gap: 1px;
+    "columInicio columInicio"
+    "row2 row3 "
+    "row4 row5"
+    "row6 row7";
+  column-gap: 5px;
   row-gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   margin-left: 50px;
   margin-right: 50px;
   border: #377f8b 2px solid;
@@ -285,7 +284,7 @@ h6{
     padding-right: 12px;
     text-align: center;
     line-height: 30px;
-    border-right: 2px solid #cc7760;
+    border-bottom: #f9c733 solid 2px;
   }
 
   .rowDescripcion {
@@ -299,64 +298,37 @@ h6{
     margin: 0;
   }
 }
-
-#columInicio {
-  grid-area: colum1;
-}
-#rowPlan {
-  grid-area: row1;
-}
-#rowDetalle {
-  grid-area: row2;
-}
-#rowDescuento {
-  grid-area: row3;
-}
-
-#proyecto {
-  grid-area: colum2;
+#rowInicio {
+  grid-area: columInicio;
+  font-family: $tipografiaTitulo;
 }
 #row2 {
-  grid-area: row4;
+  grid-area: row2;
 }
 #row3 {
-  grid-area: row5;
-}
-#row4 {
-  grid-area: row6;
+  grid-area: row3;
+  border-bottom: #f9c733 solid 2px;
 }
 
-#experiencia {
-  grid-area: colum3;
-}
 #row5 {
-  grid-area: row7;
+  grid-area: row4;
 }
 #row6 {
-  grid-area: row8;
-}
-#row7 {
-  grid-area: row9;
+  grid-area: row5;
+  border-bottom: #f9c733 solid 2px;
 }
 
-#mantenimiento {
-  grid-area: colum4;
-  border-right: none;
-}
 #row8 {
-  grid-area: row10;
+  grid-area: row6;
 }
 #row9 {
-  grid-area: row11;
-}
-#row10 {
-  grid-area: row12;
+  grid-area: row7;
+  border-bottom: #f9c733 solid 2px;
 }
 
-.botonPlanes {
-  text-align: center;
-  font-size: $tamanioTexto;
-  max-width: 50%;
+.btn-primary{
+color: $colorTipografia;
+background-color: #377f8b;
 }
 
 /*FIN PAGINA PLANES*/

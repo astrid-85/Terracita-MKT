@@ -29,25 +29,6 @@ $letraFooter: 0.875rem;
 
 
 
-/*INICIO PAGINA NUESTRO TRABAJO*/
-
-@mixin botones ($botonFondo, $botonAling){
-    background-color: $botonFondo;
-    text-align: $botonAling;
-    height: 80px;
-    padding: 20px;
-    
-    }
-    
-@mixin enlace ($subrayado, $botonColor, $transicion){
-   
-   text-decoration: none;
-   background-color: #f9c733;
-    transition: height 2s;
-    
-   
-}
-/*FIN PAGINA NUESTRO TRABAJO*/
 
 
 
