@@ -156,14 +156,14 @@ li:last-child {
 
 .equipoFlex img {
   float: left;
-  margin: 30px 10px 0px 50px; }
+  margin: 30px 50px 30px 50px; }
 
 .cajasEquipo {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.25rem;
   padding: 30px 30px 30px 10px;
   margin: 90px;
-  text-align: justify;
+  text-align: left;
   line-height: 30px;
   color: #f9c733;
   position: relative; }
@@ -175,9 +175,12 @@ li:last-child {
   .cajasEquipo .cajasEquipo p {
     margin-left: 10px; }
 
+h6 {
+  visibility: hidden; }
+
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/
-#clientes {
+.clientes {
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -188,20 +191,16 @@ li:last-child {
   margin-bottom: 80px; }
 
 .card {
-  margin: 100px; }
-
-.card-text {
-  font-family: "Open Sans Condensed", sans-serif; }
-
-#texto1,
-#texto2 {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.25rem;
-  padding-left: 10px;
-  padding-right: 12px;
-  text-align: left;
-  line-height: 30px;
-  color: #f9c733; }
+  margin: 10px;
+  width: 50%; }
+  .card .card-text {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.25rem;
+    padding-left: 10px;
+    padding-right: 12px;
+    text-align: left;
+    line-height: 30px;
+    color: #f9c733; }
 
 #botones {
   margin: 50px;
@@ -327,16 +326,22 @@ li:last-child {
   margin-right: 50px;
   margin-bottom: 70px;
   background-color: #377f8b;
-  background-image: linear-gradient(to right, #377f8b, #aa8321); }
+  background-image: linear-gradient(to right, #377f8b, #aa8321);
+  width: 70%; }
   #formulario #formularioUno {
     margin: 30px;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.25rem;
     line-height: 1.6;
     color: #f9c733; }
-    #formulario #formularioUno input,
-    #formulario #formularioUno select {
-      font-family: "Open Sans Condensed", sans-serif;
-      color: #cc7760; }
+    #formulario #formularioUno #mensajeContacto {
+      resize: vertical;
+      width: 70%;
+      height: 200px; }
+
+input,
+select {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #cc7760; }
 
 /*FIN PAGINA CONTACTO*/

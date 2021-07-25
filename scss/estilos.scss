@@ -168,7 +168,6 @@ li:last-child {
   font-size: 1.875rem;
   left: 45%;
   position: relative;
-
 }
 
 /*FIN FOOTER*/
@@ -186,7 +185,7 @@ li:last-child {
 }
 .equipoFlex img {
   float: left;
-  margin: 30px 10px 0px 50px;
+  margin: 30px 50px 30px 50px;
 }
 
 .cajasEquipo {
@@ -202,12 +201,13 @@ li:last-child {
     margin-left: 10px;
   }
 }
-
-
+h6{
+  visibility: hidden;
+}
 /*FIN PAGINA EQUIPO*/
 
 /*INICIO PAGINA NUESTRO TRABAJO*/
-#clientes {
+.clientes {
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -219,16 +219,11 @@ li:last-child {
 }
 
 .card {
-  margin: 100px;
-}
-
+  margin: 10px;
+  width: 50%;
+  
 .card-text {
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-#texto1,
-#texto2 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: $tipografiaTexto;
   font-size: $tamanioTexto;
   padding-left: 10px;
   padding-right: 12px;
@@ -236,6 +231,8 @@ li:last-child {
   line-height: 30px;
   color: #f9c733;
 }
+}
+
 
 #botones {
   margin: 50px;
@@ -272,8 +269,8 @@ li:last-child {
     "row3 row6 row9 row12";
   column-gap: 1px;
   row-gap: 10px;
-  justify-content:space-between;
-  align-items:flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 30px;
   margin-left: 50px;
   margin-right: 50px;
@@ -300,55 +297,67 @@ li:last-child {
     text-align: left;
     line-height: 30px;
     margin: 0;
-    
   }
 }
 
 #columInicio {
-  grid-area: colum1;}
-#rowPlan{
-  grid-area: row1;}
+  grid-area: colum1;
+}
+#rowPlan {
+  grid-area: row1;
+}
 #rowDetalle {
-  grid-area: row2;}
-#rowDescuento{
-  grid-area: row3;}
+  grid-area: row2;
+}
+#rowDescuento {
+  grid-area: row3;
+}
 
 #proyecto {
-  grid-area: colum2;}
-#row2{
-  grid-area: row4;}
+  grid-area: colum2;
+}
+#row2 {
+  grid-area: row4;
+}
 #row3 {
-  grid-area: row5;}
-#row4{
-  grid-area: row6;}
+  grid-area: row5;
+}
+#row4 {
+  grid-area: row6;
+}
 
 #experiencia {
-  grid-area: colum3;}
-#row5{
-  grid-area: row7;}
-#row6{
-  grid-area: row8;}
-#row7{
-  grid-area: row9;}
+  grid-area: colum3;
+}
+#row5 {
+  grid-area: row7;
+}
+#row6 {
+  grid-area: row8;
+}
+#row7 {
+  grid-area: row9;
+}
 
 #mantenimiento {
   grid-area: colum4;
-  border-right:none;}
+  border-right: none;
+}
 #row8 {
-  grid-area: row10;}
+  grid-area: row10;
+}
 #row9 {
-  grid-area: row11;}
-#row10{
-  grid-area: row12;}
+  grid-area: row11;
+}
+#row10 {
+  grid-area: row12;
+}
 
-.botonPlanes{
+.botonPlanes {
   text-align: center;
   font-size: $tamanioTexto;
   max-width: 50%;
 }
-
-
-
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
@@ -359,6 +368,7 @@ li:last-child {
   margin-bottom: 70px;
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
+  width: 70%;
 
   #formularioUno {
     margin: 30px;
@@ -367,12 +377,17 @@ li:last-child {
     line-height: 1.6;
     color: $colorTipografia;
 
-    input,
-    select {
-      font-family: $tipografiaTexto;
-      color: #cc7760;
+    #mensajeContacto {
+      resize: vertical;
+      width: 70%;
+      height: 200px;
     }
   }
 }
 
+input,
+select {
+  font-family: $tipografiaTexto;
+  color: #cc7760;
+}
 /*FIN PAGINA CONTACTO*/
