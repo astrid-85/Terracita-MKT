@@ -367,3 +367,56 @@ select {
   color: #cc7760;
 }
 /*FIN PAGINA CONTACTO*/
+
+
+/*FIN PAGINA ERROR 404*/
+.errorPagina{
+  padding: 30px 20px;
+    font-family: $tipografiaTexto;
+    line-height: 1.6;
+    background-color: #f9c733;
+  
+ 
+  
+  h1 {
+    margin: 0 0 40px;
+    font-size: 60px;
+    line-height: 1;
+    color: #252427;
+    font-weight: 700;
+  }
+  
+  h2 {
+    margin: 100px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #aa8324;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 1em 0;
+  }
+  }
+  
+  .go-back a {
+    display: inline-block;
+    margin-top: 3em;
+    padding: 10px;
+    color: #377f8b;
+    font-weight: 700;
+    border: solid 2px #377f8b;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .go-back a:hover {
+    border-color: #1B1A1A;
+  }
+  
+  
+  /*FIN PAGINA ERROR 404*/
