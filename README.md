@@ -14,3 +14,4 @@ A handful of error templates to be used as a starting point for serving up 400, 
 
 Creative Commons License
 Simple error pages by http://pooreffort.com is licensed under a Creative Commons Attribution 4.0 International License.
+

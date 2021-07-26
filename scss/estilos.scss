@@ -31,7 +31,6 @@ header {
     animation-iteration-count: initial;
   }
 
-  height: 20%;
 }
 #menu {
   color: $colorTipografia;
@@ -132,7 +131,7 @@ li:last-child {
     "pie1 pie4 pie2"
     "pie3 pie3 pie3";
   column-gap: 0px;
-  row-gap: 2px;
+  row-gap: 1px;
   align-items: end;
   height: $anchoCajas;
   background-color: #377f8b;
@@ -216,10 +215,11 @@ h6 {
   display: flex;
   flex-direction: row;
   align-items: left;
-  margin: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-color: #377f8b;
   padding: 30px;
-  margin-bottom: 80px;
+  
 }
 
 .card {
