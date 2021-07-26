@@ -30,6 +30,8 @@ header {
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
+
+  height: 20%;
 }
 #menu {
   color: $colorTipografia;
@@ -72,6 +74,7 @@ li:last-child {
 }
 
 /*FIN ENCABEZADO GENERAL*/
+
 /*INICIO PAGINA PRINCIPAL*/
 .fondo {
   display: flex;
@@ -86,6 +89,7 @@ li:last-child {
   background-size: cover;
   border: outset 2px #cc7760;
   padding: 50px;
+  height: 62.5em;
 
   .tituloPrincipal {
     color: $colorTitulo;
@@ -122,7 +126,7 @@ li:last-child {
 .piePagina {
   display: grid;
   grid-template-columns: 35% 30% 35%;
-  grid-template-rows: 30%;
+  grid-template-rows: 20% 40% 40%;
   grid-template-areas:
     "h3 h3 h3"
     "pie1 pie4 pie2"
@@ -260,7 +264,7 @@ h4 {
   display: grid;
   background-color: #377f8b;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 15% 25% 25% 25%;
+  grid-template-rows: 20% 25% 25% 25%;
   grid-template-areas:
     "columInicio columInicio"
     "row2 row3 "
@@ -326,9 +330,9 @@ h4 {
   border-bottom: #f9c733 solid 2px;
 }
 
-.btn-primary{
-color: $colorTipografia;
-background-color: #377f8b;
+.btn-primary {
+  color: $colorTipografia;
+  background-color: #377f8b;
 }
 
 /*FIN PAGINA PLANES*/
@@ -340,7 +344,7 @@ background-color: #377f8b;
   margin-bottom: 70px;
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
-  width: 70%;
+  width: 60%;
 
   #formularioUno {
     margin: 30px;
@@ -351,8 +355,8 @@ background-color: #377f8b;
 
     #mensajeContacto {
       resize: vertical;
-      width: 70%;
       height: 200px;
+      width: 90%;
     }
   }
 }
