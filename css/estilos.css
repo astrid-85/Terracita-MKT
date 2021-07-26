@@ -92,7 +92,7 @@ li:last-child {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
     padding: 60px;
-    text-align: justify;
+    text-align: left;
     line-height: 40px;
     animation-duration: 8s;
     animation-name: aparecer;
