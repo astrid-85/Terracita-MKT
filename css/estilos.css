@@ -73,8 +73,7 @@ li:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   border: outset 2px #cc7760;
-  padding: 50px;
-  height: 62.5em; }
+  padding: 50px; }
   .fondo .tituloPrincipal {
     color: #377f8b;
     font-size: 2rem;
