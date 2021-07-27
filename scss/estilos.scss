@@ -80,44 +80,45 @@ li:last-child {
   flex-direction: column;
   color: $colorTitulo;
   font-family: $tipografiaTitulo;
-  margin: 1px 2px 1px 2px;
-  justify-content: space-evenly;
-  align-items: center;
   background-image: $imgFondo;
   background-repeat: no-repeat;
   background-size: cover;
-  border: outset 2px #cc7760;
-  padding: 50px;
+  height: 100vh;
+  
   
 
   .tituloPrincipal {
-    color: $colorTitulo;
+    color: $colorTipografia;
     font-size: $tamanioTitulo;
     text-align: center;
     font-family: $tipografiaTitulo;
-    padding: 0px;
+    padding: 20px;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
+  .text-muted{
+    color: #cc7760 !important;
+    font-family: $tipografiaTexto;
+    font-weight: bolder;
+  }
 }
 
 .container {
+  position: relative;
+  top: 80px;  
   background-color: #377f8b;
   opacity: 90%;
-
+}
+  
   #textoPrincipal {
     font-size: 1.5rem;
     color: $colorTipografia;
     font-family: $tipografiaTexto;
-    padding: 60px;
-    text-align: left;
-    line-height: 40px;
     animation-duration: 8s;
     animation-name: aparecer;
     animation-iteration-count: inherit;
   }
-}
 
 /*FIN PAGINA PRINCIPAL*/
 
@@ -178,22 +179,24 @@ li:last-child {
 
 /*INICIO PÁGINA EQUIPO*/
 
-.equipoFlex {
-  background-color: #377f8b;
-  max-width: 60%;
-  margin-bottom: 30px;
-}
+.equipo {
+  @extend.container;
+  opacity: 100%;
+  height: 70%;
+  }
 .carousel-control-next,
 .carousel-control-prev {
   width: 10%;
 }
-.equipoFlex img {
+.equipo img {
   float: left;
-  margin: 30px 50px 30px 50px;
-}
+  padding: 20px;
+  padding-left: 30px;
+  }
 
 .cajasEquipo {
   @include cajasEstilos;
+  padding: 0; 
 
   h5 {
     color: #f9c733;
@@ -211,40 +214,23 @@ h6 {
 /*FIN PAGINA EQUIPO*/
 
 /*INICIO PAGINA NUESTRO TRABAJO*/
-.clientes {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  background-color: #377f8b;
-  padding: 30px;
-  
-}
-
-.card {
-  margin: 10px;
-
-  .card-text {
+  .clientesText {
     font-family: $tipografiaTexto;
     font-size: $tamanioTexto;
-    padding-left: 10px;
-    padding-right: 12px;
     text-align: left;
-    line-height: 30px;
-    color: #377f8b;
+    color: $colorTipografia;
+    padding: 30px;
   }
-  .card-img,
-  .card-img-bottom,
-  .card-img-top {
+  .clientesImg {
     width: 65%;
     margin-left: 20%;
+    position: absolute;
   }
-}
+
 h4 {
   font-family: $tipografiaTexto;
   font-size: $tamanioTitulo;
-  color: #377f8b;
+  color: $colorTipografia;
 }
 .btn-outline-warning {
   background-color: $colorFondo;
@@ -339,12 +325,13 @@ h4 {
 /*INICIO PAGINA CONTACTO*/
 
 #formulario {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 70px;
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
-  width: 60%;
+  width: 90%;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
 
   #formularioUno {
     margin: 30px;
@@ -359,7 +346,7 @@ h4 {
       width: 90%;
     }
   }
-}
+
 
 input,
 select {

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1200px) {
   /*INICIO PAGINA EQUIPO*/
-  .equipoFlex img {
+  .equipo img {
     float: inline-start;
   }
   h6 {
@@ -23,11 +23,7 @@
   /*FIN FOOTER*/
 
   /*INICIO PAGINA EQUIPO*/
-  .equipoFlex img {
-    float: inline-start;
-    padding: 20px;
-    margin: 50px;
-  }
+  
   .cajasEquipo {
     padding: 5px;
     margin: 20px;
@@ -38,44 +34,13 @@
   }
   /*FIN PAGINA EQUIPO*/
 
-  /*INICIO PAGINA TRABAJOS*/
-  .card {
-    margin: 10px;
-    width: 90%;
-  }
-  .card .card-text {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 0.875rem;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: left;
-    line-height: 20px;
-    color: #377f8b;
-  }
-  .card-img,
-  .card-img-bottom,
-  .card-img-top {
-    width: 60%;
-    position: inherit;
-    padding: 5px;
-    margin: auto;
-  }
+  /*INICIO PAGINA TRABAJOS*/  
   h4 {
     font-size: 1rem;
     font-family: "Open Sans Condensed", sans-serif;
   }
   /*FIN PAGINA TRABAJOS*/
 
-  /*INICIO PAGINA CONTACTO*/
-  #formulario {
-    
-    width: 90%;
-  }
-
-  #formulario #mensajeContacto {
-    width: 60%;
-  }
-  /*FIN PAGINA CONTACTO*/
 }
 
 @media only screen and (max-width: 576px) {
@@ -95,51 +60,21 @@
 
   /*INICIO PAGINA EQUIPO*/
 
-  #fondoEquipo {
-    padding: 0;
-  }
+  
   h6 {
     visibility: visible;
     text-align: center;
   }
-
-  .equipoFlex {
-    height: 700px;
-  }
-
-  .equipoFlex img {
-    margin: 80px;
-  }
-
   .cajasEquipo p {
     visibility: hidden;
   }
-  .cajasEquipo {
-    margin: 50px;
-    padding: 0;
-  }
-
   /*FIN PAGINA EQUIPO*/
 
   /*INICIO PAGINA TRABAJO*/
 
-  .card {
-    margin: 0px;
-    width: 90%;
-  }
-
-  .card-img,
-  .card-img-bottom,
-  .card-img-top {
-    position: absolute;
-    margin: 20%;
-    padding: 5px;
-  }
-
-  .card .card-text {
+  .clientesText {
     visibility: hidden;
-    height: 290px;
-  }
+    }
 
   /*FIN PAGINA TRABAJOS*/
 
