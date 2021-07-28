@@ -180,6 +180,10 @@ h6 {
 
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/
+.clientes {
+  background-color: #377f8b;
+  margin-top: 20%; }
+
 .clientesText {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.25rem;
@@ -188,23 +192,24 @@ h6 {
   padding: 30px; }
 
 .clientesImg {
-  width: 65%;
-  margin-left: 20%;
+  width: 50%;
+  margin-left: 25%;
   position: absolute; }
+
+.btn-primary {
+  color: #f9c733;
+  background-color: #377f8b;
+  margin: 20px; }
 
 h4 {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2rem;
-  color: #f9c733; }
+  color: #f9c733;
+  text-align: center; }
 
 .btn-outline-warning {
-  background-color: #f9c733;
-  color: #377f8b; }
-
-.btn-outline-warning:hover {
-  color: #cc7760;
-  background-color: #ffc107;
-  border-color: #ffc107; }
+  margin: 15%;
+  background-color: #377f8b; }
 
 /*FIN PAGINA NUESTRO TRABAJO*/
 /*INICIO PAGINA PLANES*/
