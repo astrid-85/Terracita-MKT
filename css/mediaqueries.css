@@ -12,6 +12,32 @@
     row-gap: 1px;
   }
   /*FIN PAGINA EQUIPO*/
+
+ /*PAGINA PLANES*/
+ #tamanioPlanes {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 25% 25% 25%;
+  column-gap: 5px;
+  row-gap: 10px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+
+.rowDescripcion {
+  font-size: 1.25rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  line-height: 30px;
+}
+
+ 
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -78,31 +104,6 @@
 
   /*FIN PAGINA TRABAJOS*/
 
-  /*PAGINA PLANES*/
-  #tamanioPlanes {
-    display: grid;
-    margin: 0px;
-    margin-bottom: 20px;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 10% 25% 25% 25%;
-    column-gap: 1px;
-    row-gap: 1px;
-    align-items: self-start;
-  }
-
-  .rowDescripcion {
-    font-size: 1rem;
-  }
-
-   
-  /*INICIO PAGINA CONTACTO*/
-  #formulario #mensajeContacto {
-    margin: 0;
-    
-  }
-
-  /*FIN PAGINA CONTACTO*/
-}
 /*INICIO PAGINA ERROR*/
 
 .errorPagina{
@@ -110,3 +111,4 @@
   }
 
 /*FIN PAGINA ERROR*/
+}

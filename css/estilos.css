@@ -216,18 +216,16 @@ h4 {
 .tablaPlanes {
   display: grid;
   background-color: #377f8b;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 25% 25% 25%;
+  grid-template-columns: 20% 75%;
+  grid-template-rows: 10% 25% 25% 25%;
   grid-template-areas: "columInicio columInicio" "row2 row3 " "row4 row5" "row6 row7";
-  column-gap: 5px;
-  row-gap: 10px;
+  column-gap: 1px;
+  row-gap: 1px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 60px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: #377f8b 2px solid;
-  padding: 10px; }
+  margin-bottom: 20%;
+  margin-top: 30%;
+  border: #377f8b 2px solid; }
   .tablaPlanes .planesDescripcion {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
@@ -235,17 +233,13 @@ h4 {
     padding-left: 10px;
     padding-right: 12px;
     text-align: center;
-    line-height: 30px;
     border-bottom: #f9c733 solid 2px; }
   .tablaPlanes .rowDescripcion {
     color: #f9c733;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.25rem;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1rem;
     text-align: left;
-    line-height: 30px;
-    margin: 0; }
+    margin: 5px; }
 
 #rowInicio {
   grid-area: columInicio;
@@ -272,25 +266,23 @@ h4 {
   grid-area: row7;
   border-bottom: #f9c733 solid 2px; }
 
-.btn-primary {
-  color: #f9c733;
-  background-color: #377f8b; }
+.d-grid {
+  display: grid !important;
+  justify-content: center; }
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
 #formulario {
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
-  width: 90%;
   position: relative;
-  left: 20px;
-  top: 20px; }
+  margin-top: 20%; }
 
 #formularioUno {
   margin: 30px;
+  margin-top: 0px;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 0.875rem;
   color: #f9c733; }
   #formularioUno #mensajeContacto {
     resize: vertical;
