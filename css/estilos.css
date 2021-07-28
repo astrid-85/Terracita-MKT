@@ -11,21 +11,19 @@ body {
   width: 100%; }
 
 /*INICIO ENCABEZADO GENERAL*/
-header {
-  height: 20%; }
-
 @keyframes aparecer {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  header .fotoEncabezado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation-duration: 5s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
+
+header .fotoEncabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
 
 #menu {
   color: #f9c733;
@@ -106,7 +104,7 @@ li:last-child {
   grid-template-rows: 20% 40% 40%;
   grid-template-areas: "h3 h3 h3" "pie1 pie4 pie2" "pie3 pie3 pie3";
   column-gap: 0px;
-  row-gap: 2px;
+  row-gap: 1px;
   align-items: end;
   height: 250px;
   background-color: #377f8b;
@@ -185,10 +183,10 @@ h6 {
   display: flex;
   flex-direction: row;
   align-items: left;
-  margin: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-color: #377f8b;
-  padding: 30px;
-  margin-bottom: 80px; }
+  padding: 30px; }
 
 .card {
   margin: 10px; }
