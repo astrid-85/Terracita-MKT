@@ -134,7 +134,6 @@ li:last-child {
   column-gap: 0px;
   row-gap: 1px;
   align-items: end;
-  height: $anchoCajas;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
 
@@ -216,7 +215,6 @@ h6 {
 /*INICIO PAGINA NUESTRO TRABAJO*/
 
 .clientes{
-
  background-color: #377f8b;
  margin-top: 20%;
 }
@@ -225,22 +223,24 @@ h6 {
     font-size: $tamanioTexto;
     text-align: left;
     color: $colorTipografia;
-    padding: 30px;
+    padding: 20px;
+    visibility: hidden;
   }
   .clientesImg {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    
-  
-   
+      
   }
   .btn-primary {
     color: #f9c733;
     background-color: #377f8b;
     margin: 20px;
 }
-
+.btn-outline-warning {
+ margin: 10%;
+ background-color: #377f8b;
+}
 h4 {
   font-family: $tipografiaTexto;
   font-size: $tamanioTitulo;
@@ -248,11 +248,6 @@ h4 {
   text-align: center;
   
 }
-.btn-outline-warning {
- margin: 15%;
- background-color: #377f8b;
-}
-  
 
 /*FIN PAGINA NUESTRO TRABAJO*/
 
@@ -294,7 +289,6 @@ h4 {
     margin: 5px;
   }
 }
-
 
 #rowInicio {
   grid-area: columInicio;

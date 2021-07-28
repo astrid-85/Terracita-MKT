@@ -106,7 +106,6 @@ li:last-child {
   column-gap: 0px;
   row-gap: 1px;
   align-items: end;
-  height: 250px;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b); }
   .piePagina h3 {
@@ -189,7 +188,8 @@ h6 {
   font-size: 1.25rem;
   text-align: left;
   color: #f9c733;
-  padding: 30px; }
+  padding: 20px;
+  visibility: hidden; }
 
 .clientesImg {
   width: 50%;
@@ -201,15 +201,15 @@ h6 {
   background-color: #377f8b;
   margin: 20px; }
 
+.btn-outline-warning {
+  margin: 10%;
+  background-color: #377f8b; }
+
 h4 {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2rem;
   color: #f9c733;
   text-align: center; }
-
-.btn-outline-warning {
-  margin: 15%;
-  background-color: #377f8b; }
 
 /*FIN PAGINA NUESTRO TRABAJO*/
 /*INICIO PAGINA PLANES*/
