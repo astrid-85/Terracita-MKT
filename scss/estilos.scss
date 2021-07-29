@@ -157,6 +157,10 @@ h3 {
 }
 #pie1 {
   grid-area: pie1;
+ 
+}
+#pie1 p {
+   margin-bottom: 0.7rem;
 }
 
 #pie4 {
@@ -170,8 +174,8 @@ h3 {
 }
 .socialIcon {
   color: #f9c733;
-  font-size: 30px;
-  left: 35%;
+  font-size: 1.75rem;
+  left: 25%;
   position: relative;
   text-decoration: none;
 }

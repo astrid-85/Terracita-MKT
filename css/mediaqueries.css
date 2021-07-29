@@ -24,7 +24,7 @@
   font-size: 1.25rem;
 }
 .socialIcon {
-  left: 45%;
+  left: 43%;
  
 }
 /*FIN FOOTER*/
@@ -150,7 +150,7 @@ select {
 @media only screen and (max-width: 768px) {
   /*INICIO FOOTER*/
   .socialIcon {
-    left: 43%;
+   
     position: relative;
   }
   /*FIN FOOTER*/
