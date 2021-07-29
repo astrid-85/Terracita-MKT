@@ -141,92 +141,6 @@
   /*FIN PAGINA CONTACTO*/
 }
 
-@media only screen and (max-width: 768px) {
-  /*INICIO PAGINA INICIO*/
-
-  .fondo {
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-  }
-  /*FIN PAGINA INICIO*/
-
-  /*INICIO FOOTER*/
-  h3 {
-    font-family: "Bowlby One SC", cursive;
-    font-size: 2rem;
-    grid-area: h3;
-    text-align: center;
-    visibility: visible;
-  }
-  .contactosEstilo p {
-    font-size: 1.25rem;
-  }
-  .socialIcon {
-    left: 38%;
-  }
-  #pie3 p {
-    margin-bottom: 0rem;
-  }
-  /*FIN FOOTER*/
-
-  /*INICIO PAGINA EQUIPO*/
-  h6 {
-    visibility: hidden;
-    text-align: center;
-  }
-  .cajasEquipo p {
-    visibility: visible;
-    margin-right: 10%;
-  }
-  .equipo img {
-    padding-left: 20%;
-    padding-right: 20px;
-  }
-  /*FIN PAGINA EQUIPO*/
-
-  /*INICIO PAGINA TRABAJOS*/
-  .clientesImg {
-    width: auto;
-    margin-left: 10%;
-    position: absolute;
-    height: 250px;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  .clientesText {
-    visibility: visible;
-    position: relative;
-    left: 30%;
-    right: 50%;
-    width: 60%;
-    padding-top: 0;
-  }
-
-  .btn-primary {
-    position: relative;
-    left: 35%;
-  }
-  .btn-outline-warning {
-    margin-left: 32%;
-  }
-
-  /*FIN PAGINA TRABAJOS*/
-
-  /*INICIO PAGINA PLANES*/
-  .tablaPlanes .rowDescripcion {
-    font-size: 1.25rem;
-  }
-  /*FIN PAGINA PLANES*/
-
-  /*INICIO PAGINA CONTACTO*/
-  #formulario {
-    margin-top: 5%;
-  }
-  /*FIN PAGINA CONTACTO*/
-}
-
 @media only screen and (min-width: 576px) {
   /*INICIO PAGINA ERROR*/
 
@@ -235,7 +149,4 @@
   }
 
   /*FIN PAGINA ERROR*/
-
-
-  
 }

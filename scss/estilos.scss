@@ -30,7 +30,6 @@ header {
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
-
 }
 #menu {
   color: $colorTipografia;
@@ -85,8 +84,6 @@ li:last-child {
   background-size: cover;
   height: 100vh;
   
-  
-
   .tituloPrincipal {
     color: $colorTipografia;
     font-size: $tamanioTitulo;
@@ -98,11 +95,11 @@ li:last-child {
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
-  .text-muted{
-    color: #cc7760 !important;
-    font-family: $tipografiaTexto;
-    font-weight: bolder;
-  }
+    .text-muted{
+      color: #cc7760 !important;
+      font-family: $tipografiaTexto;
+      font-weight: bolder;
+    }
 }
 
 .container {
@@ -111,16 +108,14 @@ li:last-child {
   background-color: #377f8b;
   opacity: 90%;
 }
-  
-  #textoPrincipal {
-    font-size: 1.5rem;
-    color: $colorTipografia;
-    font-family: $tipografiaTexto;
-    animation-duration: 8s;
-    animation-name: aparecer;
-    animation-iteration-count: inherit;
-  }
-
+#textoPrincipal {
+  font-size: 1.5rem;
+  color: $colorTipografia;
+  font-family: $tipografiaTexto;
+  animation-duration: 8s;
+  animation-name: aparecer;
+  animation-iteration-count: inherit;
+}
 /*FIN PAGINA PRINCIPAL*/
 
 /*INICIO FOOTER*/
@@ -137,8 +132,6 @@ li:last-child {
   align-items: end;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
-
-  
 }
 h3 {
     font-family: $tipografiaTitulo;
@@ -147,7 +140,7 @@ h3 {
     grid-area: h3;
     text-align: center;
     visibility: hidden;
-    }
+}
 
 .contactosEstilo p {
   color: $colorTipografia;
@@ -158,12 +151,10 @@ h3 {
 }
 #pie1 {
   grid-area: pie1;
- 
 }
 #pie1 p {
    margin-bottom: 0.7rem;
 }
-
 #pie4 {
   grid-area: pie4;
 }
@@ -180,7 +171,6 @@ h3 {
   position: relative;
   text-decoration: none;
 }
-
 /*FIN FOOTER*/
 
 /*INICIO PÁGINA EQUIPO*/
@@ -189,8 +179,7 @@ h3 {
   @extend.container;
   opacity: 100%;
   height: 70%;
-  
-  }
+}
 .carousel-control-next,
 .carousel-control-prev {
   width: 10%;
@@ -200,24 +189,21 @@ h3 {
   padding: 20px;
   padding-left: 30px;
   padding-right: 0px
-  
-  }
-
+}
 .cajasEquipo {
   @include cajasEstilos;
   padding: 0; 
   margin: 0px;
 
-  h5 {
+h5 {
     color: #f9c733;
     font-weight: bolder;
     font-size: $tamanioTitulo;
     text-align: center;
   }
-  
 }
 .cajasEquipo p {
-    visibility: hidden;
+  visibility: hidden;
     
   }
 
@@ -225,30 +211,28 @@ h6 {
   visibility: visible;
   text-align: center;
 }
-
 /*FIN PAGINA EQUIPO*/
 
 /*INICIO PAGINA NUESTRO TRABAJO*/
 
 .clientes{
- background-color: #377f8b;
- margin-top: 5%;
+  background-color: #377f8b;
+  margin-top: 5%;
 }
-  .clientesText {
-    font-family: $tipografiaTexto;
-    font-size: $tamanioTexto;
-    text-align: left;
-    color: $colorTipografia;
-    padding: 20px;
-    visibility: hidden;
+.clientesText {
+  font-family: $tipografiaTexto;
+  font-size: $tamanioTexto;
+  text-align: left;
+  color: $colorTipografia;
+  padding: 20px;
+  visibility: hidden;
   }
-  .clientesImg {
-    width: 50%;
-    margin-left: 25%;
-    position: absolute;
-      
+.clientesImg {
+  width: 50%;
+  margin-left: 25%;
+  position: absolute;
   }
-  .btn-primary {
+.btn-primary {
     color: #f9c733;
     background-color: #377f8b;
     margin: 20px;
@@ -265,7 +249,6 @@ h4 {
   text-align: center;
   
 }
-
 /*FIN PAGINA NUESTRO TRABAJO*/
 
 /*INICIO PAGINA PLANES*/
@@ -296,7 +279,6 @@ h4 {
     text-align: center;
     border-bottom: #f9c733 solid 2px;
   }
-
   .rowDescripcion {
     color: $colorTipografia;
     font-family: $tipografiaTexto;
@@ -305,7 +287,6 @@ h4 {
     margin: 5px;
   }
 }
-
 #rowInicio {
   grid-area: columInicio;
   font-family: $tipografiaTitulo;
@@ -317,7 +298,6 @@ h4 {
   grid-area: row3;
   border-bottom: #f9c733 solid 2px;
 }
-
 #row5 {
   grid-area: row4;
 }
@@ -325,7 +305,6 @@ h4 {
   grid-area: row5;
   border-bottom: #f9c733 solid 2px;
 }
-
 #row8 {
   grid-area: row6;
 }
@@ -335,22 +314,19 @@ h4 {
 }
 .d-grid {
   display: grid !important;
-  justify-content: center;}
-
-
-
+  justify-content: center;
+}
 /*FIN PAGINA PLANES*/
-/*INICIO PAGINA CONTACTO*/
 
+/*INICIO PAGINA CONTACTO*/
 #formulario {
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
   position: relative;
   margin-top: 20%;
-  
 }
 
-  #formularioUno {
+#formularioUno {
     margin: 30px;
     margin-top: 0px;
     font-family: $tipografiaTexto;
@@ -363,8 +339,6 @@ h4 {
       width: 90%;
     }
   }
-
-
 input,
 select {
   font-family: $tipografiaTexto;
