@@ -137,19 +137,21 @@ li:last-child {
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b);
 
-  h3 {
+  
+}
+h3 {
     font-family: $tipografiaTitulo;
     color: $colorTipografia;
     font-size: $tamanioTitulo;
     grid-area: h3;
     text-align: center;
-  }
-}
+    visibility: hidden;
+    }
 
 .contactosEstilo p {
   color: $colorTipografia;
   font-family: $tipografiaTexto;
-  font-size: $tamanioTexto;
+  font-size: 0.875rem;
   text-align: center;
   font-weight: bold;
 }
@@ -168,8 +170,8 @@ li:last-child {
 }
 .socialIcon {
   color: #f9c733;
-  font-size: 1.875rem;
-  left: 45%;
+  font-size: 30px;
+  left: 35%;
   position: relative;
   text-decoration: none;
 }
@@ -191,11 +193,14 @@ li:last-child {
   float: left;
   padding: 20px;
   padding-left: 30px;
+  padding-right: 0px
+  
   }
 
 .cajasEquipo {
   @include cajasEstilos;
   padding: 0; 
+  margin: 0px;
 
   h5 {
     color: #f9c733;
@@ -203,13 +208,18 @@ li:last-child {
     font-size: $tamanioTitulo;
     text-align: center;
   }
-  .cajasEquipo p {
-    margin-left: 10px;
+  
+}
+.cajasEquipo p {
+    visibility: hidden;
+    
   }
-}
+
 h6 {
-  visibility: hidden;
+  visibility: visible;
+  text-align: center;
 }
+
 /*FIN PAGINA EQUIPO*/
 
 /*INICIO PAGINA NUESTRO TRABAJO*/
@@ -238,7 +248,8 @@ h6 {
     margin: 20px;
 }
 .btn-outline-warning {
- margin: 10%;
+ margin-left: 10%;
+ margin-top: 5%;
  background-color: #377f8b;
 }
 h4 {
@@ -267,7 +278,6 @@ h4 {
     row-gap: 1px;
   justify-content: space-between;
   align-items:flex-start;
-  margin-bottom: 20%;
   margin-top: 30%;
   border: #377f8b 2px solid;
  

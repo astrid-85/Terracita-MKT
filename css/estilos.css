@@ -108,17 +108,19 @@ li:last-child {
   align-items: end;
   background-color: #377f8b;
   background-image: linear-gradient(#cc7760, #377f8b); }
-  .piePagina h3 {
-    font-family: "Bowlby One SC", cursive;
-    color: #f9c733;
-    font-size: 2rem;
-    grid-area: h3;
-    text-align: center; }
+
+h3 {
+  font-family: "Bowlby One SC", cursive;
+  color: #f9c733;
+  font-size: 2rem;
+  grid-area: h3;
+  text-align: center;
+  visibility: hidden; }
 
 .contactosEstilo p {
   color: #f9c733;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   text-align: center;
   font-weight: bold; }
 
@@ -136,8 +138,8 @@ li:last-child {
 
 .socialIcon {
   color: #f9c733;
-  font-size: 1.875rem;
-  left: 45%;
+  font-size: 30px;
+  left: 35%;
   position: relative;
   text-decoration: none; }
 
@@ -154,7 +156,8 @@ li:last-child {
 .equipo img {
   float: left;
   padding: 20px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-right: 0px; }
 
 .cajasEquipo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -165,17 +168,20 @@ li:last-child {
   line-height: 30px;
   color: #f9c733;
   position: relative;
-  padding: 0; }
+  padding: 0;
+  margin: 0px; }
   .cajasEquipo h5 {
     color: #f9c733;
     font-weight: bolder;
     font-size: 2rem;
     text-align: center; }
-  .cajasEquipo .cajasEquipo p {
-    margin-left: 10px; }
+
+.cajasEquipo p {
+  visibility: hidden; }
 
 h6 {
-  visibility: hidden; }
+  visibility: visible;
+  text-align: center; }
 
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/
@@ -202,7 +208,8 @@ h6 {
   margin: 20px; }
 
 .btn-outline-warning {
-  margin: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
   background-color: #377f8b; }
 
 h4 {
@@ -223,7 +230,6 @@ h4 {
   row-gap: 1px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20%;
   margin-top: 30%;
   border: #377f8b 2px solid; }
   .tablaPlanes .planesDescripcion {
