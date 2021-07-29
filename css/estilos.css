@@ -74,6 +74,7 @@ li:last-child {
     text-align: center;
     font-family: "Bowlby One SC", cursive;
     padding: 20px;
+    padding-bottom: 0px;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial; }
@@ -150,8 +151,7 @@ h3 {
 /*INICIO PÁGINA EQUIPO*/
 .equipo {
   opacity: 100%;
-  height: 70%;
-  margin-top: 5%; }
+  height: 70%; }
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -234,7 +234,7 @@ h4 {
   row-gap: 1px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 30%;
+  margin-top: 5%;
   border: #377f8b 2px solid; }
   .tablaPlanes .planesDescripcion {
     color: #f9c733;
