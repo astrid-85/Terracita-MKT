@@ -1,0 +1,152 @@
+@media only screen and (min-width: 1200px) {
+  /*INICIO PAGINA INICIO*/
+  .container {
+    opacity: 100%;
+  }
+
+  #textoPrincipal {
+    text-align: center;
+  }
+  /*FIN PAGINA INICIO*/
+
+  /*FOOTER*/
+
+  h3 {
+    font-family: "Bowlby One SC", cursive;
+    font-size: 2rem;
+    grid-area: h3;
+    text-align: center;
+    visibility: visible;
+  }
+
+  .contactosEstilo p {
+    font-size: 1.25rem;
+  }
+  .socialIcon {
+    left: 43%;
+  }
+  /*FIN FOOTER*/
+
+  /*INICIO PAGINA EQUIPO*/
+  .equipo {
+    opacity: 100%;
+    margin: 10px;
+  }
+  .equipo img {
+    float: inline-start;
+    padding: 0;
+    margin-left: 16%;
+  }
+  .cajasEquipo p {
+    margin-left: 20px;
+    margin-right: 50px;
+    position: relative;
+    left: 70px;
+    visibility: visible;
+  }
+  h6 {
+    visibility: hidden;
+  }
+  /*FIN PAGINA EQUIPO*/
+
+  /*INICIO PAGINA TRABAJOS*/
+  h4 {
+    font-size: 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+  .clientes {
+    margin-top: 2%;
+  }
+  .clientesText {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.25rem;
+    text-align: left;
+    color: #f9c733;
+    padding: 30px;
+    visibility: visible;
+    margin-right: 20%;
+  }
+  .clientesImg {
+    float: left;
+    padding: 20px;
+    margin-left: 10%;
+    position: relative;
+    width: 20%;
+  }
+
+  .btn-outline-warning {
+    margin: 0%;
+    background-color: #377f8b;
+    position: relative;
+    left: 30px;
+    margin-left: 40%;
+    margin-top: 1%;
+  }
+
+  /*FIN PAGINA TRABAJOS*/
+
+  /*INICIO PAGINA PLANES*/
+  .tablaPlanes {
+    display: grid;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-top: 2.5%;
+    margin-bottom: 20%;
+  }
+  #tamanioPlanes {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 25% 25% 25%;
+    column-gap: 5px;
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+  .tablaPlanes .rowDescripcion {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 2px;
+  }
+  /*FIN PAGINA PLANES*/
+
+  /*INICIO PAGINA CONTACTO*/
+  #formulario {
+    background-color: #377f8b;
+    background-image: linear-gradient(to right, #377f8b, #aa8321);
+    margin-top: 0.5%;
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+  #formularioUno {
+    margin: 30px;
+    margin-top: 0px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.25rem;
+    color: #f9c733;
+  }
+
+  #mensajeContacto {
+    resize: vertical;
+    width: 60%;
+  }
+
+  input,
+  select {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #cc7760;
+  }
+  /*FIN PAGINA CONTACTO*/
+}
+
+@media only screen and (min-width: 576px) {
+  /*INICIO PAGINA ERROR*/
+
+  .errorPagina {
+    padding: 50px;
+  }
+
+  /*FIN PAGINA ERROR*/
+}
