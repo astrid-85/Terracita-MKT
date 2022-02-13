@@ -1,28 +1,24 @@
-let nombreProductoA = 'Mesa';
-let stockProductoA = '10';
-let precioProductoA = '10000';
+let nombrePersona ;
+let edadPersona ;
 
-let nombreProductoB = 'Sila';
-let stockProductoB = '20';
-let precioProductoB = '20000';
+let nombrePlanA = 'Estrategia';
+let precioPlanA = 2000;
+let stockTurnoA = 3 ;
+let descuentoPlanA = 0.8;
 
-let cantidadComprada;
-let nombreCompra = prompt ( "Ingrese el nombre del prodcuto que quiere comprar")
+let nombrePlanB = 'Rediseño';
+let precioPlanB = 1000;
+let stockTurnoB = 5 ;
+let descuentoPlanA = 0.7;
 
-if (nombreCompra == nombreProductoA){
-    cantidadComprada = parseInt (prompt("Ingrese el nombre del prodcuto que quiere comprar"))
- stockProductoA = stockProductoA - cantidadComprada;
- let precioTotalVenta = cantidadComprada + precioProductoA;
- alert ( "Su compra es de " + cantidadComprada + '' + nombreProductoA + 's' + ' .El precio de su compra es: $' + precioTotalVenta ); 
-}
+let nombrePlanC = 'Planificación';
+let precioPlanC = 500;
+let stockTurnoC = 10 ;
+let descuentoPlanA = 0.6;
 
-else if (nombreCompra == nombreProductoB){
-    cantidadComprada = parseInt (prompt("Ingrese el nombre del prodcuto que quiere comprar"))
- stockProductoA = stockProductoB - cantidadComprada;
- let precioTotalVenta = cantidadComprada + precioProductoB;
- alert ( "Su compra es de " + cantidadComprada + '' + nombreProductoB + 's' + ' .El precio de su compra es: $' + precioTotalVenta ); 
-}
 
-else{
-    alert ( 'No tenemos ese producto')
-}
+
+let planEleccion = prompt(" Ingresar el Plan para consultar")
+let stockTurnoA = stockTurnoA - planEleccion;
+
+alert("Quedan" + stockTurnoA + "Estrategia");
