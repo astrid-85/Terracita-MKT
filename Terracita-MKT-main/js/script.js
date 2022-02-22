@@ -1,20 +1,3 @@
-/**
- variables globales. Const no cambian el dato, Let pueden variar el dato a ingresar
- **/
-const nombrePlanA = "Estrategia";
-const precioPlanA = 2000;
-let stockTurnoA = 4;
-const descuentoPlanA = 0.8;
-
-const nombrePlanB = 'Rediseño';
-const precioPlanB = 1000;
-let stockTurnoB = 5;
-const descuentoPlanB = 0.7;
-
-const nombrePlanC = 'Planificación';
-const precioPlanC = 500;
-let stockTurnoC = 10;
-const descuentoPlanC = 0.6;
 
 let planEleccion;
 let ingresarPlan;
@@ -25,26 +8,48 @@ let nombrePersona = prompt("Ingrese su nombre y Apellido :");
 let edadPersona = parseInt(prompt("Ingrese su edad:"));
 let emailPersona = prompt("Ingrese su correo electrónico:");
 
-/** Fin variables Globales */
+const planA = new Plan ("Estrategia", 4 , 2000 , 0.8)
+const planB = new Plan ("Rediseño", 5 , 1000 , 0.7) 
+const planC = new Plan ("Planificación", 10 , 500 , 0.6)
 
-/**Inicio Funciones */
+const listaPlanes = [planA, planB, planC]
 
+for(const Plan of listaPlanes){
+    console.log(Plan.nombre)
+}
+
+let listaPlanesMenu = "Estos son nuestro"
+
+function Plan (nombre,stock ,precio , descuento){
+    this.nombre = nombre;
+    this.stock = stock; 
+    this.precio = precio;
+    this.descuento = descuento;
+}
+    
 function saludar(nombre, edad, _email) {
     alert("Hola " + nombre + ". Tu edad es: " + edad + " ¿Es correcto?")
    
 }
-
 function stockSuficiente(stock, precio, _nombre) {
     stock -= planEleccion;
     precioConsulta = planEleccion * precio;
-    console.log("Quedan" + " " + stock + " " + "turnos para" + _nombre);
+    console.log("Quedan" + " " + stock + " " + "turnos para" + "\n" + _nombre);
 
 }
 
-function stockInsuficiente(stock) {
+function stockInsuficiente(_stock) {
     alert("No hay turnos disponibles, consulte más tarde")
 
 }
+
+saludar(nombrePersona, edadPersona, emailPersona)
+
+alert("Estos son nuestro planes de trabajo \n" + planA.nombre + "\n" + planB.nombre + "\n" + planC.nombre);
+ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas");
+
+
+
 
 function planMedida(stock, precio, nombre){
     planEleccion = parseInt(prompt("Ingresar la cantidad de turnos que necesita"));
@@ -56,51 +61,21 @@ function planMedida(stock, precio, nombre){
         stockInsuficiente(stock)
     }
 }
-/**Fin Funciones */
-
-/**Inicio de Evento: En el botón que ya tiene la página de CONSULTAR DESCUENTO iría este código dónde se recuperarán los datos ingresados
- * por el usuario/a y se le ofrecerá un turno y un descuento.
- */
-
-saludar(nombrePersona, edadPersona, emailPersona)
-
-alert("Estos son nuestro planes de trabajo \n" + nombrePlanA + "\n" + nombrePlanB + "\n" + nombrePlanC);
-ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas");
 
 for (let i = 0; i < planEleccion; i++); {
 
-    if (ingresarPlan == nombrePlanA) {
-        planMedida (stockTurnoA, precioPlanA, nombrePlanA);
+    if (ingresarPlan == planA.nombre) {
+        planMedida (planA.stock, planA.precio, planA.nombre);
         
 
-    } else if (ingresarPlan == nombrePlanB) {
-        planMedida (stockTurnoB, precioPlanB, nombrePlanB);
+    } else if (ingresarPlan == planB.nombre) {
+        planMedida (planB.stock, planB.precio, planB.nombre);
         
-    } else if (ingresarPlan == nombrePlanC) {
-        planMedida (stockTurnoC, precioPlanC, nombrePlanC);
+    } else if (ingresarPlan == planC.nombre) {
+        planMedida (planC.stock, planC.precio, planC.nombre);
     } else {
         alert("No ingresaste el nombre correcto");
     }
 
 
 }
-
-/*switch(ingresarPlan){
-    case 'Estrategia':
-        stockTurnoA = stockTurnoA - planEleccion;
-        precioConsulta = planEleccion * precioPlanA;
-        alert ("El valor de la consulta es de: $" + precioConsulta);
-        console.log ( "Quedan" + " "+ stockTurnoA + " " +"turnos para Estrategia");
-        break;
-    case 'Rediseño':
-        console.log ("Tu plan es Rediseño");
-        break;
-    case 'Planificación':
-        console.log("Tu plan es Planificación")
-        break;
-    default:
-        console.log("No elegiste ningun plan" + ingresarPlan)
-        break
-}
-
-*/
