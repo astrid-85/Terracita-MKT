@@ -1,6 +1,6 @@
 /**
  variables globales. Const no cambian el dato, Let pueden variar el dato a ingresar
- **/
+**/
 const nombrePlanA = "Estrategia";
 const precioPlanA = 2000;
 let stockTurnoA = 4;
@@ -41,7 +41,7 @@ function stockSuficiente(stock, precio, _nombre) {
 
 }
 
-function stockInsuficiente(stock) {
+function stockInsuficiente(_stock) {
     alert("No hay turnos disponibles, consulte más tarde")
 
 }
@@ -103,4 +103,34 @@ for (let i = 0; i < planEleccion; i++); {
         break
 }
 
-*/
+
+
+//**Para página de contacto
+
+let nombrePersona = prompt("Ingrese su nombre y Apellido :");
+let edadPersona = parseInt(prompt("Ingrese su edad:"));
+let emailPersona = prompt("Ingrese su correo electrónico:");
+    
+function saludar(nombre, edad, _email) {
+    alert("Hola " + nombre + ". Tu edad es: " + edad + " ¿Es correcto?")
+
+   saludar(nombrePersona, edadPersona, emailPersona)
+   
+   
+   
+   
+   */
+   function calcularPrecio(precio, descuento){
+    planEleccion += stock * precio * descuento;
+}
+
+const listaPlanes = [planA, planB, planC]
+
+for(const Plan of listaPlanes){
+    console.log(Plan.precio)
+}
+
+const descuentoConsulta = [planA.precio, planB.precio, planC.precio];
+const descuento = descuentoConsulta.map(precio => precio - 100);
+
+ console.log(planA.descuento);
