@@ -83,4 +83,14 @@ const aumento = actualizacionConsulta.map(precio => precio + 1000);
 
  console.log(aumento);
 
-const hoy = new Date ("Febrero, 26, 2022")
+let contacto = document.getElementsByClassName("contactosEstilo");
+ console.log(contacto);
+
+ let textoPie3 = document.querySelector("#pie3  p")
+
+ textoPie3.innerText = "Copyright-Terracita 2022"
+
+ console.log (piePagina.innerText)
+ 
+ /** No pude mandetener el estilo de origen pero pude actualizar la fecha del Copyright de la página */
+ 
