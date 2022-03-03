@@ -2,6 +2,7 @@
   /*INICIO PAGINA INICIO*/
   .container {
     opacity: 100%;
+   
   }
 
   #textoPrincipal {
@@ -81,6 +82,10 @@
     left: 30px;
     margin-left: 40%;
     margin-top: 1%;
+    margin-bottom: 5%;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
   }
 
   /*FIN PAGINA TRABAJOS*/
