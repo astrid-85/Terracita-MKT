@@ -28,11 +28,11 @@ function menuElegido (){
 
 botonPlanes.addEventListener('click',planMedida);
 
-let miformulario = document.getElementById("formulario");
+let miformulario= document.getElementById("formularioUno");
 
 miformulario.addEventListener ('submit', validarFormulario)
-
-function validarFormulario (_e){
+console.log(miformulario)
+function validarFormulario (e){
     
 }
 
