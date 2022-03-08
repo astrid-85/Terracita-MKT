@@ -1,7 +1,17 @@
 
 let planEleccion;
 let precioConsulta = 0;
+let stock;
+let precio;
 let ingresarPlan;
+let botonPlanes = document.querySelector('.botonPlanes');
+
+function Plan (_plan, stock ,precio , descuento){
+    this.plan = _plan;
+    this.stock = stock; 
+    this.precio = precio;
+    this.descuento = descuento;
+}
 
 const planA = new Plan ("Estrategia", 4 , 2000 , 0.8)
 const planB = new Plan ("Rediseño", 5 , 1000 , 0.7) 
@@ -13,33 +23,19 @@ function cartelInicio(){
  
 
 function menuElegido (){
-    
-    ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas")
-   
+    return ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas")
 }
-/**iltrado de método avanzado arrays */
 
-const planes= [
-{plan: "Estrategia", stock: 4 , precio: 2000, descuento: 0.8},
-{plan : "Rediseño", stock: 5 , precio: 1000 , descuento: 0.7},
-{plan: "Planificación", stock: 10 , precio: 500 , descuento: 0.9}
- 
-]
+botonPlanes.addEventListener('click',planMedida);
 
+let miformulario = document.getElementById("formulario");
 
-/** fin método avanzado arrays */
+miformulario.addEventListener ('submit', validarFormulario)
 
-
-let botonPlanes = document.querySelector('.botonPlanes')
-botonPlanes.addEventListener('click',planMedida)
-
-function Plan (_plan,stock ,precio , descuento){
-    this.plan = _plan;
-    this.stock = stock; 
-    this.precio = precio;
-    this.descuento = descuento;
-}
+function validarFormulario (_e){
     
+}
+
 function stockSuficiente(stock) {
     stock -= planEleccion;
     console.log("Quedan" + " " + stock + " " + "turnos para" + "\n" + ingresarPlan);
@@ -53,13 +49,29 @@ function calcularPrecio(precio, descuento){
     precioConsulta += planEleccion * precio * descuento;
 }
 
-function planMedida(stock, precio, ingresarPlan, descuento){
+function planMedida(){
 
     cartelInicio()
-    menuElegido(ingresarPlan)
+    ingresarPlan = menuElegido()
 
     planEleccion = parseInt(prompt("Ingresar la cantidad de turnos que necesita"));
 
+    if (ingresarPlan == planA.plan){
+            stock=planA.stock;
+            precio=planA.precio;
+            descuento=planA.descuento;
+            
+        } else if (ingresarPlan == planB.plan) {
+            stock=planB.stock;
+            precio=planB.precio;
+            descuento=planB.descuento;
+            
+        } else if (ingresarPlan == planC.plan) {
+            stock=planC.stock;
+            precio=planC.precio;
+            descuento=planC.descuento;
+        } 
+            
     if (planEleccion <= stock) {
         
         stockSuficiente(stock,ingresarPlan);
@@ -75,21 +87,9 @@ function planMedida(stock, precio, ingresarPlan, descuento){
     else {
         stockInsuficiente(stock)
     }
+    alert("Gracias por elegirnos. Nos estaremos poniendo en contacto con vos.")
 }
 
-for (let i = 0; i < planEleccion; i++); {
-
-    if (ingresarPlan == planA.plan){
-        planMedida (planA.stock, planA.precio, planA.plan, planA.descuento);
-        
-    } else if (ingresarPlan == planB.plan) {
-        planMedida (planB.stock, planB.precio, planB.plan,planB.descuento);
-        
-    } else if (ingresarPlan == planC.plan) {
-        planMedida (planC.stock, planC.precio, planC.plan,planC.descuento);
-    } 
-    console.log (new Date)
-}
 
 const actualizacionConsulta = [planA.precio, planB.precio, planC.precio];
 const aumento = actualizacionConsulta.map(precio => precio + 1000);

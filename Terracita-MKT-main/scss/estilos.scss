@@ -340,11 +340,11 @@ h4 {
 
     #mensajeContacto {
       resize: vertical;
-      height: 200px;
       width: 90%;
     }
   }
-.botonPlanes {
+input,
+select {
   font-family: $tipografiaTexto;
   color: #cc7760;
 }
