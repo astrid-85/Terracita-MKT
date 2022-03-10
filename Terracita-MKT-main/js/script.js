@@ -5,6 +5,8 @@ let stock;
 let precio;
 let ingresarPlan;
 let botonPlanes = document.querySelector('.botonPlanes');
+let contador;
+
 
 function Plan (_plan, stock ,precio , descuento){
     this.plan = _plan;
@@ -30,11 +32,14 @@ botonPlanes.addEventListener('click',planMedida);
 
 let miformulario= document.getElementById("formularioUno");
 
-miformulario.addEventListener ('submit', validarFormulario)
+miformulario.addEventListener ('submit', e=> {e.preventDefault()});
+
+
 console.log(miformulario)
 function validarFormulario (e){
     
 }
+
 
 function stockSuficiente(stock) {
     stock -= planEleccion;
