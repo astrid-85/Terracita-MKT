@@ -5,7 +5,7 @@ let stock;
 let precio;
 let ingresarPlan;
 let botonPlanes = document.querySelector('.botonPlanes');
-let contador;
+
 
 
 function Plan (_plan, stock ,precio , descuento){
@@ -34,8 +34,12 @@ let miformulario= document.getElementById("formularioUno");
 
 miformulario.addEventListener ('submit', e=> {e.preventDefault()});
 
+let contador;
+localStorage.setItem("cantidadDeTurnos", contador);
 
-console.log(miformulario)
+
+
+console.log(miformulario);
 function validarFormulario (e){
     
 }
