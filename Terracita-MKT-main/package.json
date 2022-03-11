@@ -1,17 +1,20 @@
 {
-  "name": "entregas-baumann-main",
+  "name": "terracita-mkt-main",
   "version": "1.0.0",
-  "description": "",
+  "description": "fecha 3 de marzo 2022",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css css/mediaqueries.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
+  "repository": {
+    "type": "git",
+    "url": "D:\\usuario\\Documents\\GitHub\\Repositorios\\Terracita-MKT-main"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.15"
   }
 }
