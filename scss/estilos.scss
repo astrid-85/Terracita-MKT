@@ -8,7 +8,7 @@
 
 body {
   background-color: $colorFondo;
-  width: 100%;
+  
 }
 
 /*INICIO ENCABEZADO GENERAL*/
@@ -29,7 +29,7 @@ header {
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
-  }
+}
 }
 #menu {
   color: $colorTipografia;
