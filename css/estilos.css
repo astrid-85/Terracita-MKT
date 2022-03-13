@@ -7,8 +7,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f9c733;
-  width: 100%; }
+  background-color: #f9c733; }
 
 /*INICIO ENCABEZADO GENERAL*/
 @keyframes aparecer {
@@ -64,7 +63,7 @@ li:last-child {
   flex-direction: column;
   color: #377f8b;
   font-family: "Bowlby One SC", cursive;
-  background-image: url("../img/fototerracita.png");
+  background-image: url("/img/fototerracita.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh; }
