@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: $colorFondo;
+/**body {
+  background-image: url(/img/fototerracita.png);
   
 }
-
+*/
 /*INICIO ENCABEZADO GENERAL*/
 
 header {
@@ -29,7 +29,13 @@ header {
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
+    
+    img {
+      width: 200px;
+      height: 200px;
+    }
 }
+
 }
 #menu {
   color: $colorTipografia;
@@ -177,7 +183,6 @@ h3 {
 
 .equipo {
   @extend.container;
-  opacity: 100%;
   height: 70%;
 }
 .carousel-control-next,
@@ -217,7 +222,7 @@ h6 {
 
 .clientes{
   background-color: #377f8b;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .clientesText {
   font-family: $tipografiaTexto;
@@ -240,7 +245,7 @@ h6 {
 .btn-outline-warning {
  margin-left: 5%;
  margin-top: 2%;
- 
+ margin-bottom: 5%;
  background-color: #377f8b;
  
 }
@@ -321,31 +326,46 @@ h4 {
 /*FIN PAGINA PLANES*/
 
 /*INICIO PAGINA CONTACTO*/
+.clientesContacto{
+ width: 100%;
+
+}
+
 #formulario {
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
   position: relative;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 #formularioUno {
-    margin: 30px;
-    margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin: 10px;
     font-family: $tipografiaTexto;
     font-size: 0.875rem;
-    color: $colorTipografia;
+    color: #377f8b;
 
     #mensajeContacto {
       resize: vertical;
-      height: 200px;
-      width: 90%;
+      height: 100px;
+      width: 40%;
     }
   }
-input,
-select {
+.botonPlanes {
   font-family: $tipografiaTexto;
   color: #cc7760;
+  border-radius:10% ;
 }
+
+
+input,
+select {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #cc7760;
+}
+
 /*FIN PAGINA CONTACTO*/
 
 

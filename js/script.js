@@ -1,5 +1,5 @@
 
- let planEleccion;
+let planEleccion;
 let precioConsulta = 0;
 let stock;
 let precio;
@@ -19,6 +19,8 @@ const planA = new Plan ("Estrategia", 4 , 2000 , 0.8)
 const planB = new Plan ("Rediseño", 5 , 1000 , 0.7) 
 const planC = new Plan ("Planificación", 10 , 500 , 0.9)
 
+const listaPlanes = [planA, planB, planC]
+
 function cartelInicio(){
     alert("Bienvenido/a a la Terracita. Estos son nuestro planes de trabajo \n" + planA.plan + "\n" + planB.plan + "\n" + planC.plan)
 }
@@ -30,19 +32,20 @@ function menuElegido (){
 
 botonPlanes.addEventListener('click',planMedida);
 
-let miformulario= document.getElementById("formularioUno");
+let miFormulario= document.getElementById("formularioUno");
 
-miformulario.addEventListener ('submit', e=> {e.preventDefault()});
-
-let contador;
-localStorage.setItem("cantidadDeTurnos", contador);
+miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
+console.log(miFormulario)
 
 
 
-console.log(miformulario);
-function validarFormulario (e){
-    
-}
+let listaPlanesMenu = "Estos son nuestros planes:"
+
+localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
+
+
+
+
 
 
 function stockSuficiente(stock) {
@@ -60,10 +63,14 @@ function calcularPrecio(precio, descuento){
 
 function planMedida(){
 
-    cartelInicio()
-    ingresarPlan = menuElegido()
+    
+    cartelInicio();
+    ingresarPlan = menuElegido();
 
     planEleccion = parseInt(prompt("Ingresar la cantidad de turnos que necesita"));
+
+
+i
 
     if (ingresarPlan == planA.plan){
             stock=planA.stock;
@@ -96,6 +103,7 @@ function planMedida(){
     else {
         stockInsuficiente(stock)
     }
+
     alert("Gracias por elegirnos. Nos estaremos poniendo en contacto con vos.")
 }
 
@@ -113,6 +121,5 @@ let contacto = document.getElementsByClassName("contactosEstilo");
  piePagina.innerText = "Copyright-Terracita 2022"
 
  console.log (piePagina.innerText)
- 
- /** No pude mandetener el estilo de origen pero pude actualizar la fecha del Copyright de la página */
+
  

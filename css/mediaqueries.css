@@ -29,7 +29,7 @@
 
   /*INICIO PAGINA EQUIPO*/
   .equipo {
-    opacity: 100%;
+ 
     margin: 10px;
   }
   .equipo img {
@@ -54,7 +54,8 @@
     font-size: 1rem;
     font-family: "Open Sans Condensed", sans-serif;
   }
-  .clientes {
+  .clientes{
+    background-color: #377f8b;
     margin-top: 2%;
   }
   .clientesText {
@@ -81,6 +82,7 @@
     left: 30px;
     margin-left: 40%;
     margin-top: 1%;
+    margin-bottom: 5%;
   }
 
   /*FIN PAGINA TRABAJOS*/
@@ -115,17 +117,18 @@
   #formulario {
     background-color: #377f8b;
     background-image: linear-gradient(to right, #377f8b, #aa8321);
-    margin-top: 0.5%;
     width: 60%;
     position: relative;
     left: 20%;
+   
   }
   #formularioUno {
-    margin: 30px;
-    margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.25rem;
-    color: #f9c733;
+    color: #377f8b;
   }
 
   #mensajeContacto {
@@ -146,6 +149,12 @@
 
   .errorPagina {
     padding: 50px;
+  }
+
+  input,
+  select {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #cc7760;
   }
 
   /*FIN PAGINA ERROR*/
