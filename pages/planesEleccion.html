@@ -131,50 +131,40 @@
       </nav>
     </header>
 
-    <main class="fondo">
-      <!--INICIO SECTION BS-->
-
-      <section id="tamanioPlanes" class="tablaPlanes" class="container">
-        <h1 id="rowInicio" class="tituloPrincipal" class="planesDescripcion">
-          Planes de Trabajo
-        </h1>
-        <p id="row2" class="rowDescripcion">ESTRATEGIA</p>
-
-        <p id="row3" class="rowDescripcion">
-          Incluye: Brief (analizar situación actual, definir: objetivo, target,
-          acciones, presupuesto) <br />
-          Plan de marketing de contenidos <br />
-          Propuesta de acciones y ¡manos a la obra!
-        </p>
-
-        <p id="row5" class="rowDescripcion">REDISEÑO</p>
-        <p id="row6" class="rowDescripcion">
-          Incluye: Realización de propuestas de marca hasta lograr el resultado
-          deseado.<br />
-          Aplicación de la marca en modo cromático y acromático.<br />
-          Pruebas de legibilidad.<br />
-          Entrega de archivos para ser utilizados por el cliente.
-        </p>
-
-        <p id="row8" class="rowDescripcion">PLANIFICACIÓN</p>
-        <p id="row9" class="rowDescripcion">
-          Incluye: Brief <br />
-          Plan de marketing de contenidos. Calendarización y seguimiento.
-          Propuesta de acciones. Evaluación e impacto.
-        </p>
-        <!--FIN SECTION BS-->
-      </section>
-
-      <!--INICIO BOTON BS-->
-
-      <div class="d-grid gap-2">
-        <a href="planesEleccion.html"
-          ><button  class="btn btn-primary" type="button">
-            Pedí tu turno acá
-          </button></a
-        >
-      </div>
-      <!--FIN BOTON BS-->
+    <main class="flex">
+     
+        <div class="container">
+            <h1>Elegí un Plan a tu medida</h1>
+            <form action="#" method="post" id="formulario">
+                <div class="form__group">
+                    <label for="tamanio">
+                        Tipo de Plan
+                    </label>
+                    <select name="tamanio" id="tamanio">
+                       <option value="" selected disabled>Seleccionar</option>
+                       <option value="0">Estrategia</option>
+                       <option value="1">Rediseño</option>
+                       <option value="2">Planificación</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="servicio">
+                        Tipo de servicio
+                    </label>
+                    <select name="servicio" id="servicio">
+                       <option value="" selected disabled>Seleccionar</option>
+                       <option value="0"> Plan de marketing de contenidos</option>
+                       <option value="1">Realización de propuestas de marca</option>
+                       <option value="2"> Plan de marketing de contenidos. Calendarización y seguimiento.
+                        Propuesta de acciones. Evaluación e impacto.</option>
+                       <option value="3">Brief (analizar situación actual, definir: objetivo, target,
+                        acciones, presupuesto)</option>
+                    </select>
+                </div>
+                <button id="boton" type="submit">Presupuestar</button>
+                <!--<img id="loading" class="loading hide" src="../img/loadingWeb.gif" alt="">-->
+            </form>
+        </div>
     </main>
 
     <footer class="piePagina">
@@ -219,6 +209,8 @@
     ></script>
     <script 
       src="../js/script2.js"
+    ></script>
+    <script src="../js/script3.js"
     ></script>
   </body>
 </html>
