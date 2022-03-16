@@ -423,26 +423,12 @@ select {
 
   /* INICIO PAGINA PLANES ELECCION*/
 
-  .container {
-    width: 80%;
-    min-width: 300px;
-    max-width: 500px;
-    margin: auto;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 2px solid #81fbb8;
-}
 
 .form__group {
     padding: 1rem 0;
+  
 }
 
-label {
-    padding: 2rem 0;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
 
 select {
     margin: 1rem 0;
