@@ -69,12 +69,12 @@ class Presupuesto {
                 p.textContent = "Tu consulta tiene el valor de:" + mensaje;
             }
             div.appendChild(p);
-            document.getElementById("formulario").appendChild(div);
+            document.getElementById("formulario1").appendChild(div);
         }
     }
     
     const pedirPresupuesto = (e) =>{
-        e.preventeDefault();
+        e.preventDefault();
         e.stopPropagation();
 
         const [valorPlan, valorServicio] = Interfaz.capturarDatos();
@@ -92,4 +92,7 @@ class Presupuesto {
         } 
     };
 
-    document.getElementById("formulario").addEventListener("submit", pedirPresupuesto);
+    document.getElementById("formulario1").addEventListener("submit", pedirPresupuesto);
+
+
+    

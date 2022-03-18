@@ -1,15 +1,15 @@
+
 let planEleccion;
 let precioConsulta = 0;
-let stock;
-let precio;
-let ingresarPlan;
+let stock= document.querySelector('Servicio');
+let precio ;
+let ingresarPlan = document.querySelector('Planes');
+
 let botonPlanes = document.querySelector('.botonPlanes');
 
-
-
 class Plan {
-    constructor(_plan, stock, precio, descuento) {
-        this.plan = _plan;
+    constructor(plan, stock, precio, descuento) {
+        this.plan = plan;
         this.stock = stock;
         this.precio = precio;
         this.descuento = descuento;
@@ -22,27 +22,31 @@ const planC = new Plan ("Planificación", 10 , 500 , 0.9)
 
 const listaPlanes = [planA, planB, planC]
 
-function cartelInicio(){
-    alert("Bienvenido/a a la Terracita. Estos son nuestro planes de trabajo \n" + planA.plan + "\n" + planB.plan + "\n" + planC.plan)
-}
- 
+ /** miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
+console.log(miFormulario)*/
 
-function menuElegido (){
-    return ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas")
+class Interfaz{
+
+    static capturarDatos(){
+      const ingresarPlan = document.getElementById('plan');
+      const planValor = parseInt(Plan.input[Plan.inputIndex].value);
+      const cantidadTurno = document.getElementById("turno");
+      return [planValor, turnoValor];
+    }
+
+
 }
+
+let cantidadTurno = document.getElementById("turno");
+
+stock.addEventListener('input', planEleccion )
+
+function planEleccion (){
+
+
+    }
 
 botonPlanes.addEventListener('click',planMedida);
-
-let miFormulario= document.getElementById("formularioUno");
-
-miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
-console.log(miFormulario)
-
-
-
-let listaPlanesMenu = "Estos son nuestros planes:"
-
-localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
 
 
 
@@ -61,11 +65,9 @@ function calcularPrecio(precio, descuento){
 
 function planMedida(){
 
-    
-    cartelInicio();
-    ingresarPlan = menuElegido();
+     ingresarPlan = menuElegido();
 
-    planEleccion = parseInt(prompt("Ingresar la cantidad de turnos que necesita"));
+    
 
     if (ingresarPlan == planA.plan){
             stock=planA.stock;
@@ -102,6 +104,13 @@ function planMedida(){
     alert("Gracias por elegirnos. Nos estaremos poniendo en contacto con vos.")
 }
 
+let miFormulario= document.getElementById("formularioUno");
+
+let listaPlanesMenu = "Estos son nuestros planes:"
+
+localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
+
+
 
 const actualizacionConsulta = [planA.precio, planB.precio, planC.precio];
 const aumento = actualizacionConsulta.map(precio => precio + 1000);
@@ -116,8 +125,6 @@ let contacto = document.getElementsByClassName("contactosEstilo");
  piePagina.innerText = "Copyright-Terracita 2022"
 
  console.log (piePagina.innerText)
-
-
 
 
 

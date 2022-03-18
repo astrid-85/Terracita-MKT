@@ -429,13 +429,15 @@ select {
   
 }
 
+.turnera{
+  height: 50%;
+}
 
 select {
     margin: 1rem 0;
     padding: 0.3rem 0;
-    width: 100%;
     border-radius: 0.3rem;
-    background-color: #f5f5f5;
+    background-color: #f5f4f0;
     border: 2px solid #81fbb8;
 }
 
@@ -454,6 +456,17 @@ button:hover {
     border: 2px solid #28c76f;
 }
 
+#formulario1{
+  height: 40%;
+}
+
+#plan{
+  visibility: visible;
+}
+
+#servicio{
+  visibility: visible;
+}
 .mensaje {
     padding: 1rem;
     text-align: center;
@@ -462,8 +475,8 @@ button:hover {
 
 .mensaje p,
 .mensaje h3 {
-    color: #fff;
-    font-weight: 600;
+    color: #377f8b;
+    font-weight: 200;
 }
 
 .mensaje--error {
@@ -471,7 +484,7 @@ button:hover {
 }
 
 .mensaje--resumen {
-    background-color: #28c76f;
+    background-color: #f9c733;
 }
 
   .loading {
