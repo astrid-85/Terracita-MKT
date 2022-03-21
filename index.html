@@ -46,6 +46,8 @@
       crossorigin="anonymous"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
 
@@ -59,9 +61,9 @@
         </a>
       </div>
       <!--INICIO NAVBAR BS-->
-      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav id="menu" class="navbar  navbar-light" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Menú</a>
+          <a class="navbar-brand" href="index.html"></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -70,6 +72,7 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -139,7 +142,9 @@
 
     <main class="fondo">
       <!--INICIO SECTION BS-->
-      <section class="container">
+      <section  class="container"  data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000">
         <!--INICIO TITULO BS-->
         <h1 class="tituloPrincipal">
            un lugar para desarrollar tus ideas
@@ -153,7 +158,7 @@
           Te damos la bienvenida a nuestro espacio. <br />
         </p>
 
-        <a href="pages/nuestrotrabajo.html"><button  class="btn btn-outline-warning" class="boton1">Subite a la Terracita.</button></a> 
+        <a href="pages/nuestrotrabajo.html"><button class="btn btn-primary"  class="boton1">Subite a la Terracita.</button></a> 
       </section>
     
 
@@ -199,8 +204,13 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    
-      
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
     <script 
     src="js/script2.js"
   ></script>

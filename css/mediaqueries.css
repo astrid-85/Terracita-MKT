@@ -1,15 +1,43 @@
 @media only screen and (min-width: 1200px) {
+
+
+  body {
+    background-image: url("../img/fototerracita.png");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-position:initial;    
+    height: 100vh;
+    max-width: 100%;
+
+   
+  }
+ .fondo {
+      display: flex;
+      flex-direction: column;
+      height: inherit;
+     
+    }
+
   /*INICIO PAGINA INICIO*/
+
   .container {
     opacity: 100%;
+    width: max-content;
   }
 
   #textoPrincipal {
     text-align: center;
   }
+
+
   /*FIN PAGINA INICIO*/
 
   /*FOOTER*/
+
+  .piePagina {
+       margin: 0;
+   
+  }
 
   h3 {
     font-family: "Bowlby One SC", cursive;
@@ -76,11 +104,11 @@
   }
 
   .btn-outline-warning {
-    margin: 0%;
+   
     background-color: #377f8b;
     position: relative;
     left: 30px;
-    margin-left: 40%;
+    margin-left: 20%;
     margin-top: 1%;
     margin-bottom: 5%;
   }
@@ -145,6 +173,8 @@
 }
 
 @media only screen and (min-width: 576px) {
+
+ 
   /*INICIO PAGINA ERROR*/
 
   .errorPagina {
@@ -158,4 +188,14 @@
   }
 
   /*FIN PAGINA ERROR*/
+}
+
+@media only screen and (max-width: 767px) {
+
+  body {
+  
+    background-image: url(../img/fototerracita\ .jpg)
+    ;
+  
+  }
 }

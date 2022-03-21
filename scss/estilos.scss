@@ -6,15 +6,20 @@
   box-sizing: border-box;
 }
 
-/**body {
-  background-image: url(/img/fototerracita.png);
-  
+body {
+  background-image: url("../img/fototerracita\ .jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-position:initial;    
+ 
 }
-*/
+
 /*INICIO ENCABEZADO GENERAL*/
 
 header {
-  @keyframes aparecer {
+  
+    @keyframes aparecer {
     0% {
       opacity: 0;
     }
@@ -29,24 +34,50 @@ header {
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
+   
     
     img {
-      width: 200px;
-      height: 200px;
+      margin: 10rem;
+      margin-bottom: 0;
+      width: 500px;
+      height: 500px;
+      
     }
 }
 
+
 }
+.logoInicio{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  img {
+        width: 200px;
+      height: 200px;
+    
+  }
+}
+
 #menu {
+
   color: $colorTipografia;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: flex;
-  background-image: linear-gradient(to top, #dfb129, #cc7760);
+  background-color:transparent; 
+  float: left;
 }
+.navbar-light .navbar-toggler-icon{
+  background-image: url("../img/logo\ 1.png");
+ 
+}
+
 ul {
   display: flex;
   list-style-type: none;
+  
 
   li {
     border-right: 2px solid #cc7760;
@@ -54,7 +85,7 @@ ul {
 
     #navInicio {
       text-decoration: none;
-      text-align: center;
+      text-align: left;
       font-size: 1.3rem;
       font-family: $tipografiaTexto;
       color: $colorTipografia;
@@ -68,7 +99,7 @@ ul {
     }
   }
 }
-.navbar-light .navbar-brand {
+.navbar-brand {
   color: #377f8b;
   font-weight: bold;
 }
@@ -85,11 +116,8 @@ li:last-child {
   flex-direction: column;
   color: $colorTitulo;
   font-family: $tipografiaTitulo;
-  background-image: $imgFondo;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
   
+    
   .tituloPrincipal {
     color: $colorTipografia;
     font-size: $tamanioTitulo;
@@ -136,8 +164,8 @@ li:last-child {
   column-gap: 0px;
   row-gap: 1px;
   align-items: end;
-  background-color: #377f8b;
-  background-image: linear-gradient(#cc7760, #377f8b);
+  margin-top: 40%;
+ 
 }
 h3 {
     font-family: $tipografiaTitulo;
@@ -433,6 +461,7 @@ select {
   height: 50%;
 }
 
+
 select {
     margin: 1rem 0;
     padding: 0.3rem 0;
@@ -442,8 +471,8 @@ select {
 }
 
 button {
-    margin: auto;
-    display: block;
+    margin: 0;
+    display: bclock;
     background-color: white;
     border: 2px solid #81fbb8;
     padding: 0.5rem;
