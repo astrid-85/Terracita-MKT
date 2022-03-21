@@ -10,23 +10,25 @@ body {
   background-image: url("../img/fototerracita\ .jpg");
   background-size: cover;
   background-position: center center;
-  background-repeat:no-repeat;
-  background-position:initial;    
- 
+  background-repeat: no-repeat;
+  background-position: initial;
+
 }
 
 /*INICIO ENCABEZADO GENERAL*/
 
 header {
-  
-    @keyframes aparecer {
+
+  @keyframes aparecer {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   .fotoEncabezado {
     display: flex;
     flex-direction: column;
@@ -34,30 +36,44 @@ header {
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
-   
-    
+
+
     img {
       margin: 10rem;
       margin-bottom: 0;
       width: 500px;
       height: 500px;
-      
+
     }
-}
-
-
-}
-.logoInicio{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+  .tituloPrincipal {
+    color: $colorTipografia;
+    font-size: $tamanioTitulo;
+    text-align: center;
+    font-family: $tipografiaTitulo;
+    padding: 20px;
+    padding-bottom: 0px;
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
+  }
+
+
+}
+
+.logoInicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+  margin: 5%;
   img {
-        width: 200px;
-      height: 200px;
     
+    width: 300px;
+    height: 300px;
+
   }
 }
 
@@ -66,18 +82,19 @@ header {
   color: $colorTipografia;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color:transparent; 
+  background-color: transparent;
   float: left;
 }
-.navbar-light .navbar-toggler-icon{
+
+.navbar-light .navbar-toggler-icon {
   background-image: url("../img/logo\ 1.png");
- 
+
 }
 
 ul {
   display: flex;
   list-style-type: none;
-  
+
 
   li {
     border-right: 2px solid #cc7760;
@@ -99,6 +116,7 @@ ul {
     }
   }
 }
+
 .navbar-brand {
   color: #377f8b;
   font-weight: bold;
@@ -116,32 +134,23 @@ li:last-child {
   flex-direction: column;
   color: $colorTitulo;
   font-family: $tipografiaTitulo;
-  
-    
-  .tituloPrincipal {
-    color: $colorTipografia;
-    font-size: $tamanioTitulo;
-    text-align: center;
-    font-family: $tipografiaTitulo;
-    padding: 20px;
-    padding-bottom: 0px;
-    animation-duration: 5s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
+
+
+ 
+  .text-muted {
+    color: #cc7760 !important;
+    font-family: $tipografiaTexto;
+    font-weight: bolder;
   }
-    .text-muted{
-      color: #cc7760 !important;
-      font-family: $tipografiaTexto;
-      font-weight: bolder;
-    }
 }
 
 .container {
   position: relative;
-  top: 80px;  
+  top: 80px;
   background-color: #377f8b;
   opacity: 90%;
 }
+
 #textoPrincipal {
   font-size: 1.5rem;
   color: $colorTipografia;
@@ -150,6 +159,7 @@ li:last-child {
   animation-name: aparecer;
   animation-iteration-count: inherit;
 }
+
 /*FIN PAGINA PRINCIPAL*/
 
 /*INICIO FOOTER*/
@@ -165,15 +175,16 @@ li:last-child {
   row-gap: 1px;
   align-items: end;
   margin-top: 40%;
- 
+
 }
+
 h3 {
-    font-family: $tipografiaTitulo;
-    color: $colorTipografia;
-    font-size: $tamanioTitulo;
-    grid-area: h3;
-    text-align: center;
-    visibility: hidden;
+  font-family: $tipografiaTitulo;
+  color: $colorTipografia;
+  font-size: $tamanioTitulo;
+  grid-area: h3;
+  text-align: center;
+  visibility: hidden;
 }
 
 .contactosEstilo p {
@@ -183,21 +194,27 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
+
 #pie1 {
   grid-area: pie1;
 }
+
 #pie1 p {
-   margin-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
+
 #pie4 {
   grid-area: pie4;
 }
+
 #pie2 {
   grid-area: pie2;
 }
+
 #pie3 {
   grid-area: pie3;
 }
+
 .socialIcon {
   color: #f9c733;
   font-size: 1.75rem;
@@ -205,53 +222,60 @@ h3 {
   position: relative;
   text-decoration: none;
 }
+
 /*FIN FOOTER*/
 
 /*INICIO PÁGINA EQUIPO*/
 
 .equipo {
   @extend.container;
-  height: 70%;
+margin-right: 5%;
+margin-left: 5%;
 }
+
 .carousel-control-next,
 .carousel-control-prev {
-  width: 10%;
+  width: 2%;
 }
+
 .equipo img {
   float: left;
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 0px
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .cajasEquipo {
   @include cajasEstilos;
-  padding: 0; 
+  padding: 0;
   margin: 0px;
 
-h5 {
+  h5 {
     color: #f9c733;
     font-weight: bolder;
     font-size: $tamanioTitulo;
     text-align: center;
   }
 }
+
 .cajasEquipo p {
   visibility: hidden;
-    
-  }
+
+}
 
 h6 {
   visibility: visible;
   text-align: center;
 }
+
 /*FIN PAGINA EQUIPO*/
 
 /*INICIO PAGINA NUESTRO TRABAJO*/
 
-.clientes{
+.clientes {
   background-color: #377f8b;
   margin-top: 2%;
 }
+
 .clientesText {
   font-family: $tipografiaTexto;
   font-size: $tamanioTexto;
@@ -259,31 +283,39 @@ h6 {
   color: $colorTipografia;
   padding: 20px;
   visibility: hidden;
-  }
+}
+
 .clientesImg {
   width: 50%;
   margin-left: 25%;
   position: absolute;
-  }
+}
+
+
 .btn-primary {
-    color: #f9c733;
-    background-color: #377f8b;
-    margin: 20px;
+  color: #f9c733;
+  background-color: #377f8b;
+  margin: 20px;
+  position: inherit;
+
 }
+
 .btn-outline-warning {
- margin-left: 5%;
- margin-top: 2%;
- margin-bottom: 5%;
- background-color: #377f8b;
- 
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  background-color: #377f8b;
 }
+
+
 h4 {
   font-family: $tipografiaTexto;
   font-size: $tamanioTitulo;
   color: $colorTipografia;
   text-align: center;
-  
+
 }
+
 /*FIN PAGINA NUESTRO TRABAJO*/
 
 /*INICIO PAGINA PLANES*/
@@ -291,71 +323,73 @@ h4 {
 .tablaPlanes {
   display: grid;
   background-color: #377f8b;
-  grid-template-columns: 20% 75%;
-  grid-template-rows: 10% 25% 25% 25%;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 0%;
   grid-template-areas:
     "columInicio columInicio"
     "row2 row3 "
     "row4 row5"
     "row6 row7";
-    column-gap: 1px;
-    row-gap: 1px;
-  justify-content: space-between;
-  align-items:flex-start;
-  margin-top: 5%;
+  column-gap: 1px;
+  row-gap: 1px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 5%;
   border: #377f8b 2px solid;
- 
-  .planesDescripcion {
-    color: $colorTipografia;
-    font-family: $tipografiaTexto;
-    font-size: $tamanioTexto;
-    padding-left: 10px;
-    padding-right: 12px;
-    text-align: center;
-    border-bottom: #f9c733 solid 2px;
-  }
-  .rowDescripcion {
-    color: $colorTipografia;
-    font-family: $tipografiaTexto;
-    font-size: 1rem;
-    text-align: left;
-    margin: 5px;
-  }
+  max-width: 100%;
 }
+
+
+.tablaPlanes .rowDescripcion {
+  color: $colorTipografia;
+  font-family: $tipografiaTexto;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
 #rowInicio {
   grid-area: columInicio;
   font-family: $tipografiaTitulo;
 }
+
 #row2 {
   grid-area: row2;
 }
+
 #row3 {
   grid-area: row3;
   border-bottom: #f9c733 solid 2px;
 }
+
 #row5 {
   grid-area: row4;
 }
+
 #row6 {
   grid-area: row5;
   border-bottom: #f9c733 solid 2px;
 }
+
 #row8 {
   grid-area: row6;
 }
+
 #row9 {
   grid-area: row7;
   border-bottom: #f9c733 solid 2px;
 }
+
 .d-grid {
   display: grid !important;
   justify-content: center;
 }
+
 /*FIN PAGINA PLANES*/
 
 /*INICIO PAGINA CONTACTO*/
-.clientesContacto{
- width: 100%;
+.clientesContacto {
+  width: 100%;
 
 }
 
@@ -367,24 +401,25 @@ h4 {
 }
 
 #formularioUno {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    margin: 10px;
-    font-family: $tipografiaTexto;
-    font-size: 0.875rem;
-    color: #377f8b;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin: 10px;
+  font-family: $tipografiaTexto;
+  font-size: 0.875rem;
+  color: #377f8b;
 
-    #mensajeContacto {
-      resize: vertical;
-      height: 100px;
-      width: 40%;
-    }
+  #mensajeContacto {
+    resize: vertical;
+    height: 100px;
+    width: 40%;
   }
+}
+
 .botonPlanes {
   font-family: $tipografiaTexto;
   color: #cc7760;
-  border-radius:10% ;
+  border-radius: 10%;
 }
 
 
@@ -398,14 +433,14 @@ select {
 
 
 /*FIN PAGINA ERROR 404*/
-.errorPagina{
+.errorPagina {
   padding: 30px 20px;
-    font-family: $tipografiaTexto;
-    line-height: 1.6;
-    background-color: #f9c733;
-  
- 
-  
+  font-family: $tipografiaTexto;
+  line-height: 1.6;
+  background-color: #f9c733;
+
+
+
   h1 {
     margin: 0 0 40px;
     font-size: 60px;
@@ -413,7 +448,7 @@ select {
     color: #252427;
     font-weight: 700;
   }
-  
+
   h2 {
     margin: 100px 0 0;
     font-size: 20px;
@@ -422,108 +457,109 @@ select {
     color: #aa8324;
     text-transform: uppercase;
   }
-  
+
   p {
     font-size: 16px;
     margin: 1em 0;
   }
-  }
-  
-  .go-back a {
-    display: inline-block;
-    margin-top: 3em;
-    padding: 10px;
-    color: #377f8b;
-    font-weight: 700;
-    border: solid 2px #377f8b;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-  
-  .go-back a:hover {
-    border-color: #1B1A1A;
-  }
-  
-  
-  /*FIN PAGINA ERROR 404*/
+}
 
-  /* INICIO PAGINA PLANES ELECCION*/
+.go-back a {
+  display: inline-block;
+  margin-top: 3em;
+  padding: 10px;
+  color: #377f8b;
+  font-weight: 700;
+  border: solid 2px #377f8b;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.go-back a:hover {
+  border-color: #1B1A1A;
+}
+
+
+/*FIN PAGINA ERROR 404*/
+
+/* INICIO PAGINA PLANES ELECCION*/
 
 
 .form__group {
-    padding: 1rem 0;
-  
+  padding: 1rem 0;
+
 }
 
-.turnera{
+.turnera {
   height: 50%;
 }
 
 
 select {
-    margin: 1rem 0;
-    padding: 0.3rem 0;
-    border-radius: 0.3rem;
-    background-color: #f5f4f0;
-    border: 2px solid #81fbb8;
+  margin: 1rem 0;
+  padding: 0.3rem 0;
+  border-radius: 0.3rem;
+  background-color: #f5f4f0;
+  border: 2px solid #81fbb8;
 }
 
 button {
-    margin: 0;
-    display: bclock;
-    background-color: white;
-    border: 2px solid #81fbb8;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    transition: all 0.4s;
+  margin: 0;
+  display: block;
+  background-color: white;
+  border: 2px solid #81fbb8;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 button:hover {
-    border: 2px solid #28c76f;
+  border: 2px solid #28c76f;
 }
 
-#formulario1{
+#formulario1 {
   height: 40%;
 }
 
-#plan{
+#plan {
   visibility: visible;
 }
 
-#servicio{
+#servicio {
   visibility: visible;
 }
+
 .mensaje {
-    padding: 1rem;
-    text-align: center;
-    margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .mensaje p,
 .mensaje h3 {
-    color: #377f8b;
-    font-weight: 200;
+  color: #377f8b;
+  font-weight: 200;
 }
 
 .mensaje--error {
-    background-color: #fa6450;
+  background-color: #fa6450;
 }
 
 .mensaje--resumen {
-    background-color: #f9c733;
+  background-color: #f9c733;
 }
 
-  .loading {
-    margin: auto;
-    display: block;
-    width: 80px;
+.loading {
+  margin: auto;
+  display: block;
+  width: 80px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 /* FIN PAGINA PLANES ELECCION*/

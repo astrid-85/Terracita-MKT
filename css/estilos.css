@@ -33,16 +33,28 @@ header .fotoEncabezado {
     width: 500px;
     height: 500px; }
 
+header .tituloPrincipal {
+  color: #ff9b00;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Bowlby One SC", cursive;
+  padding: 20px;
+  padding-bottom: 0px;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
 .logoInicio {
   display: flex;
   flex-direction: column;
   align-items: center;
   animation-duration: 5s;
   animation-name: aparecer;
-  animation-iteration-count: initial; }
+  animation-iteration-count: initial;
+  margin: 5%; }
   .logoInicio img {
-    width: 200px;
-    height: 200px; }
+    width: 300px;
+    height: 300px; }
 
 #menu {
   color: #ff9b00;
@@ -64,7 +76,7 @@ ul {
       text-decoration: none;
       text-align: left;
       font-size: 1.3rem;
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "Santana-RegularCondensed";
       color: #ff9b00;
       font-weight: bolder; }
       ul li #navInicio:hover {
@@ -86,19 +98,9 @@ li:last-child {
   flex-direction: column;
   color: #377f8b;
   font-family: "Bowlby One SC", cursive; }
-  .fondo .tituloPrincipal {
-    color: #ff9b00;
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Bowlby One SC", cursive;
-    padding: 20px;
-    padding-bottom: 0px;
-    animation-duration: 5s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
   .fondo .text-muted {
     color: #cc7760 !important;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Santana-RegularCondensed";
     font-weight: bolder; }
 
 .container, .equipo {
@@ -110,7 +112,7 @@ li:last-child {
 #textoPrincipal {
   font-size: 1.5rem;
   color: #ff9b00;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   animation-duration: 8s;
   animation-name: aparecer;
   animation-iteration-count: inherit; }
@@ -137,7 +139,7 @@ h3 {
 
 .contactosEstilo p {
   color: #ff9b00;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 0.875rem;
   text-align: center;
   font-weight: bold; }
@@ -167,20 +169,20 @@ h3 {
 /*FIN FOOTER*/
 /*INICIO PÁGINA EQUIPO*/
 .equipo {
-  height: 70%; }
+  margin-right: 5%;
+  margin-left: 5%; }
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 10%; }
+  width: 2%; }
 
 .equipo img {
   float: left;
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 0px; }
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .cajasEquipo {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 1.25rem;
   padding: 30px 30px 30px 10px;
   margin: 90px;
@@ -210,7 +212,7 @@ h6 {
   margin-top: 2%; }
 
 .clientesText {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 1.25rem;
   text-align: left;
   color: #ff9b00;
@@ -225,7 +227,8 @@ h6 {
 .btn-primary {
   color: #f9c733;
   background-color: #377f8b;
-  margin: 20px; }
+  margin: 20px;
+  position: inherit; }
 
 .btn-outline-warning {
   margin-left: 5%;
@@ -234,7 +237,7 @@ h6 {
   background-color: #377f8b; }
 
 h4 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 2rem;
   color: #ff9b00;
   text-align: center; }
@@ -244,29 +247,22 @@ h4 {
 .tablaPlanes {
   display: grid;
   background-color: #377f8b;
-  grid-template-columns: 20% 75%;
-  grid-template-rows: 10% 25% 25% 25%;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 0%;
   grid-template-areas: "columInicio columInicio" "row2 row3 " "row4 row5" "row6 row7";
   column-gap: 1px;
   row-gap: 1px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 5%;
-  border: #377f8b 2px solid; }
-  .tablaPlanes .planesDescripcion {
-    color: #ff9b00;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.25rem;
-    padding-left: 10px;
-    padding-right: 12px;
-    text-align: center;
-    border-bottom: #f9c733 solid 2px; }
-  .tablaPlanes .rowDescripcion {
-    color: #ff9b00;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1rem;
-    text-align: left;
-    margin: 5px; }
+  margin: 5%;
+  border: #377f8b 2px solid;
+  max-width: 100%; }
+
+.tablaPlanes .rowDescripcion {
+  color: #ff9b00;
+  font-family: "Santana-RegularCondensed";
+  font-size: 1rem;
+  text-align: center; }
 
 #rowInicio {
   grid-area: columInicio;
@@ -313,7 +309,7 @@ h4 {
   margin-right: 10%;
   margin-top: 2%;
   margin: 10px;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 0.875rem;
   color: #377f8b; }
   #formularioUno #mensajeContacto {
@@ -322,7 +318,7 @@ h4 {
     width: 40%; }
 
 .botonPlanes {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   color: #cc7760;
   border-radius: 10%; }
 
@@ -335,7 +331,7 @@ select {
 /*FIN PAGINA ERROR 404*/
 .errorPagina {
   padding: 30px 20px;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   line-height: 1.6;
   background-color: #f9c733; }
   .errorPagina h1 {
@@ -387,7 +383,7 @@ select {
 
 button {
   margin: 0;
-  display: bclock;
+  display: block;
   background-color: white;
   border: 2px solid #81fbb8;
   padding: 0.5rem;
