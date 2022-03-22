@@ -1,12 +1,12 @@
 
-$colorTitulo:#377f8b;
-$colorTipografia: #f9c733;
+$colorTitulo:#ff9b00;
+$colorTipografia: #736e8c;
 $tipografiaTitulo: 'Bowlby One SC', cursive;
-$tipografiaTexto: 'Open Sans Condensed', sans-serif;
-$colorFondo: #f9c733;
+$tipografiaTexto: 'Santana-RegularCondensed';
+$colorFondo:#80b3c0;
 $anchoCajas: 250px;
-$imgFondo: url("../img/fototerracita.png"); 
-$botonColor: #aa8324; 
+$imgFondo: url("../../img/fototerracita.png"); 
+$botonColor: #ff9b00; 
 $tamanioTexto: 1.25rem;
 $tamanioTitulo: 2rem;
 $letraFooter: 0.875rem; 
@@ -16,12 +16,12 @@ $letraFooter: 0.875rem;
 
 @mixin cajasEstilos {
   font-family: $tipografiaTexto;
-  font-size: $tamanioTexto;
+  font-size: 1.75rem;
   padding: 30px 30px 30px 10px;
   margin: 90px;
   text-align: left;
   line-height: 30px;
-  color: #f9c733;
+  color: #985697;
   position: relative;
   }
 

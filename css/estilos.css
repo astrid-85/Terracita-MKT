@@ -7,8 +7,11 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f9c733;
-  width: 100%; }
+  background-image: url("../img/fototerracita .jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: initial; }
 
 /*INICIO ENCABEZADO GENERAL*/
 @keyframes aparecer {
@@ -24,33 +27,64 @@ header .fotoEncabezado {
   animation-duration: 5s;
   animation-name: aparecer;
   animation-iteration-count: initial; }
+  header .fotoEncabezado img {
+    margin: 10rem;
+    margin-bottom: 0;
+    width: 500px;
+    height: 500px; }
+
+header .tituloPrincipal {
+  color: #736e8c;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Bowlby One SC", cursive;
+  padding: 20px;
+  padding-bottom: 0px;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
+.logoInicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 5s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+  margin: 5%; }
+  .logoInicio img {
+    width: 300px;
+    height: 300px; }
 
 #menu {
-  color: #f9c733;
+  color: #736e8c;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: flex;
-  background-image: linear-gradient(to top, #dfb129, #cc7760); }
+  background-color: transparent;
+  float: left; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../img/logo 1.png"); }
 
 ul {
   display: flex;
   list-style-type: none; }
   ul li {
-    border-right: 2px solid #cc7760;
+    border-right: 2px solid #736e8c;
     margin: 0; }
     ul li #navInicio {
       text-decoration: none;
-      text-align: center;
+      text-align: left;
       font-size: 1.3rem;
-      font-family: "Open Sans Condensed", sans-serif;
-      color: #f9c733;
+      font-family: "Santana-RegularCondensed";
+      color: #736e8c;
       font-weight: bolder; }
       ul li #navInicio:hover {
-        background-color: #f9c733;
+        background-color: #80b3c0;
         color: #cc7760;
         padding: 4px; }
 
-.navbar-light .navbar-brand {
+.navbar-brand {
   color: #377f8b;
   font-weight: bold; }
 
@@ -62,40 +96,28 @@ li:last-child {
 .fondo {
   display: flex;
   flex-direction: column;
-  color: #377f8b;
-  font-family: "Bowlby One SC", cursive;
-  background-image: url("../img/fototerracita.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh; }
-  .fondo .tituloPrincipal {
-    color: #f9c733;
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Bowlby One SC", cursive;
-    padding: 20px;
-    padding-bottom: 0px;
-    animation-duration: 5s;
-    animation-name: aparecer;
-    animation-iteration-count: initial; }
+  color: #ff9b00;
+  font-family: "Bowlby One SC", cursive; }
   .fondo .text-muted {
     color: #cc7760 !important;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Santana-RegularCondensed";
     font-weight: bolder; }
 
 .container, .equipo {
   position: relative;
   top: 80px;
-  background-color: #377f8b;
-  opacity: 90%; }
+  background-color: #80b3c0;
+  opacity: 90%;
+  border-radius: 5vh; }
 
 #textoPrincipal {
-  font-size: 1.5rem;
-  color: #f9c733;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2rem;
+  color: #736e8c;
+  font-family: "Santana-RegularCondensed";
   animation-duration: 8s;
   animation-name: aparecer;
-  animation-iteration-count: inherit; }
+  animation-iteration-count: inherit;
+  padding: 5%; }
 
 /*FIN PAGINA PRINCIPAL*/
 /*INICIO FOOTER*/
@@ -107,20 +129,20 @@ li:last-child {
   column-gap: 0px;
   row-gap: 1px;
   align-items: end;
-  background-color: #377f8b;
-  background-image: linear-gradient(#cc7760, #377f8b); }
+  margin-top: 40%;
+  padding-top: 10%; }
 
 h3 {
   font-family: "Bowlby One SC", cursive;
-  color: #f9c733;
+  color: #736e8c;
   font-size: 2rem;
   grid-area: h3;
   text-align: center;
   visibility: hidden; }
 
 .contactosEstilo p {
-  color: #f9c733;
-  font-family: "Open Sans Condensed", sans-serif;
+  color: #736e8c;
+  font-family: "Santana-RegularCondensed";
   font-size: 0.875rem;
   text-align: center;
   font-weight: bold; }
@@ -150,32 +172,33 @@ h3 {
 /*FIN FOOTER*/
 /*INICIO PÁGINA EQUIPO*/
 .equipo {
-  opacity: 100%;
-  height: 70%; }
+  margin-right: 5%;
+  margin-left: 5%; }
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 10%; }
+  width: 2%; }
 
 .equipo img {
   float: left;
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 0px; }
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 5vh; }
 
 .cajasEquipo {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.25rem;
+  font-family: "Santana-RegularCondensed";
+  font-size: 1.75rem;
   padding: 30px 30px 30px 10px;
   margin: 90px;
   text-align: left;
   line-height: 30px;
-  color: #f9c733;
+  color: #985697;
   position: relative;
   padding: 0;
   margin: 0px; }
   .cajasEquipo h5 {
-    color: #f9c733;
+    color: #736e8c;
     font-weight: bolder;
     font-size: 2rem;
     text-align: center; }
@@ -190,14 +213,14 @@ h6 {
 /*FIN PAGINA EQUIPO*/
 /*INICIO PAGINA NUESTRO TRABAJO*/
 .clientes {
-  background-color: #377f8b;
-  margin-top: 5%; }
+  background-color: #80b3c0;
+  margin-top: 2%; }
 
 .clientesText {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 1.25rem;
   text-align: left;
-  color: #f9c733;
+  color: #736e8c;
   padding: 20px;
   visibility: hidden; }
 
@@ -209,47 +232,43 @@ h6 {
 .btn-primary {
   color: #f9c733;
   background-color: #377f8b;
-  margin: 20px; }
+  margin: 20px;
+  position: inherit; }
 
 .btn-outline-warning {
   margin-left: 5%;
   margin-top: 2%;
+  margin-bottom: 5%;
   background-color: #377f8b; }
 
 h4 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   font-size: 2rem;
-  color: #f9c733;
+  color: #736e8c;
   text-align: center; }
 
 /*FIN PAGINA NUESTRO TRABAJO*/
 /*INICIO PAGINA PLANES*/
 .tablaPlanes {
   display: grid;
-  background-color: #377f8b;
-  grid-template-columns: 20% 75%;
-  grid-template-rows: 10% 25% 25% 25%;
+  background-color: #80b3c0;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 0%;
   grid-template-areas: "columInicio columInicio" "row2 row3 " "row4 row5" "row6 row7";
   column-gap: 1px;
   row-gap: 1px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 5%;
-  border: #377f8b 2px solid; }
-  .tablaPlanes .planesDescripcion {
-    color: #f9c733;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.25rem;
-    padding-left: 10px;
-    padding-right: 12px;
-    text-align: center;
-    border-bottom: #f9c733 solid 2px; }
-  .tablaPlanes .rowDescripcion {
-    color: #f9c733;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1rem;
-    text-align: left;
-    margin: 5px; }
+  margin: 5%;
+  border: #377f8b 2px;
+  border-radius: 5vh;
+  max-width: 100%; }
+
+.tablaPlanes .rowDescripcion {
+  color: #736e8c;
+  font-family: "Santana-RegularCondensed";
+  font-size: 1rem;
+  text-align: center; }
 
 #rowInicio {
   grid-area: columInicio;
@@ -282,47 +301,57 @@ h4 {
 
 /*FIN PAGINA PLANES*/
 /*INICIO PAGINA CONTACTO*/
+.clientesContacto {
+  width: 100%; }
+
 #formulario {
   background-color: #377f8b;
   background-image: linear-gradient(to right, #377f8b, #aa8321);
   position: relative;
-  margin-top: 20%; }
+  margin-top: 10%; }
 
 #formularioUno {
-  margin: 30px;
-  margin-top: 0px;
-  font-family: "Open Sans Condensed", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin: 10px;
+  font-family: "Santana-RegularCondensed";
   font-size: 0.875rem;
-  color: #f9c733; }
+  color: #377f8b; }
   #formularioUno #mensajeContacto {
     resize: vertical;
-    height: 200px;
-    width: 90%; }
+    height: 100px;
+    width: 40%; }
+
+.botonPlanes {
+  font-family: "Santana-RegularCondensed";
+  color: #cc7760;
+  border-radius: 10%; }
 
 input,
 select {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   color: #cc7760; }
 
 /*FIN PAGINA CONTACTO*/
 /*FIN PAGINA ERROR 404*/
 .errorPagina {
   padding: 30px 20px;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Santana-RegularCondensed";
   line-height: 1.6;
   background-color: #f9c733; }
   .errorPagina h1 {
     margin: 0 0 40px;
     font-size: 60px;
     line-height: 1;
-    color: #252427;
+    color: #ff9b00;
     font-weight: 700; }
   .errorPagina h2 {
     margin: 100px 0 0;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.1em;
-    color: #aa8324;
+    color: #ff9b00;
     text-transform: uppercase; }
   .errorPagina p {
     font-size: 16px;
@@ -344,3 +373,71 @@ select {
   border-color: #1B1A1A; }
 
 /*FIN PAGINA ERROR 404*/
+/* INICIO PAGINA PLANES ELECCION*/
+.form__group {
+  padding: 1rem 0; }
+
+.turnera {
+  height: 50%; }
+
+select {
+  margin: 1rem 0;
+  padding: 0.3rem 0;
+  border-radius: 0.3rem;
+  background-color: #f5f4f0;
+  border: 2px solid #81fbb8; }
+
+button {
+  margin: 0;
+  display: block;
+  background-color: white;
+  border: 2px solid #81fbb8;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.4s; }
+
+button:hover {
+  border: 2px solid #28c76f; }
+
+#formulario1 {
+  height: 40%; }
+
+#plan {
+  visibility: visible; }
+
+#servicio {
+  visibility: visible; }
+
+.mensaje {
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0; }
+
+.mensaje p,
+.mensaje h3 {
+  color: #377f8b;
+  font-weight: 200; }
+
+.mensaje--error {
+  background-color: #fa6450; }
+
+.mensaje--resumen {
+  background-color: #f9c733; }
+
+.loading {
+  margin: auto;
+  display: block;
+  width: 80px; }
+
+.hide {
+  display: none; }
+
+/* FIN PAGINA PLANES ELECCION*/
+#turnera {
+  display: inline-flex;
+  align-content: flex-end;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline; }

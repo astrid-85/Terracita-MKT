@@ -1,15 +1,43 @@
 @media only screen and (min-width: 1200px) {
+
+
+  body {
+    background-image: url("../img/fototerracita.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: initial;
+    height: 100vh;
+    max-width: 100%;
+
+
+  }
+
+  .fondo {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+
+  }
+
   /*INICIO PAGINA INICIO*/
+
   .container {
-    opacity: 100%;
+    width: max-content;
   }
 
   #textoPrincipal {
     text-align: center;
   }
+
+
   /*FIN PAGINA INICIO*/
 
   /*FOOTER*/
+
+  .piePagina {
+    margin: 0;
+
+  }
 
   h3 {
     font-family: "Bowlby One SC", cursive;
@@ -22,31 +50,37 @@
   .contactosEstilo p {
     font-size: 1.25rem;
   }
+
   .socialIcon {
     left: 43%;
   }
+
   /*FIN FOOTER*/
 
   /*INICIO PAGINA EQUIPO*/
-  .equipo {
-    opacity: 100%;
+  .container .equipo {
     margin: 10px;
+    width: 20vh;
   }
+
   .equipo img {
     float: inline-start;
     padding: 0;
-    margin-left: 16%;
+    margin-left: 10%;
   }
+
   .cajasEquipo p {
     margin-left: 20px;
-    margin-right: 50px;
+    margin-right: 20px;
     position: relative;
     left: 70px;
     visibility: visible;
   }
+
   h6 {
     visibility: hidden;
   }
+
   /*FIN PAGINA EQUIPO*/
 
   /*INICIO PAGINA TRABAJOS*/
@@ -54,18 +88,22 @@
     font-size: 1rem;
     font-family: "Open Sans Condensed", sans-serif;
   }
+
   .clientes {
+    background-color: #377f8b;
     margin-top: 2%;
   }
+
   .clientesText {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.25rem;
+   font-family:'Santana-RegularCondensed';
+   font-size: 1.25rem;
     text-align: left;
-    color: #f9c733;
+    color: #736e8c;
     padding: 30px;
     visibility: visible;
     margin-right: 20%;
   }
+
   .clientesImg {
     float: left;
     padding: 20px;
@@ -75,57 +113,62 @@
   }
 
   .btn-outline-warning {
-    margin: 0%;
+
     background-color: #377f8b;
     position: relative;
     left: 30px;
-    margin-left: 40%;
+    margin-left: 20%;
     margin-top: 1%;
+    margin-bottom: 5%;
   }
+
 
   /*FIN PAGINA TRABAJOS*/
 
   /*INICIO PAGINA PLANES*/
+
   .tablaPlanes {
-    display: grid;
-    column-gap: 1px;
-    row-gap: 1px;
-    margin-top: 2.5%;
-    margin-bottom: 20%;
+    margin: 2%;
+    max-width: 100%;
   }
-  #tamanioPlanes {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 25% 25% 25%;
-    column-gap: 5px;
-    row-gap: 10px;
-    margin-bottom: 30px;
-  }
+
   .tablaPlanes .rowDescripcion {
     font-size: 1.5rem;
+    text-align: left;
     padding-left: 10px;
     padding-right: 10px;
-    text-align: left;
-    margin: 0px;
-    margin-bottom: 2px;
+    font-family: Santana-RegularCondensed;
+
   }
+
+  #tamanioPlanes {
+    display: grid;
+    grid-template-columns: 10% 80%;
+    grid-template-rows: 0;
+    column-gap: 5px;
+    row-gap: 10px;
+    margin-bottom: 10px;
+  }
+
   /*FIN PAGINA PLANES*/
 
   /*INICIO PAGINA CONTACTO*/
   #formulario {
     background-color: #377f8b;
     background-image: linear-gradient(to right, #377f8b, #aa8321);
-    margin-top: 0.5%;
     width: 60%;
     position: relative;
     left: 20%;
+
   }
+
   #formularioUno {
-    margin: 30px;
-    margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.25rem;
-    color: #f9c733;
+    color: #377f8b;
   }
 
   #mensajeContacto {
@@ -138,15 +181,33 @@
     font-family: "Open Sans Condensed", sans-serif;
     color: #cc7760;
   }
+
   /*FIN PAGINA CONTACTO*/
 }
 
 @media only screen and (min-width: 576px) {
+
+
   /*INICIO PAGINA ERROR*/
 
   .errorPagina {
     padding: 50px;
   }
 
+  input,
+  select {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #cc7760;
+  }
+
   /*FIN PAGINA ERROR*/
+}
+
+@media only screen and (max-width: 767px) {
+
+  body {
+
+    background-image: url(../img/fototerracita\ .jpg);
+
+  }
 }

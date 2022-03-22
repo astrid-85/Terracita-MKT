@@ -50,16 +50,16 @@
     <title>Contacto</title>
   </head>
   <body>
-    <header class="encabezado">
-      <div class="fotoEncabezado">
+    <header>
+      <div class="logoInicio">
         <a title="logo" href="../index.html"
           ><img src="../img/logo.png" alt="Logo Terracita" />
         </a>
       </div>
-
-      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+      <h1 class="tituloPrincipal">Contacto</h1>
+      <nav id="menu" class="navbar navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Menú</a>
+          <a class="navbar-brand" href="../index.html"></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -132,11 +132,11 @@
     </header>
 
     <main class="fondo">
-      <section id="formulario">
-        <h1 class="tituloPrincipal">Contacto</h1>
-        <form>
+      <section class="clientesContacto">
+      
+        <form id="formularioUno">
           <fieldset>
-            <div id="formularioUno">
+            <div>
               <legend>Dejá tu consulta</legend>
 
               <label for="nombre_apellido"> Nombre Completo:</label>
@@ -164,20 +164,26 @@
               <input type="checkbox" value="Boca_en_Boca" />
 
               <br />
-
-              <select name="Planes de Trabajo">
-                <option value="10hs">Mi Primer Proyecto</option>
-                <option value="20hs">Con Experiencia</option>
-                <option value="30hs">Con Mantenimiento</option>
+           
+<!--
+              <select name="Planes" id="Planes" class="botonPlanes">
+                <option value="Elegí tu Plan" >Elegí tu Plan</option>
+                <option id="planA" >Mi Primer Proyecto</option>
+                <option id="planB">Con Experiencia</option>
+                <option id="planC">Con Mantenimiento</option>
+              
+              
               </select>
 
+-->     
+
               <br />
-              <textarea
+               <textarea
                 placeholder="Contanos que necesitas para tu proyecto"
                 id="mensajeContacto"
                 cols="100"
-                rows="10"
-              ></textarea>
+                rows="3"
+              ></textarea> 
 
               <br />
               <input type="submit" value="Enviar formulario" />
@@ -228,5 +234,10 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+
+    <script 
+    src="../js/script.js"
+    ></script>
+
   </body>
 </html>
