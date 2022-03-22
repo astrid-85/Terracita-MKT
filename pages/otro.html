@@ -44,22 +44,23 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+   
 
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/mediaqueries.css" />
     <title>Planes a Medida</title>
   </head>
   <body>
-    <header class="encabezado">
-      <div class="fotoEncabezado">
+    <header>
+      <div class="logoInicio">
         <a title="logo" href="../index.html"
           ><img src="../img/logo.png" alt="Logo Terracita" />
         </a>
       </div>
-
-      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+      <h1 class="tituloPrincipal">Contacto</h1>
+      <nav id="menu" class="navbar navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Menú</a>
+          <a class="navbar-brand" href="../index.html"></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -133,7 +134,7 @@
 
     <main class="fondo">
       <section class="clientesContacto">
-        <h1 class="tituloPrincipal">Contacto</h1>
+    
         <form id="formularioUno">
           <fieldset>
             <div>
@@ -164,11 +165,11 @@
               <input type="checkbox" value="Boca_en_Boca" />
 
               <br />
-           <form type="submit">
-            <input name="Planes" class="Planes" type="text"  placeholder="Elegí tu plan"/>  <p id="plan"></p>              
-            <input name="Planes" class="Servicio" type="number" placeholder="Cantidad de Turnos"/> <p id="turno"></p>   
-            <input type="submit" class="botonPlanes" value="Presupuesto" />
-          </form>
+          <div id="turnera">
+            Elegí tu plan <button class="Planes" type="text"> Plan </button>           
+            Cantidad de Turnos <button class="Servicio" type="number"> Turno </button> 
+            <input class="botonPlanes" type="submit" value="Presupuesto" />
+          </div>
               <br />
                <textarea
                 placeholder="Contanos que necesitas para tu proyecto"
@@ -230,6 +231,6 @@
     <script 
       src="../js/prueba.js"
     ></script>
-
+   
   </body>
 </html>

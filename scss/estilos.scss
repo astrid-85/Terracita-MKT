@@ -97,7 +97,7 @@ ul {
 
 
   li {
-    border-right: 2px solid #cc7760;
+    border-right: 2px solid #736e8c;
     margin: 0;
 
     #navInicio {
@@ -147,17 +147,19 @@ li:last-child {
 .container {
   position: relative;
   top: 80px;
-  background-color: #377f8b;
+  background-color: $colorFondo;
   opacity: 90%;
+  border-radius:5vh;
 }
 
 #textoPrincipal {
-  font-size: 1.5rem;
+  font-size:$tamanioTitulo;
   color: $colorTipografia;
   font-family: $tipografiaTexto;
   animation-duration: 8s;
   animation-name: aparecer;
   animation-iteration-count: inherit;
+  padding: 5%;
 }
 
 /*FIN PAGINA PRINCIPAL*/
@@ -175,7 +177,8 @@ li:last-child {
   row-gap: 1px;
   align-items: end;
   margin-top: 40%;
-
+  padding-top: 10%;
+  
 }
 
 h3 {
@@ -242,6 +245,8 @@ margin-left: 5%;
   float: left;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 5vh;
 }
 
 .cajasEquipo {
@@ -250,10 +255,11 @@ margin-left: 5%;
   margin: 0px;
 
   h5 {
-    color: #f9c733;
+    color: $colorTipografia;
     font-weight: bolder;
     font-size: $tamanioTitulo;
-    text-align: center;
+    text-align:center;
+  
   }
 }
 
@@ -272,7 +278,7 @@ h6 {
 /*INICIO PAGINA NUESTRO TRABAJO*/
 
 .clientes {
-  background-color: #377f8b;
+  background-color: $colorFondo;
   margin-top: 2%;
 }
 
@@ -322,7 +328,7 @@ h4 {
 
 .tablaPlanes {
   display: grid;
-  background-color: #377f8b;
+  background-color: $colorFondo;
   grid-template-columns: 20% 80%;
   grid-template-rows: 0%;
   grid-template-areas:
@@ -335,7 +341,8 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   margin: 5%;
-  border: #377f8b 2px solid;
+  border: #377f8b 2px;
+  border-radius: 5vh;
   max-width: 100%;
 }
 
@@ -425,7 +432,7 @@ h4 {
 
 input,
 select {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: $tipografiaTexto;
   color: #cc7760;
 }
 
@@ -445,7 +452,7 @@ select {
     margin: 0 0 40px;
     font-size: 60px;
     line-height: 1;
-    color: #252427;
+    color: $colorTitulo;
     font-weight: 700;
   }
 
@@ -454,7 +461,7 @@ select {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.1em;
-    color: #aa8324;
+    color: $colorTitulo;
     text-transform: uppercase;
   }
 
@@ -563,3 +570,13 @@ button:hover {
 }
 
 /* FIN PAGINA PLANES ELECCION*/
+
+#turnera{
+
+  display: inline-flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+}

@@ -39,12 +39,7 @@ class Interfaz{
 
 let cantidadTurno = document.getElementById("turno");
 
-stock.addEventListener('input', planEleccion )
 
-function planEleccion (){
-
-
-    }
 
 botonPlanes.addEventListener('click',planMedida);
 
@@ -66,8 +61,6 @@ function calcularPrecio(precio, descuento){
 function planMedida(){
 
      ingresarPlan = menuElegido();
-
-    
 
     if (ingresarPlan == planA.plan){
             stock=planA.stock;

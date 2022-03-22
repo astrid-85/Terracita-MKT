@@ -44,8 +44,6 @@ let listaPlanesMenu = "Estos son nuestros planes:"
 
 localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
 
-
-
 function stockSuficiente(stock) {
     stock -= planEleccion;
     console.log("Quedan" + " " + stock + " " + "turnos para" + "\n" + ingresarPlan);
