@@ -15,12 +15,14 @@ class Plan {
         this.descuento = descuento;
     }
 }
-
+/*
 const planA = new Plan ("Estrategia", 4 , 2000 , 0.8)
 const planB = new Plan ("Rediseño", 5 , 1000 , 0.7) 
 const planC = new Plan ("Planificación", 10 , 500 , 0.9)
 
 const listaPlanes = [planA, planB, planC]
+*/
+
 
 function cartelInicio(){
     alert("Bienvenido/a a la Terracita. Estos son nuestro planes de trabajo \n" + planA.plan + "\n" + planB.plan + "\n" + planC.plan)

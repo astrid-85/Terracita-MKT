@@ -1,5 +1,5 @@
 
-let planEleccion;
+ /**let planEleccion;
 let precioConsulta = 0;
 let stock= document.querySelector('Servicio');
 let precio ;
@@ -22,15 +22,13 @@ const planC = new Plan ("Planificación", 10 , 500 , 0.9)
 
 const listaPlanes = [planA, planB, planC]
 
- /** miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
-console.log(miFormulario)*/
+ miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
+console.log(miFormulario)
 
 class Interfaz{
 
     static capturarDatos(){
-      const ingresarPlan = document.getElementById('plan');
       const planValor = parseInt(Plan.input[Plan.inputIndex].value);
-      const cantidadTurno = document.getElementById("turno");
       return [planValor, turnoValor];
     }
 
@@ -110,15 +108,20 @@ const aumento = actualizacionConsulta.map(precio => precio + 1000);
 
  console.log(aumento);
 
-let contacto = document.getElementsByClassName("contactosEstilo");
- console.log(contacto);
+
 
  let piePagina = document.querySelector("#pie3  p")
 
  piePagina.innerText = "Copyright-Terracita 2022"
 
  console.log (piePagina.innerText)
+*/
+
+let contacto = document.getElementsByClassName("formularioUno");
+ console.log(formularioUno);
 
 
 
-
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
