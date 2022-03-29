@@ -56,7 +56,7 @@
           ><img src="../img/logo.png" alt="Logo Terracita" />
         </a>
       </div>
-      <h1 class="tituloPrincipal">Contacto</h1>
+      <h1 class="tituloPrincipal">Elegí tu Plan</h1>
       <nav id="menu" class="navbar navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"></a>
@@ -165,17 +165,19 @@
 
               <br />
            
-<!--
-              <select name="Planes" id="Planes" class="botonPlanes">
-                <option value="Elegí tu Plan" >Elegí tu Plan</option>
-                <option id="planA" >Mi Primer Proyecto</option>
-                <option id="planB">Con Experiencia</option>
-                <option id="planC">Con Mantenimiento</option>
+           <select name="Planes" id="Planes"  onChange="elegirPlan()">
+                <option value=""selected disabled>Seleccionar</option>
+                <option  value="2000">Mi Primer Proyecto</option>
+                <option value="1000">Con Experiencia</option>
+                <option  value="500">Con Mantenimiento</option>
               
               
-              </select>
-
--->     
+          </select>
+     
+            <br>
+            Plan Seleccionado:<input type="text" id="plan"><br>
+            Cantidad de Turnos:<input type="text" id="turnos" placeholder="0"><br>
+            Valor Consulta:<input type="text" id="precio"><br>
 
               <br />
                <textarea
@@ -235,9 +237,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <script 
-    src="../js/script.js"
-    ></script>
-
+<script src="../js/contacto.js"
+></script>
+<script src="../js/script.js"
+></script>
   </body>
 </html>

@@ -15,13 +15,13 @@ class Plan {
         this.descuento = descuento;
     }
 }
-/*
+
 const planA = new Plan ("Estrategia", 4 , 2000 , 0.8)
 const planB = new Plan ("Rediseño", 5 , 1000 , 0.7) 
 const planC = new Plan ("Planificación", 10 , 500 , 0.9)
 
 const listaPlanes = [planA, planB, planC]
-*/
+
 
 
 function cartelInicio(){
@@ -33,7 +33,7 @@ function menuElegido (){
     return ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas")
 }
 
-botonPlanes.addEventListener('click',planMedida);
+botonPlanes.addEventListener('onChange',planMedida());
 
 let miFormulario= document.getElementById("formularioUno");
 
@@ -41,10 +41,6 @@ miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
 console.log(miFormulario)
 
 
-
-let listaPlanesMenu = "Estos son nuestros planes:"
-
-localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
 
 function stockSuficiente(stock) {
     stock -= planEleccion;
@@ -119,6 +115,10 @@ let contacto = document.getElementsByClassName("contactosEstilo");
 
 
 
+ let listaPlanesMenu = "Estos son nuestros planes:"
+
+ localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
+ 
 
 
 
