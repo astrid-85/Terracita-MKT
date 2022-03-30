@@ -93,7 +93,7 @@ miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
 console.log(miFormulario)
 
 
-fetch('data.json')
+fetch('../js/data.json')
 .then((resp)=>resp.json())
 .then((data)=>console.log(data)) 
 
