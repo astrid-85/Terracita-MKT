@@ -140,28 +140,18 @@
               <legend>Dejá tu consulta</legend>
 
               <label for="nombre_apellido"> Nombre Completo:</label>
-              <input type="text" name="nombre_apellido" /> <br />
+              <input type="text" name="nombre_apellido" id="nombre_apellido" /> <br />
 
               <label for="correo electrónico"> Correo Electrónico:</label>
-              <input type="text" name="correo_electrónico" />
-
-              <br />
-              <label for="género"> femenino</label>
-              <input type="radio" name="género" value="femenino" />
-
-              <label for="género"> masculino</label>
-              <input type="radio" name="género" value="masculino" />
-
-              <label for="género"> no especificar</label>
-              <input type="radio" name="género" value="no especificar" />
+              <input type="text" name="correo_electrónico" id="correo_electrónico" />
 
               <p>¿Cómo te enteraste de nosotros?</p>
               <label for="checkbox"> Instagram</label>
-              <input type="checkbox" value="Instagram" />
+              <input type="checkbox" id="Instagram" name="conoce" />
               <label for="checkbox"> Publicidad</label>
-              <input type="checkbox" value="Publicidad" />
+              <input type="checkbox" id="Publicidad" name="conoce" />
               <label for="checkbox"> Boca en Boca</label>
-              <input type="checkbox" value="Boca_en_Boca" />
+              <input type="checkbox" id="Boca_en_Boca" name="conoce"  />
 
               <br />
            
@@ -176,7 +166,7 @@
      
             <br>
             Plan Seleccionado:<input type="text" id="plan"><br>
-            Cantidad de Turnos:<input type="text" id="turnos" placeholder="0"><br>
+            Cantidad de Turnos:<input type="number" id="turnos" placeholder="0"><br>
             Valor Consulta:<input type="text" id="precio"><br>
 
               <br />
@@ -194,7 +184,9 @@
             </div>
           </fieldset>
         </form>
+
       </section>
+ 
     </main>
 
     <footer class="piePagina">
@@ -239,7 +231,7 @@
 
 <script src="../js/contacto.js"
 ></script>
-<script src="../js/script.js"
-></script>
+
+
   </body>
 </html>

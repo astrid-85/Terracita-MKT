@@ -1,8 +1,8 @@
-let planEleccion;
+let cantidadTurno=document.querySelector('turnos');
 let precioConsulta = 0;
 let stock;
-let precio;
-let ingresarPlan;
+let precio=document.querySelector('precio');
+let ingresarPlan=document.querySelector('plan');
 let botonPlanes = document.querySelector('.botonPlanes');
 
 
@@ -24,26 +24,8 @@ const listaPlanes = [planA, planB, planC]
 
 
 
-function cartelInicio(){
-    alert("Bienvenido/a a la Terracita. Estos son nuestro planes de trabajo \n" + planA.plan + "\n" + planB.plan + "\n" + planC.plan)
-}
- 
-
-function menuElegido (){
-    return ingresarPlan = prompt("Ingresar nombre del Plan de trabajo que necesitas")
-}
-
-botonPlanes.addEventListener('onChange',planMedida());
-
-let miFormulario= document.getElementById("formularioUno");
-
-miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
-console.log(miFormulario)
-
-
-
 function stockSuficiente(stock) {
-    stock -= planEleccion;
+    stock -= cantidadTurno;
     console.log("Quedan" + " " + stock + " " + "turnos para" + "\n" + ingresarPlan);
 }
 
@@ -52,16 +34,14 @@ function stockInsuficiente(_stock) {
 
 }
 function calcularPrecio(precio, descuento){
-    precioConsulta += planEleccion * precio * descuento;
+    precioConsulta += cantidadTurno * precio * descuento;
 }
 
 function planMedida(){
 
-    
-    cartelInicio();
-    ingresarPlan = menuElegido();
+        ingresarPlan = elegirPlan();
 
-    planEleccion = parseInt(prompt("Ingresar la cantidad de turnos que necesita"));
+    cantidadTurno();
 
     if (ingresarPlan == planA.plan){
             stock=planA.stock;
@@ -79,10 +59,10 @@ function planMedida(){
             descuento=planC.descuento;
         } 
             
-    if (planEleccion <= stock) {
+    if (cantidadTurno<= stock) {
         
         stockSuficiente(stock,ingresarPlan);
-        if(planEleccion > 2){
+        if(cantidadTurno > 2){
             calcularPrecio(precio, descuento)
         }
         else {

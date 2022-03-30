@@ -3,18 +3,21 @@
     "liveServer.settings.port": 5501
 },
 
-{   "plan": "Estrategia",
+{   "id": "planA",
+    "plan": "Estrategia",
     "stock": 4,
     "precio": 2000,
     "descuento": 0.8
 },
 {
+    "id": "planB",
     "plan": "Rediseño",
     "stock": 5,
     "precio": 1000,
     "descuento": 0.7
 },
 {
+    "id": "planC",
     "plan": "Planificación",
     "stock": 10,
     "precio": 500,
