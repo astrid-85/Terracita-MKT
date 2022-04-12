@@ -1,4 +1,4 @@
-let cantidadTurno;
+let cantidadTurno=document.getElementById('cantidadTurno');
 let precioConsulta = 0;
 let stock;
 let precio;

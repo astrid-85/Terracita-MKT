@@ -3,7 +3,7 @@ class eleccionPlanes {
         this.user = nombre_apellido;
         this.email = correo_electronico;
         this.plan = plan;
-        this.turno = cantidadTurno;
+        this.cantidadTurno = cantidadTurno;
     }
 
     loguerse() {
@@ -26,37 +26,36 @@ let divSeleccion = document.getElementById("seleccionPlan")
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    e.stopPropagation()
-
 
     let nombre_apellido = document.getElementById('nombre_apellido').value
     let correo_electronico = document.getElementById('correo_electronico').value
     let plan = document.getElementById('plan').value
     let cantidadTurno = document.getElementById('cantidadTurno').value
 
-  
-        const usuario = new eleccionPlanes(nombre_apellido, correo_electronico, plan, cantidadTurno)
+  if(!usuarioPlan.some(eleccionPlanes => eleccionPlanes.plan == plan)){
+       const usuario = new eleccionPlanes(nombre_apellido, correo_electronico, plan, cantidadTurno)
         usuarioPlan.push(usuario)
         localStorage.setItem('planUsuario', JSON.stringify(usuarioPlan))
         formulario.reset()
+  }
+       
 
 })
 
 
-botonMostrar.addEventListener('click', () => {
+botonMostrar.addEventListener('click',  ()  => {
 
-        usuarioPlan.forEach((eleccionPlanes, i) => {
-        divSeleccion.innerHTML = `
-        <div class="card" id="user${i}" style="width 18rem;">
-            <div class="card-body">
-        Hola ${eleccionPlanes.user}, ¿cómo estás? Contanos por que elegiste el plan ${eleccionPlanes.plan},
-        Responderemos en breve tu consulta a ${eleccionPlanes.email} . Cantidad de Turno ${eleccionPlanes.cantidadTurno}
-               </div>
-        </div>
+        usuarioPlan.forEach((eleccionPlanes, indice) => {
+            divSeleccion.innerHTML= `         
+
+            <div class="card" id="user${indice}">
+        Hola ${eleccionPlanes.user}, ¿cómo estás? Elegiste el Plan: ${eleccionPlanes.plan}, 
+        solicitaste esta cantidad de turno ${eleccionPlanes.cantidadTurno}.
+        Responderemos en breve tu consulta a ${eleccionPlanes.email} . 
+         </div>
         `
-        
+        })
     })
- })
 
 
 

@@ -147,12 +147,12 @@
               />
               <br />
 
-              <label for="correo electrónico"> Email:</label>
+              <label for="correo electrónico"> Correo Electrónico:</label>
               <input
                 type="text"
                 name="correo_electronico"
                 id="correo_electronico"
-                placeholder="escribí tu correo electrónico"
+                placeholder="escribí tu email"
               />
 
               <br />
@@ -161,25 +161,27 @@
                 type="text"
                 name="plan"
                 id="plan"
-                placeholder=" plan elegido" onchange="ingresarPlan()" 
+                placeholder=" plan elegido" 
               />
-              <label for="plan elegido"> Turno:</label>
+
+              <br>
+              <label for="turno elegido"> Turno:</label>
               <input
-                type="number"
+                type="text"
                 name="turno"
                 id="cantidadTurno"
                 placeholder=" cantidad de turnos" 
               />
              
 
-              <br />
-              <div id="seleccionPlan" class="row">
-                     
+              <br>
+         
+                     <div id="seleccionPlan"  class="row"></div>
                
-              </div>
-              <button id="botonMostrar" class="botonPlanes" class="btn btn-primary" >Mostrar plan</button>
+                 <br />
+              <button id="botonMostrar"class="btn btn-primary" >Mostrar plan</button>
 
-              <br />
+       
               <input type="submit" value="Enviar formulario" />
 
               <input type="reset" value="Limpiar formulario" />
