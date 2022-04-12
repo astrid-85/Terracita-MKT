@@ -1,118 +1,67 @@
-let cantidadTurno=document.querySelector('turnos');
-let precioConsulta = 0;
-let stock=0;
-let precio=document.querySelector('precio');
-let ingresarPlan=document.querySelector('plan');
-let botonPlanes = document.querySelector('.botonPlanes');
+class eleccionPlanes {
+    constructor(nombre_apellido, correo_electronico, plan) {
+        this.user = nombre_apellido;
+        this.email = correo_electronico;
+        this.plan = plan;
+    }
 
-class Plan {
-    constructor(_plan, stock, precio, descuento) {
-        this.plan = _plan;
-        this.stock = stock;
-        this.precio = precio;
-        this.descuento = descuento;
+    loguerse() {
+        console.log(`${this.user}está logueado`)
     }
 }
 
-const planA = new Plan ("Estrategia", 4 , 2000 , 0.8)
-const planB = new Plan ("Rediseño", 5 , 1000 , 0.7) 
-const planC = new Plan ("Planificación", 10 , 500 , 0.9)
+let usuarioPlan = []
 
-const listaPlanes = [planA, planB, planC]
-
-function elegirPlan()
-{
-const seleccion=document.getElementById('Planes');
-document.getElementById('plan').value=seleccion.options[seleccion.selectedIndex].text;
-document.getElementById('turnos').value=seleccion.options[seleccion.selectedIndex].num;
-document.getElementById('precio').value=seleccion.options[seleccion.selectedIndex].value;
+if (localStorage.getItem('planUsuario')) {
+    usuarioPlan = JSON.parse(localStorage.getItem('planUsuario'))
+} else {
+    localStorage.setItem('planUsuario', JSON.stringify(usuarioPlan))
 }
 
+let formulario = document.getElementById("formularioUno")
+let botonMostrar = document.getElementById("botonMostrar")
+let divSeleccion = document.getElementById("seleccionPlan")
 
 
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.stopPropagation()
 
 
+    let nombre_apellido = document.getElementById('nombre_apellido').value
+    let correo_electronico = document.getElementById('correo_electronico').value
+    let plan = document.getElementById('plan').value
 
-function stockSuficiente(stock) {
-    stock -= cantidadTurno;
-    console.log("Quedan" + " " + stock + " " + "turnos para" + "\n" + ingresarPlan);
-}
+  
+        const usuario = new eleccionPlanes(nombre_apellido, correo_electronico, plan)
+        usuarioPlan.push(usuario)
+        localStorage.setItem('planUsuario', JSON.stringify(usuarioPlan))
+        formulario.reset()
+})
 
-function stockInsuficiente(_stock) {
-    alert("No hay turnos disponibles, consulte más tarde")
 
-}
-function calcularPrecio(precio, descuento){
-    precioConsulta += cantidadTurno * precio * descuento;
-}
+botonMostrar.addEventListener('click', () => {
 
-function planMedida(){
-
-        ingresarPlan = elegirPlan();
-
-    cantidadTurno();
-
-    if (ingresarPlan == planA.plan){
-            stock=planA.stock;
-            precio=planA.precio;
-            descuento=planA.descuento;
-            
-        } else if (ingresarPlan == planB.plan) {
-            stock=planB.stock;
-            precio=planB.precio;
-            descuento=planB.descuento;
-            
-        } else if (ingresarPlan == planC.plan) {
-            stock=planC.stock;
-            precio=planC.precio;
-            descuento=planC.descuento;
-        } 
-            
-    if (cantidadTurno<= stock) {
+        usuarioPlan.forEach((eleccionPlanes, indice) => {
+        divSeleccion.innerHTML = `
+        <div class="card" id="user${indice}" style="width 18rem;">
+            <div class="card-body">
+        Hola ${eleccionPlanes.user}, ¿cómo estás? Contanos por que elegiste el plan ${eleccionPlanes.plan},
+        Responderemos en breve tu consulta a ${eleccionPlanes.email} 
+               </div>
+        </div>
+        `
         
-        stockSuficiente(stock,ingresarPlan);
-        if(cantidadTurno > 2){
-            calcularPrecio(precio, descuento)
-        }
-        else {
-            calcularPrecio(precio, 1)
-        }
+    })
+ })
 
-        alert("El valor de la consulta es de: $" + " " + precioConsulta);
-    } 
-    else {
-        stockInsuficiente(stock)
-    }
-
-    alert("Gracias por elegirnos. Nos estaremos poniendo en contacto con vos.")
-}
-
-let miFormulario= document.getElementById("formularioUno");
-
-miFormulario.addEventListener ('submit', e=> {e.preventDefault()});
-console.log(miFormulario)
 
 
 fetch('../js/data.json')
-.then((resp)=>resp.json())
-.then((data)=>console.log(data)) 
-
-const actualizacionConsulta = [planA.precio, planB.precio, planC.precio];
-const aumento = actualizacionConsulta.map(precio => precio + 1000);
-
- console.log(aumento);
-
-let contacto = document.getElementsByClassName("contactosEstilo");
- console.log(contacto);
-
- let piePagina = document.querySelector("#pie3  p")
-
- piePagina.innerText = "Copyright-Terracita 2022"
-
- console.log (piePagina.innerText)
+    .then((resp) => resp.json())
+    .then((data) => console.log(data))
 
 
+let piePagina = document.querySelector("#pie3  p")
 
- let listaPlanesMenu = "Estos son nuestros planes:"
-
- localStorage.setItem("listaPlanesMenu", JSON.stringify(listaPlanes));
+piePagina.innerText = "Copyright-Terracita 2022"

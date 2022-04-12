@@ -133,49 +133,44 @@
 
     <main class="fondo">
       <section class="clientesContacto">
-      
         <form id="formularioUno">
           <fieldset>
             <div>
               <legend>Dejá tu consulta</legend>
 
               <label for="nombre_apellido"> Nombre Completo:</label>
-              <input type="text" name="nombre_apellido" id="nombre_apellido" /> <br />
+              <input
+                type="text"
+                name="nombre_apellido"
+                id="nombre_apellido"
+                placeholder="Escribí tu nombre"
+              />
+              <br />
 
-              <label for="correo electrónico"> Correo Electrónico:</label>
-              <input type="text" name="correo_electrónico" id="correo_electrónico" />
-
-              <p>¿Cómo te enteraste de nosotros?</p>
-              <label for="checkbox"> Instagram</label>
-              <input type="checkbox" id="Instagram" name="conoce" />
-              <label for="checkbox"> Publicidad</label>
-              <input type="checkbox" id="Publicidad" name="conoce" />
-              <label for="checkbox"> Boca en Boca</label>
-              <input type="checkbox" id="Boca_en_Boca" name="conoce"  />
+              <label for="correo electrónico"> Email:</label>
+              <input
+                type="text"
+                name="correo_electronico"
+                id="correo_electronico"
+                placeholder="escribí tu correo electrónico"
+              />
 
               <br />
-           
-           <select name="Planes" id="Planes"  onChange="elegirPlan()">
-                <option value=""selected disabled>Seleccionar</option>
-                <option  value="2000">Mi Primer Proyecto</option>
-                <option value="1000">Con Experiencia</option>
-                <option  value="500">Con Mantenimiento</option>
-              
-              
-          </select>
-     
-            <br>
-            Plan Seleccionado:<input type="text" id="plan"><br>
-            Cantidad de Turnos:<input type="number" id="turnos" placeholder="0"><br>
-            Valor Consulta:<input type="text" id="precio"><br>
+              <label for="plan elegido"> Plan:</label>
+              <input
+                type="text"
+                name="plan"
+                id="plan"
+                placeholder=" plan elegido"
+              />
+
+              <button id="botonMostrar" class="btn btn-primary" >Mostrar plan</button>
 
               <br />
-               <textarea
-                placeholder="Contanos que necesitas para tu proyecto"
-                id="mensajeContacto"
-                cols="100"
-                rows="3"
-              ></textarea> 
+              <div id="seleccionPlan" class="row">
+                <p></p>
+              </div>
+             
 
               <br />
               <input type="submit" value="Enviar formulario" />
@@ -184,9 +179,7 @@
             </div>
           </fieldset>
         </form>
-
       </section>
- 
     </main>
 
     <footer class="piePagina">
@@ -229,9 +222,8 @@
       crossorigin="anonymous"
     ></script>
 
-
-<script src="../js/contacto.js"
-></script>
-
+    <script src="../js/contacto.js"></script>
+   
+    </script>
   </body>
 </html>
