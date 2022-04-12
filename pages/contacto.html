@@ -161,16 +161,23 @@
                 type="text"
                 name="plan"
                 id="plan"
-                placeholder=" plan elegido"
+                placeholder=" plan elegido" onchange="ingresarPlan()" 
               />
-
-              <button id="botonMostrar" class="btn btn-primary" >Mostrar plan</button>
+              <label for="plan elegido"> Turno:</label>
+              <input
+                type="number"
+                name="turno"
+                id="cantidadTurno"
+                placeholder=" cantidad de turnos" 
+              />
+             
 
               <br />
               <div id="seleccionPlan" class="row">
-                <p></p>
+                     
+               
               </div>
-             
+              <button id="botonMostrar" class="botonPlanes" class="btn btn-primary" >Mostrar plan</button>
 
               <br />
               <input type="submit" value="Enviar formulario" />

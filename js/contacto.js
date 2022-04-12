@@ -1,8 +1,9 @@
 class eleccionPlanes {
-    constructor(nombre_apellido, correo_electronico, plan) {
+    constructor(nombre_apellido, correo_electronico, plan, cantidadTurno) {
         this.user = nombre_apellido;
         this.email = correo_electronico;
         this.plan = plan;
+        this.turno = cantidadTurno;
     }
 
     loguerse() {
@@ -31,23 +32,25 @@ formulario.addEventListener('submit', (e) => {
     let nombre_apellido = document.getElementById('nombre_apellido').value
     let correo_electronico = document.getElementById('correo_electronico').value
     let plan = document.getElementById('plan').value
+    let cantidadTurno = document.getElementById('cantidadTurno').value
 
   
-        const usuario = new eleccionPlanes(nombre_apellido, correo_electronico, plan)
+        const usuario = new eleccionPlanes(nombre_apellido, correo_electronico, plan, cantidadTurno)
         usuarioPlan.push(usuario)
         localStorage.setItem('planUsuario', JSON.stringify(usuarioPlan))
         formulario.reset()
+
 })
 
 
 botonMostrar.addEventListener('click', () => {
 
-        usuarioPlan.forEach((eleccionPlanes, indice) => {
+        usuarioPlan.forEach((eleccionPlanes, i) => {
         divSeleccion.innerHTML = `
-        <div class="card" id="user${indice}" style="width 18rem;">
+        <div class="card" id="user${i}" style="width 18rem;">
             <div class="card-body">
         Hola ${eleccionPlanes.user}, ¿cómo estás? Contanos por que elegiste el plan ${eleccionPlanes.plan},
-        Responderemos en breve tu consulta a ${eleccionPlanes.email} 
+        Responderemos en breve tu consulta a ${eleccionPlanes.email} . Cantidad de Turno ${eleccionPlanes.cantidadTurno}
                </div>
         </div>
         `
@@ -65,3 +68,6 @@ fetch('../js/data.json')
 let piePagina = document.querySelector("#pie3  p")
 
 piePagina.innerText = "Copyright-Terracita 2022"
+
+
+

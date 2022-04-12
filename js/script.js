@@ -1,15 +1,15 @@
-let cantidadTurno=document.querySelector('turnos');
+let cantidadTurno;
 let precioConsulta = 0;
 let stock;
-let precio=document.querySelector('precio');
-let ingresarPlan=document.querySelector('plan');
-let botonPlanes = document.querySelector('.botonPlanes');
+let precio;
+let ingresarPlan=document.getElementById('plan');
+let botonPlanes = document.getElementById('.botonPlanes');
 
 
 
 class Plan {
-    constructor(_plan, stock, precio, descuento) {
-        this.plan = _plan;
+    constructor(plan, stock, precio, descuento) {
+        this.plan = plan;
         this.stock = stock;
         this.precio = precio;
         this.descuento = descuento;
@@ -39,7 +39,7 @@ function calcularPrecio(precio, descuento){
 
 function planMedida(){
 
-        ingresarPlan = elegirPlan();
+        ingresarPlan();
 
     cantidadTurno();
 
