@@ -31,12 +31,12 @@ formulario.addEventListener("submit", (e) => {
 botonMostrar.addEventListener("click", () => {
   if (usuarioPlan.length) {
     usuarioPlan.forEach((user) => {
-      displayMessage(user);
+      displayMessage(usuario);
     });
   }
 });
 
-function displayMessage(user) {
+function displayMessage(usuario) {
   return (divSeleccion.innerHTML = `         
 
             <div class="card">
