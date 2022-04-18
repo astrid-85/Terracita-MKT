@@ -40,9 +40,9 @@ function displayMessage(user) {
   return (divSeleccion.innerHTML = `         
 
             <div class="card">
-            Hola ${user.fullname}, ¿cómo estás? Elegiste el Plan: ${user.planSelected}, 
-            solicitaste esta cantidad de turno ${user.appointment}.
-            Responderemos en breve tu consulta a ${user.email} . 
+            Hola ${usuario.fullname}, ¿cómo estás? Elegiste el Plan: ${usuario.planSelected}, 
+            solicitaste esta cantidad de turno ${usuario.appointment}.
+            Responderemos en breve tu consulta a ${usuario.email} . 
             </div>
             `);
 }
