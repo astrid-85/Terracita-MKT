@@ -25,12 +25,12 @@ formulario.addEventListener("submit", (e) => {
   usuarioPlan.push(usuario);
   localStorage.setItem("planUsuario", JSON.stringify(usuarioPlan));
   formulario.reset();
-  displayMessage(user);
+  displayMessage(usuario);
 });
 
 botonMostrar.addEventListener("click", () => {
   if (usuarioPlan.length) {
-    usuarioPlan.forEach((user) => {
+    usuarioPlan.forEach((usuario) => {
       displayMessage(usuario);
     });
   }
