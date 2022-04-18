@@ -36,7 +36,7 @@ botonMostrar.addEventListener("click", () => {
   }
 });
 
-function displayMessage(user) {
+function displayMessage(usuario) {
   return (divSeleccion.innerHTML = `         
 
             <div class="card">
