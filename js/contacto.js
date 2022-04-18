@@ -30,13 +30,13 @@ formulario.addEventListener("submit", (e) => {
 
 botonMostrar.addEventListener("click", () => {
   if (usuarioPlan.length) {
-    usuarioPlan.forEach((usuario) => {
-      displayMessage(usuario);
+    usuarioPlan.forEach((user) => {
+      displayMessage(user);
     });
   }
 });
 
-function displayMessage(usuario) {
+function displayMessage(user) {
   return (divSeleccion.innerHTML = `         
 
             <div class="card">
