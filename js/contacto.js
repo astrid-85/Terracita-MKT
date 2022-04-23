@@ -21,11 +21,12 @@ formulario.addEventListener("submit", (e) => {
   let appointment = document.getElementById("cantidadTurno").value;
 
 
+  
   const usuario = new User(fullname, email, planSelected, appointment);
   usuarioPlan.push(usuario);
   localStorage.setItem("planUsuario", JSON.stringify(usuarioPlan));
   formulario.reset();
-  displayMessage(usuario);
+  displayMessage(user);
 });
 
 botonMostrar.addEventListener("click", () => {
@@ -36,13 +37,13 @@ botonMostrar.addEventListener("click", () => {
   }
 });
 
-function displayMessage(usuario) {
+function displayMessage(user) {
   return (divSeleccion.innerHTML = `         
 
             <div class="card">
-            Hola ${usuario.fullname}, ¿cómo estás? Elegiste el Plan: ${usuario.planSelected}, 
-            solicitaste esta cantidad de turno ${usuario.appointment}.
-            Responderemos en breve tu consulta a ${usuario.email} . 
+            Hola ${user.fullname}, ¿cómo estás? Elegiste el Plan: ${user.planSelected}, 
+            solicitaste esta cantidad de turno ${user.appointment}.
+            Responderemos en breve tu consulta a ${user.email} . 
             </div>
             `);
 }
